@@ -13,7 +13,6 @@ const douaaController = {
             error.method = request.method;
             error.message = "Error in getting all douaas";
             return next(error);
-
         }
     },
     get: async function (request, response, next) {
@@ -21,24 +20,24 @@ const douaaController = {
         try {
             const douaa = await db.douaa.get(id);
             if (!douaa)
-                return next(new Error404('Hadith not found'));
+                return next(new Error404('Douaa not found'));
             response.json(douaa);
         } catch (error) {
             error.type = "database";
             error.method = request.method;
-            error.message = "Error in getting hadith";
+            error.message = "Error in getting douaa";
             return next(error);
         }
     },
     /*create: async function (request, response, next) {
         const { name } = request.body;
         try {
-            const createdHadith = await db.hadith.create(hadith);
-            response.status(201).json(createdHadith);
+            const createdDouaa = await db.douaa.create(douaa);
+            response.status(201).json(createdDouaa);
         } catch (error) {
             error.type = "database";
             error.method = request.method;
-            error.message = "Error in creating hadith";
+            error.message = "Error in creating douaa";
             return next(error);
         }
     },
@@ -46,12 +45,12 @@ const douaaController = {
         const { id } = request.params;
         const { name } = request.body;
         try {
-            const updatedHadith = await db.hadith.update(id, hadith);
-            response.json(updatedHadith);
+            const updatedDouaa = await db.douaa.update(id, douaa);
+            response.json(updatedDouaa);
         } catch (error) {
             error.type = "database";
             error.method = request.method;
-            error.message = "Error in updating hadith";
+            error.message = "Error in updating douaa";
             return next(error);
         }
      */

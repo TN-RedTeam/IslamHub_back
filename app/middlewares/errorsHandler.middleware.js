@@ -1,50 +1,32 @@
 import { ZodError } from "zod";
 
+const isDev = process.env.NODE_ENV !== 'production';
+
 async function errorsHandler(error, request, response, next) {
-    // Handle Schema Validation Errors
     if (error instanceof ZodError)
         return response.status(422).json(error.flatten().fieldErrors);
 
-    // Handle Database 404 Errors : Element(s) not found
     if (error.type === "not found") {
-        return response.status(error.status || 404).json(error);
+        return response.status(error.status || 404).json({ message: error.message });
     }
 
-    // Handle Database 409 Errors : Element(s) already exists
     if (error.type === "duplicate") {
-        return response.status(error.status || 409).json(error);
+        return response.status(error.status || 409).json({ message: error.message });
     }
 
-    // Handle NodeMailer Errors
     if (error.type === "nodemailer") {
-        return response.json({ message: error.message, error });
+        return response.json({ message: error.message });
     }
 
-    // Handle Database General Errors
     if (error.type === "database") {
-        return response.status(error.status || 500).json({
-            primary: {
-                message: error.message,
-                method: error.method,
-                status: error.status,
-                detail: error.detail,
-            },
-            secondary: error,
-        });
+        const body = isDev
+            ? { message: error.message, method: error.method, status: error.status, detail: error.detail }
+            : { message: 'Database error' };
+        return response.status(error.status || 500).json(body);
     }
 
-    // Handle API General Errors
     response.status(error.status || 500);
-    return response.json(error);
-
-    // {
-    //   primary: {
-    //     message: error.message,
-    //         method: error.method,
-    //         status: error.status,
-    //         detail: error.detail,
-    //   },
-    //   secondary: error,
+    return response.json({ message: isDev ? (error.message || 'Internal server error') : 'Internal server error' });
 }
 
 export default errorsHandler;
