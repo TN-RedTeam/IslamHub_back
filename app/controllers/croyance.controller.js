@@ -6,14 +6,13 @@ const croyanceController = {
         try {
             const croyances = await db.croyance.getAll();
             if (!croyances)
-                return next(new Error404('No hadith found'));
+                return next(new Error404('No croyance found'));
             response.json(croyances);
         } catch (error) {
             error.type = "database";
             error.method = request.method;
-            error.message = "Error in getting all hadiths";
+            error.message = "Error in getting all croyances";
             return next(error);
-
         }
     },
     get: async function (request, response, next) {
@@ -21,24 +20,24 @@ const croyanceController = {
         try {
             const croyance = await db.croyance.get(id);
             if (!croyance)
-                return next(new Error404('Hadith not found'));
+                return next(new Error404('Croyance not found'));
             response.json(croyance);
         } catch (error) {
             error.type = "database";
             error.method = request.method;
-            error.message = "Error in getting hadith";
+            error.message = "Error in getting croyance";
             return next(error);
         }
     },
     /*create: async function (request, response, next) {
         const { name } = request.body;
         try {
-            const createdHadith = await db.hadith.create(hadith);
-            response.status(201).json(createdHadith);
+            const createdCroyance = await db.croyance.create(croyance);
+            response.status(201).json(createdCroyance);
         } catch (error) {
             error.type = "database";
             error.method = request.method;
-            error.message = "Error in creating hadith";
+            error.message = "Error in creating croyance";
             return next(error);
         }
     },
@@ -46,12 +45,12 @@ const croyanceController = {
         const { id } = request.params;
         const { name } = request.body;
         try {
-            const updatedHadith = await db.hadith.update(id, hadith);
-            response.json(updatedHadith);
+            const updatedCroyance = await db.croyance.update(id, croyance);
+            response.json(updatedCroyance);
         } catch (error) {
             error.type = "database";
             error.method = request.method;
-            error.message = "Error in updating hadith";
+            error.message = "Error in updating croyance";
             return next(error);
         }
      */
