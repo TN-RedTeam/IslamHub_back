@@ -5,8 +5,8 @@ import {dhikrController as dhikr} from "../controllers/index.controller.js";
 const router = express.Router();
 
 
-router.get("/dhikr/:id", dhikr.get);
-router.get("/dhikrs", dhikr.getAll);
+router.get("/api/dhikr/:id", dhikr.get);
+router.get("/api/dhikrs", dhikr.getAll);
 
 
 
