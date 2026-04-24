@@ -7,7 +7,14 @@ const croyanceController = {
             const croyances = await db.croyance.getAll();
             if (!croyances)
                 return next(new Error404('No croyance found'));
-            response.json(croyances);
+            const page = Number(request.query.page ?? 0);
+            const pageSize = Number(request.query.pageSize ?? croyances.length);
+            response.json({
+                data: croyances,
+                total: croyances.length,
+                page,
+                pageSize,
+            });
         } catch (error) {
             error.type = "database";
             error.method = request.method;
@@ -29,31 +36,6 @@ const croyanceController = {
             return next(error);
         }
     },
-    /*create: async function (request, response, next) {
-        const { name } = request.body;
-        try {
-            const createdCroyance = await db.croyance.create(croyance);
-            response.status(201).json(createdCroyance);
-        } catch (error) {
-            error.type = "database";
-            error.method = request.method;
-            error.message = "Error in creating croyance";
-            return next(error);
-        }
-    },
-    update: async function (request, response, next) {
-        const { id } = request.params;
-        const { name } = request.body;
-        try {
-            const updatedCroyance = await db.croyance.update(id, croyance);
-            response.json(updatedCroyance);
-        } catch (error) {
-            error.type = "database";
-            error.method = request.method;
-            error.message = "Error in updating croyance";
-            return next(error);
-        }
-     */
 };
 
 export default croyanceController;

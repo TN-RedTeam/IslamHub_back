@@ -7,7 +7,14 @@ const douaaController = {
             const douaas = await db.douaa.getAll();
             if (!douaas)
                 return next(new Error404('No douaa found'));
-            response.json(douaas);
+            const page = Number(request.query.page ?? 0);
+            const pageSize = Number(request.query.pageSize ?? douaas.length);
+            response.json({
+                data: douaas,
+                total: douaas.length,
+                page,
+                pageSize,
+            });
         } catch (error) {
             error.type = "database";
             error.method = request.method;
@@ -29,31 +36,6 @@ const douaaController = {
             return next(error);
         }
     },
-    /*create: async function (request, response, next) {
-        const { name } = request.body;
-        try {
-            const createdDouaa = await db.douaa.create(douaa);
-            response.status(201).json(createdDouaa);
-        } catch (error) {
-            error.type = "database";
-            error.method = request.method;
-            error.message = "Error in creating douaa";
-            return next(error);
-        }
-    },
-    update: async function (request, response, next) {
-        const { id } = request.params;
-        const { name } = request.body;
-        try {
-            const updatedDouaa = await db.douaa.update(id, douaa);
-            response.json(updatedDouaa);
-        } catch (error) {
-            error.type = "database";
-            error.method = request.method;
-            error.message = "Error in updating douaa";
-            return next(error);
-        }
-     */
 };
 
 export default douaaController;
