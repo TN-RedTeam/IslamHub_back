@@ -49,7 +49,7 @@ app.use(
 
 app.get('/health', (_req, res) => res.json({ status: 'ok' }));
 
-app.use(router);
+app.use('/api', router);
 app.use(errorsHandler);
 app.all("*", error404);
 
