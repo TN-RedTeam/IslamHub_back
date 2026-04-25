@@ -16,6 +16,31 @@ const douaaController = {
     }
   },
 
+  search: async function (request, response, next) {
+    try {
+      const { q, tag } = request.query;
+      const page     = Math.max(0, Number(request.query.page     ?? 0));
+      const pageSize = Math.min(100, Math.max(1, Number(request.query.pageSize ?? 20)));
+      const result = await db.douaa.search({ q, tag, page, pageSize });
+      response.json({ data: result.data, total: result.total, page, pageSize });
+    } catch (error) {
+      error.type = 'database'; error.method = request.method;
+      error.message = 'Error in searching douaas';
+      return next(error);
+    }
+  },
+
+  getTags: async function (request, response, next) {
+    try {
+      const tags = await db.douaa.getTags();
+      response.json(tags);
+    } catch (error) {
+      error.type = 'database'; error.method = request.method;
+      error.message = 'Error in getting douaa tags';
+      return next(error);
+    }
+  },
+
   get: async function (request, response, next) {
     const { id } = request.params;
     try {
