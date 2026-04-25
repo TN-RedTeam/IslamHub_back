@@ -12,6 +12,62 @@ const dhikrDatamapper = {
     return result.rows;
   },
 
+  search: async function ({ q, tag, page = 0, pageSize = 20 }) {
+    const params = [];
+    const conditions = [];
+    let idx = 1;
+
+    if (q && q.trim()) {
+      const term = `%${q.trim()}%`;
+      // dhikr table uses "tags" column (plural)
+      conditions.push(`(
+        texte_arabe    ILIKE $${idx} OR
+        texte_francais ILIKE $${idx} OR
+        sujet          ILIKE $${idx} OR
+        commentaire    ILIKE $${idx} OR
+        "phonétique"   ILIKE $${idx} OR
+        explication    ILIKE $${idx} OR
+        tags           ILIKE $${idx}
+      )`);
+      params.push(term);
+      idx++;
+    }
+
+    if (tag) {
+      conditions.push(`EXISTS (
+        SELECT 1 FROM UNNEST(STRING_TO_ARRAY(dhikr.tags, ',')) AS t
+        WHERE TRIM(t) ILIKE $${idx}
+      )`);
+      params.push(tag.trim());
+      idx++;
+    }
+
+    const where = conditions.length > 0 ? `WHERE ${conditions.join(' AND ')}` : '';
+
+    const countResult = await client.query(
+      `SELECT COUNT(*) FROM dhikr ${where}`,
+      params
+    );
+    const total = parseInt(countResult.rows[0].count, 10);
+
+    const dataResult = await client.query(
+      `SELECT * FROM dhikr ${where} ORDER BY id LIMIT $${idx} OFFSET $${idx + 1}`,
+      [...params, pageSize, page * pageSize]
+    );
+
+    return { data: dataResult.rows, total };
+  },
+
+  getTags: async function () {
+    const result = await client.query(`
+      SELECT DISTINCT TRIM(t) AS tag
+      FROM dhikr, UNNEST(STRING_TO_ARRAY(tags, ',')) AS t
+      WHERE tags IS NOT NULL AND tags <> ''
+      ORDER BY tag
+    `);
+    return result.rows.map(r => r.tag).filter(Boolean);
+  },
+
   create: async function (data) {
     const hash = hashArabic(data.texte_arabe);
     const sql = `
