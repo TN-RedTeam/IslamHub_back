@@ -1,16 +1,18 @@
-import hadithDatamapper from "./hadith.datamapper.js";
-import croyanceDatamapper from "./croyance.datamapper.js";
-import dhikrDatamapper from "./dhikr.datamapper.js";
-import douaaDatamapper from "./douaa.datamapper.js";
+import hadithDatamapper  from './hadith.datamapper.js';
+import dhikrDatamapper   from './dhikr.datamapper.js';
+import douaaDatamapper   from './douaa.datamapper.js';
+import coranDatamapper   from './coran.datamapper.js';
+import paroleDatamapper  from './parole.datamapper.js';
 
+// Note : la table `croyance` n'existe pas encore en BDD.
+// Le datamapper croyance est retiré jusqu'à création de la table.
 
 const db = {
-    hadith: hadithDatamapper,
-    croyance: croyanceDatamapper,
-    dhikr: dhikrDatamapper,
-    douaa: douaaDatamapper,
+  hadith:  hadithDatamapper,
+  dhikr:   dhikrDatamapper,
+  douaa:   douaaDatamapper,
+  coran:   coranDatamapper,
+  parole:  paroleDatamapper,
 };
-
-
 
 export default db;
