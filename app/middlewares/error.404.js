@@ -1,12 +1,5 @@
-import path from "path";
-import { fileURLToPath } from "url";
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
 function error404(request, response) {
-    response.status(404).sendFile("error404.html", {
-        root: path.join(__dirname, "../../public/html"),
-    });
+    response.status(404).json({ message: 'Route not found' });
 }
 
 export default error404;
