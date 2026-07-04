@@ -1,4 +1,4 @@
--- hadithss, invocations (douaa) et évocations (dhikr) recopiés VERBATIM depuis islam.ms
+-- hadithss, invocations (douaas) et évocations (dhikrs) recopiés VERBATIM depuis islam.ms
 -- Contenu religieux : titre, texte arabe, phonétique, traduction et explication sont
 -- des copies exactes des pages source (HTML retiré, entités décodées). Aucun mot
 -- ajouté, retiré ou modifié. Seuls les tags sont générés (métadonnée de filtrage).
@@ -17,14 +17,14 @@ ALTER TABLE hadiths ADD COLUMN IF NOT EXISTS tag VARCHAR(255) DEFAULT '';
 BEGIN;
 
 -- source: https://islam.ms/causes-bien-invocations-aumones
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Les causes de bien invocations et aumônes profitent par la volonté de Allāh', '« إِذَا مَاتَ ابْنُ ءادَمَ انْقَطَعَ عَمَلُهُ إِلاَّ مِنْ ثَلاَثٍ صَدَقَةٍ جَارِيَةٍ وعِلْمٍ يُنْتَفَعُ بِهِ وَوَلَدٍ صَالِحٍ يَدْعُو لَهُ »', 'Lorsque le fils de ‘Âdam meurt, ses actes seront interrompus sauf ce qui lui parvient à partir de 3 sources: une aumône qui court, une science par laquelle on tire profit et un enfant vertueux qui lui fait des invocations.', '‘idhâ mâta bnou ‘Âdam ‘inqaTaʿa ʿamalouh ‘illâ min thalâth Sadaqatin jâriyah wa ʿilmin yountafaʿou bih wa waladin Sâlihin yadʿôu lah', 'La signification de sa parole: (‘inqaTaʿa ʿamalouh) ce qui signifie: « ses actes seront interrompus. » C’est-à-dire que les actes dont il est responsable, les actes pour lesquels des récompenses peuvent être obtenues seront interrompus par la mort de l’être humain sauf à partir de ces trois sources qui sont des causes pour obtenir des récompenses. Celui qui a laissé une science par laquelle on profite, alors quand il sera mort, il aura une récompense qui lui viendra autant que les gens profitent de cette science qu’il a laissée derrière lui après sa mort car il a été la cause pour ce profit. S’il a laissé une aumône qui court c’est-à-dire par exemple qu’il a construit une Mosquée ou une école pour que l’on y enseigne une science utile ou ce qui est de cet ordre, alors il aura des récompenses qui vont lui venir chaque fois que les gens profiteront de ce qu’il a fait parce qu’il a été la cause pour cela. Enfin, si son fils vertueux lui fait une invocation ou plus particulièrement il invoque Allāh qu’Il lui accorde une récompense semblable à sa récitation du Qour’ân ou ce qui est de cet ordre, ce mort obtient une récompense en raison de la vertu de son fils car cette vertu est grâce à la bonne éducation qu’il lui a donnée, et à l’enseignement qu’il lui a assuré pour qu’il soit vertueux. Quant à ce qui a été confirmée par l’observation directe et par tawâtour et qui est arrivé à certains musulmans vertueux dans leur tombe, qu’ils faisaient la prière ou qu’ils récitaient le Qour’ân, leurs actes ne leur donnent pas de récompenses car ils ne sont plus responsables. Le Messager de Allāh a ainsi attiré l’attention de sa communauté que les œuvres qui sont sources de récompenses seront interrompus par la mort des humains, alors qu’ils s’empressent d’accomplir des bonnes œuvres avant de mourir. Il n’y a pas dans ce ḥadīth ce qu’ont prétendu certains à savoir que le Prophète est mort et qu’il n’a donc plus d’œuvres après sa mort, qu’il ne profite plus à autrui et qu’il ne serait pas permis de l’appeler après sa mort en disant: « Yâ Mouhammad ! » ou « Yâ Rasôula l-Lâh ! ». Ils ont même prétendu que c’était une sorte de chirk, une sorte d’association à Dieu qui ferait sortir de l’islam. La prétention de ces gens-là est contraire à la croyance que les musulmans ont, qu’ils soient du Salaf –les musulmans des trois premiers siècles- ou des Khalaf -les musulmans des siècles suivants-. Ces gens-là prétendent donner pour argument pour leur prétention ce ḥadīth:', '', 'invocation, causes, bien, invocations'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« إِذَا مَاتَ ابْنُ ءادَمَ انْقَطَعَ عَمَلُهُ إِلاَّ مِنْ ثَلاَثٍ صَدَقَةٍ جَارِيَةٍ وعِلْمٍ يُنْتَفَعُ بِهِ وَوَلَدٍ صَالِحٍ يَدْعُو لَهُ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« إِذَا مَاتَ ابْنُ ءادَمَ انْقَطَعَ عَمَلُهُ إِلاَّ مِنْ ثَلاَثٍ صَدَقَةٍ جَارِيَةٍ وعِلْمٍ يُنْتَفَعُ بِهِ وَوَلَدٍ صَالِحٍ يَدْعُو لَهُ »');
 
 -- source: https://islam.ms/causes-bien-invocations-aumones
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Les causes de bien invocations et aumônes profitent par la volonté de Allāh', '« إِذَا مَاتَ ابْنُ ءادَمَ انْقَطَعَ عَمَلُهُ »', 'Lorsque le fils de ‘Âdam meurt, ses actes seront interrompus', '‘idhâ mâta bnou ‘Âdam ‘inqaTaʿa ʿamalouh', 'Il n’y a pas dans ce ḥadīth de preuve sur ce qu’ils ont prétendus. En effet, le sens de ce ḥadīth comme nous l’avons indiqué plus haut, c’est que les actes dont la personne est responsable, pour lesquels elle peut avoir des récompenses, seront interrompus, et non pas que le mort serait comme un bout de bois après être enterré, qu’il ne sentirait rien du tout, qu’il n’entendrait pas ou qu’il ne dirait rien du tout. Comment en serait-il ainsi alors qu’il a été confirmé comme l’a rapporté Ibnôu Majjah et d’autres que le Prophète est vivant dans sa tombe et que les actes de sa communauté lui sont exposés. Quand il voit du bien, il remercie Allāh pour cela et quand il voit autre que cela, il demande le pardon en faveur de la communauté. Il a également été confirmé qu’il rend le salâm à ceux qui le lui passe auprès de sa tombe et que lorsque quelqu’un qui est éloigné lui passe le salâm, ce salâm lui est transmis. Nous avons vu dans le discours précédant, le discours de Al-Miʿrâj -l’Ascension-, comment notre Maître Môuçâ a profité à la communauté de Mouḥammad. Il a ainsi indiqué à notre Maître Mouḥammad de demander à Allāh l’allègement des prières obligatoires. Au lieu de 50, elles sont devenues 5 par jour et nuit. Il y a en tout cela des preuves claires que le mort profite après sa mort, par la volonté de Allāh. Quant à ce que font certains impudents qui accusent les musulmans d’être des non-croyants parce qu’ils appellent au secours le Messager de Allāh lors des épreuves, c’est une accusation sans fondement. En effet, la personne qui est vivante, si elle profite à celle qui l’appelle, elle lui profite par la volonté de Allāh parce qu’elle est une cause. Quant à celui qui crée le profit et la nuisance, c’est Allāh parce qu’il n’y a pas d’autre créateur que Allāh, il n’y a pas un seul créateur de quoique ce soit si ce n’est Allāh. Le mort également peut profiter à celui qui l’appelle, et ce par la volonté de Allāh au titre de cause, grâce à l’invocation qu’il fait à Allāh pour régler l’affaire de celui qui l’appel au secours. Ainsi, le mort et le vivant sont équivalents dans le fait que tous deux n’ont pas d’influence pour créer un profit ou une nuisance, mais ils ne sont, tous deux, que des causes alors que le créateur du profit et de la nuisance, c’est Allāh taʿālā. Vous qui vous vous précipitez pour déclarer non-croyant la communauté, arrêtez vous un instant pour réfléchir. Lorsque vous êtes malade et que vous prenez un médicament et que vous guérissez, n’est-ce pas que la guérison est par la création de Allāh ? N’avez-vous donc pas pris un médicament qui est une cause pour la guérison ? Est ce que vous dites de vous-même que vous avez attribué un associé à Allāh parce que vous avez pris un médicament qui est une cause de guérison ? Nous ne pensons pas que vous allez dire cela ! Donc si celui qui prend un médicament que telle ou telle personne a composé, n’attribue pas un associé à Allāh en prenant le médicament en tant que cause pour la guérison tout en ayant la certitude que c’est Allāh qui est le créateur du profit et de la nuisance, de la maladie et de la guérison. Comment alors déclarent-ils non-croyant celui qui prend le messager de Allāh comme cause pour obtenir ce qu’il souhaite ?! Mes frères de foi, les compagnons, que Allāh les agrée, ont bien compris du Messager de Allāh le caractère permis d’appeler au secours le Prophète après sa mort. Entre autre, il y a ʿAbdou l-Lâh Ibnou ʿOumar que Allāh l’agrée lui et son père et d’autres qui ont fait cela. Al-Boukhâriyy a ainsi rapporté dans son livre Al-‘adabou l-moufrad dans le chapitre « ce que l’homme dit lorsque sa jambe est paralysée » que Ibnou ʿOumar a été atteint par une maladie dans sa jambe (khadar), c’est-à-dire que sa jambe s’est comme paralysée, et un homme lui a alors dit: « cite la personne que tu aimes le plus ! » c’est-à-dire puisse cette mention être une cause de guérison. ʿAbdou l-Lâh Ibnou ʿOumar dit: « Yâ Mouḥammad ! » [Fin de citation]. Et dans la version rapportée par Ibnou s-Sounniyy, il a dit: « Yâ Mouḥammadâh ! », c’est alors qu’il s’est relevé et il a pu marcher à nouveau [Fin de citation]. Dans une autre version également, il a dit: « Yâ Mouḥammad ! » et c’est comme si il a été délivré d’un ʿIqâl (Il a comparé son redressement à celui d’un chameau dont les pattes étaient ligotées et qu’on délivre, et qui se redresse d’un seul coup.) [Fin de citation]. C’est-à-dire que cette maladie qui est comme la paralysie s’en est allée. Ce qui s’est produit de la part de ʿAbdou l-Lah Ibnou ʿOumar, est un appel au secours adressé au messager de Allāh avec les termes: « Yâ Mouhammad ! » alors que chez ses impudents qui se précipitent dans la déclaration de mécréance, l’Istighâthah- l’appel au secours – adressé au Prophète après sa mort serait un chirk - une association à Dieu. Que disent-ils après toutes ces preuves, est ce qu’ils vont abandonner leur avis de déclarer non-croyant celui qui appelle « Ô Mouḥammad ! » ou alors vont-ils accuser ʿAbdou l-Lâh Ibnou ʿOumar de pratiquer le chirk, ce grand compagnon au sujet duquel le prophète a dit qu’il était un homme vertueux (Sâlih). Mes frères de foi, ce n’est pas une attribution d’un associé à Allāh le fait que les musulmans disent lors de l’épreuve: « Yâ Mouḥammad ! » - « Ô Mouḥammad ! », cela veut dire ô toi le messager de Allāh vient à notre secours en faisant des invocations à Dieu pour Qu’Il nous délivre de notre tourment. Mes frères de foi, la demande de quelqu’un serait une association à Dieu lorsque celui qui demande, demande que la créature lui crée une quelconque chose, c’est à dire lui fasse surgir du néant quelque chose tout comme Allāh taʿālā crée ou s’il demande à une créature de lui pardonner ses péchés car Allāh taʿālā dit:', '', 'invocation, causes, bien, invocations'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« إِذَا مَاتَ ابْنُ ءادَمَ انْقَطَعَ عَمَلُهُ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« إِذَا مَاتَ ابْنُ ءادَمَ انْقَطَعَ عَمَلُهُ »');
 
 -- source: https://islam.ms/dix-compagnons-promis-paradis
 INSERT INTO "hadiths" (sujet, rapporteur, narrateur, statut, texte_arabe, texte_francais, phonetique, explication, type_id, tag)
@@ -32,149 +32,149 @@ SELECT 'Ḥadīth sur les dix compagnons à qui le Prophète a annoncé le Parad
 WHERE NOT EXISTS (SELECT 1 FROM "hadiths" WHERE texte_arabe = '"أبو بكر في الجنة وعمرُ في الجنة وعثمانُ في الجنة وعليٌ في الجنة وطلحةُ بن عبيدِ اللهِ في الجنة والزبيرُ بنُ العوامِ في الجنة وأبو عبيدةُ عامرُ بنُ الجراحِ في الجنة وسعدُ بن أبي وقاصٍ في الجنة وسعيد بن زَيدٍ في الجنة وعبد الرحمنِ بنُ عوفٍ في الجنة".');
 
 -- source: https://islam.ms/doua-autre-sens
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Est-ce que le mot douʿā’ peut avoir un autre sens que l’adoration ?', 'الحمد لله رب العالمين', '', '', 'La louange est à Allāh, le Créateur du monde.', '', 'invocation, est-ce, douʿā, peut'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'الحمد لله رب العالمين');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'الحمد لله رب العالمين');
 
 -- source: https://islam.ms/doua-peut-avoir-sens-adoration
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Est-ce que le mot douʿā’ peut avoir le sens de l’adoration ?', '« الدُعَاءُ هُوَ العِبَادَة »', 'Le douʿā’, c’est l’adoration', '’ad-douʿā’ou houwa l-ʿibādah', '[rapporté par Ibnou Ḥibbān]', '', 'invocation, est-ce, douʿā, peut'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« الدُعَاءُ هُوَ العِبَادَة »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« الدُعَاءُ هُوَ العِبَادَة »');
 
 -- source: https://islam.ms/evocation-au-lever
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Évocation lorsqu’on se lève du lit', 'رَبِّ اغْفِرْ وَارْحَمْ وَاهْدِ لِلسَّبِيلِ الأَقْوَمِ', 'Seigneur, pardonne, fais miséricorde et guide vers le chemin le plus droit', 'Rabbi ghfir warḥam wahdi li s-sabīli l-’aqwam', 'Quand notre Prophète Mouḥammad ṣalla l-Lāhou ʿalayhi wa sallam se levait de son lit, il disait:', '', 'dhikr, évocation, lève'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'رَبِّ اغْفِرْ وَارْحَمْ وَاهْدِ لِلسَّبِيلِ الأَقْوَمِ');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Évocation lorsqu’on se lève du lit', 'رَبِّ اغْفِرْ وَارْحَمْ وَاهْدِ لِلسَّبِيلِ الأَقْوَمِ', 'Seigneur, pardonne, fais miséricorde et guide vers le chemin le plus droit', 'Rabbi ghfir warḥam wahdi li s-sabīli l-’aqwam', 'Quand notre Prophète Mouḥammad ṣalla l-Lāhou ʿalayhi wa sallam se levait de son lit, il disait:', '', 'dhikrs, évocation, lève'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'رَبِّ اغْفِرْ وَارْحَمْ وَاهْدِ لِلسَّبِيلِ الأَقْوَمِ');
 
 -- source: https://islam.ms/evocation-avoir-millions-bonne-action
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Évocation pour avoir deux millions de bonnes actions', 'لا إله إلا الله وحده لا شريك له، أحـد أحـد، لـم يلـد ولـم يولد، ولـم يكـن لـه كفوا أحـد.', '', '', 'Dis avec une bonne intention 11 fois: Lā ’ilāha il-la l-Lāhou waḥdahoū lā charīka lah ’Aḥadoun ’aḥad, lam yalid wa lam yoūlad wa lam yakoul-lahoū koufouwan ’aḥad.', '', 'dhikr, évocation, avoir, millions'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'لا إله إلا الله وحده لا شريك له، أحـد أحـد، لـم يلـد ولـم يولد، ولـم يكـن لـه كفوا أحـد.');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Évocation pour avoir deux millions de bonnes actions', 'لا إله إلا الله وحده لا شريك له، أحـد أحـد، لـم يلـد ولـم يولد، ولـم يكـن لـه كفوا أحـد.', '', '', 'Dis avec une bonne intention 11 fois: Lā ’ilāha il-la l-Lāhou waḥdahoū lā charīka lah ’Aḥadoun ’aḥad, lam yalid wa lam yoūlad wa lam yakoul-lahoū koufouwan ’aḥad.', '', 'dhikrs, évocation, avoir, millions'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'لا إله إلا الله وحده لا شريك له، أحـد أحـد، لـم يلـد ولـم يولد، ولـم يكـن لـه كفوا أحـد.');
 
 -- source: https://islam.ms/evocation-delivrer-feu-enfer
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Évocation pour être délivré du feu de l’enfer', 'اللهُمَّ إِنِّي أُشْهِدُكَ وَأُشْهِدُ حَمَلَتَ عَرْشِك وَ مَلائكَتَكَ وَجَمِيعَ خَلْقِكَ أَنَّكَ أَنْتَ الله لا إلهَ إلا أنْتَ وَحْدَكَ لا شَرِيكَ لك وَأَنَّ مُحَمَّدً عَبْدُكَ وَ رَسُولُك', 'Ô Allāh, Tu sais et je prend à témoin les anges qui portent le Trône ainsi que tous Tes anges et toutes Tes créatures : que Tu es Allāh et qu’il n’est de dieu que Toi, Toi seul Tu n’as pas d’associé et que Mouḥammad est Ton esclave et Ton messager', 'Allāhoumma ’innî ’ouch-hidouka wa ’ouch-hidou ḥamalata ʿarchik wa malâ’ikataka wa jamîʿa khalqika ’annaka ’anta l-Lâh lâ ’ilâha ’il-lâ ’anta waḥdaka lâ charîka lak wa ’anna Mouḥammadan ʿabdouka wa raçôulouk', 'Anas Ibnou Mâlik a rapporté du Messager de Allāh ṣalla l-Lâhou ʿalayhi wa sallam cet invocation : [à réciter quatre fois matin et soir pour la délivrance du feu de l’enfer] Dieu n’a pas besoin du trône ni des anges ni d’aucune créatures. L’Imam ʿAliyy, que Allāh l’agrée, a dit :', '', 'dhikr, évocation, être, délivré'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'اللهُمَّ إِنِّي أُشْهِدُكَ وَأُشْهِدُ حَمَلَتَ عَرْشِك وَ مَلائكَتَكَ وَجَمِيعَ خَلْقِكَ أَنَّكَ أَنْتَ الله لا إلهَ إلا أنْتَ وَحْدَكَ لا شَرِيكَ لك وَأَنَّ مُحَمَّدً عَبْدُكَ وَ رَسُولُك');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Évocation pour être délivré du feu de l’enfer', 'اللهُمَّ إِنِّي أُشْهِدُكَ وَأُشْهِدُ حَمَلَتَ عَرْشِك وَ مَلائكَتَكَ وَجَمِيعَ خَلْقِكَ أَنَّكَ أَنْتَ الله لا إلهَ إلا أنْتَ وَحْدَكَ لا شَرِيكَ لك وَأَنَّ مُحَمَّدً عَبْدُكَ وَ رَسُولُك', 'Ô Allāh, Tu sais et je prend à témoin les anges qui portent le Trône ainsi que tous Tes anges et toutes Tes créatures : que Tu es Allāh et qu’il n’est de dieu que Toi, Toi seul Tu n’as pas d’associé et que Mouḥammad est Ton esclave et Ton messager', 'Allāhoumma ’innî ’ouch-hidouka wa ’ouch-hidou ḥamalata ʿarchik wa malâ’ikataka wa jamîʿa khalqika ’annaka ’anta l-Lâh lâ ’ilâha ’il-lâ ’anta waḥdaka lâ charîka lak wa ’anna Mouḥammadan ʿabdouka wa raçôulouk', 'Anas Ibnou Mâlik a rapporté du Messager de Allāh ṣalla l-Lâhou ʿalayhi wa sallam cet invocation : [à réciter quatre fois matin et soir pour la délivrance du feu de l’enfer] Dieu n’a pas besoin du trône ni des anges ni d’aucune créatures. L’Imam ʿAliyy, que Allāh l’agrée, a dit :', '', 'dhikrs, évocation, être, délivré'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'اللهُمَّ إِنِّي أُشْهِدُكَ وَأُشْهِدُ حَمَلَتَ عَرْشِك وَ مَلائكَتَكَ وَجَمِيعَ خَلْقِكَ أَنَّكَ أَنْتَ الله لا إلهَ إلا أنْتَ وَحْدَكَ لا شَرِيكَ لك وَأَنَّ مُحَمَّدً عَبْدُكَ وَ رَسُولُك');
 
 -- source: https://islam.ms/evocation-delivrer-feu-enfer
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Évocation pour être délivré du feu de l’enfer', '« كَانَ اللَّهُ وَلاَ مَكَانَ وَهُوَ الآنَ عَلَى مَا عَلَيْهِ كَانَ »', '', '', 'ce qui ssignifie: « Allāh est de toute éternité sans endroit et Il est maintenant tel qu’Il est de toute éternité » c’est à dire sans endroit, et il a dit :', '', 'dhikr, évocation, être, délivré'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = '« كَانَ اللَّهُ وَلاَ مَكَانَ وَهُوَ الآنَ عَلَى مَا عَلَيْهِ كَانَ »');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Évocation pour être délivré du feu de l’enfer', '« كَانَ اللَّهُ وَلاَ مَكَانَ وَهُوَ الآنَ عَلَى مَا عَلَيْهِ كَانَ »', '', '', 'ce qui ssignifie: « Allāh est de toute éternité sans endroit et Il est maintenant tel qu’Il est de toute éternité » c’est à dire sans endroit, et il a dit :', '', 'dhikrs, évocation, être, délivré'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = '« كَانَ اللَّهُ وَلاَ مَكَانَ وَهُوَ الآنَ عَلَى مَا عَلَيْهِ كَانَ »');
 
 -- source: https://islam.ms/evocation-delivrer-feu-enfer
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Évocation pour être délivré du feu de l’enfer', '« إنَّ الله خَلَقَ العَرْشَ إِظْهَارًا لِقُدْرَتِهِ وَلَمْ يَتَّخِذهُ مَكَاناً لِذَاتِهِ »', 'Certes, Allāh a créé le Trône par manifestation de Sa puissance et Il ne l’a pas pris comme emplacement pour Lui-même', '', '[rapporté par Abôu Manṣoūr Al-Baghdâdiyy] Ainsi celui qui attribue l’endroit ou la direction à Dieu n’est pas musulman et il doit revenir à l’Islam en prononçant les deux témoignages en ayant délaissé la mauvaise croyance.', '', 'dhikr, évocation, être, délivré'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = '« إنَّ الله خَلَقَ العَرْشَ إِظْهَارًا لِقُدْرَتِهِ وَلَمْ يَتَّخِذهُ مَكَاناً لِذَاتِهِ »');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Évocation pour être délivré du feu de l’enfer', '« إنَّ الله خَلَقَ العَرْشَ إِظْهَارًا لِقُدْرَتِهِ وَلَمْ يَتَّخِذهُ مَكَاناً لِذَاتِهِ »', 'Certes, Allāh a créé le Trône par manifestation de Sa puissance et Il ne l’a pas pris comme emplacement pour Lui-même', '', '[rapporté par Abôu Manṣoūr Al-Baghdâdiyy] Ainsi celui qui attribue l’endroit ou la direction à Dieu n’est pas musulman et il doit revenir à l’Islam en prononçant les deux témoignages en ayant délaissé la mauvaise croyance.', '', 'dhikrs, évocation, être, délivré'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = '« إنَّ الله خَلَقَ العَرْشَ إِظْهَارًا لِقُدْرَتِهِ وَلَمْ يَتَّخِذهُ مَكَاناً لِذَاتِهِ »');
 
 -- source: https://islam.ms/evocation-doua-tawaf-kaba
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Les évocations recommandées pendant les tours rituels', 'بسمِ الله، الله أكبرُ اللهمَّ إيمانًا بك وتصديقًا بكتابك ووفاءً بعهدِك واتّباعًا لسنةِ نبيك محمدٍ صلى الله عليه وسلم', 'Par le nom de Allāh, Allāh est plus Vénéré que toute chose, Ô Allāh par acte de foi en Toi, en croyant à la véracité de Ton Livre, en respectant l’engagement que nous avons pris pour Toi et en suivant la tradition de Ton Prophète Mouḥammad ṣalla l-Lâhou ʿalayhi wa sallam', 'Bismi l-Lâh, Allāhou ’akbar, Allāhoumma ’Imânan bika wa taṣdiqan bi kitâbika, wa wafâ’an bi ʿahdika, wa t-tibâʿan li sounnati nabiyyika Mouḥammad ṣalla l-Lâhou ʿalayhi wa sallam', 'Il est recommandé de dire lors de la salutation de la Pierre Noire en premier et lors du commencement des tours rituels également : Il dit cette invocation lorsqu’il est à proximité de la Pierre Noire à chaque tour. Ach-Châfiʿiyy, que Allāh taʿālā lui fasse miséricorde a dit: « Il dit : الله أَكبرُ ولا إله إِلا الله (Allāhou ’akbar, wa lâ ’ilâha ’il-la l-Lâh) ce qui signifie : "Allāh mérite plus de vénération et de glorification que tout autre et il n’est de dieu que Allāh ".» Et il a dit également : « Et s’il évoque Allāh taʿālā et qu’il fait l’invocation en faveur du Prophète ṣalla l-Lâhou ʿalayhi wa sallam, cela est bon.» Il est recommandé de dire lors de son ramal (marche rapide lors des trois premiers tours):', '', 'dhikr, évocations, recommandées, pendant'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'بسمِ الله، الله أكبرُ اللهمَّ إيمانًا بك وتصديقًا بكتابك ووفاءً بعهدِك واتّباعًا لسنةِ نبيك محمدٍ صلى الله عليه وسلم');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Les évocations recommandées pendant les tours rituels', 'بسمِ الله، الله أكبرُ اللهمَّ إيمانًا بك وتصديقًا بكتابك ووفاءً بعهدِك واتّباعًا لسنةِ نبيك محمدٍ صلى الله عليه وسلم', 'Par le nom de Allāh, Allāh est plus Vénéré que toute chose, Ô Allāh par acte de foi en Toi, en croyant à la véracité de Ton Livre, en respectant l’engagement que nous avons pris pour Toi et en suivant la tradition de Ton Prophète Mouḥammad ṣalla l-Lâhou ʿalayhi wa sallam', 'Bismi l-Lâh, Allāhou ’akbar, Allāhoumma ’Imânan bika wa taṣdiqan bi kitâbika, wa wafâ’an bi ʿahdika, wa t-tibâʿan li sounnati nabiyyika Mouḥammad ṣalla l-Lâhou ʿalayhi wa sallam', 'Il est recommandé de dire lors de la salutation de la Pierre Noire en premier et lors du commencement des tours rituels également : Il dit cette invocation lorsqu’il est à proximité de la Pierre Noire à chaque tour. Ach-Châfiʿiyy, que Allāh taʿālā lui fasse miséricorde a dit: « Il dit : الله أَكبرُ ولا إله إِلا الله (Allāhou ’akbar, wa lâ ’ilâha ’il-la l-Lâh) ce qui signifie : "Allāh mérite plus de vénération et de glorification que tout autre et il n’est de dieu que Allāh ".» Et il a dit également : « Et s’il évoque Allāh taʿālā et qu’il fait l’invocation en faveur du Prophète ṣalla l-Lâhou ʿalayhi wa sallam, cela est bon.» Il est recommandé de dire lors de son ramal (marche rapide lors des trois premiers tours):', '', 'dhikrs, évocations, recommandées, pendant'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'بسمِ الله، الله أكبرُ اللهمَّ إيمانًا بك وتصديقًا بكتابك ووفاءً بعهدِك واتّباعًا لسنةِ نبيك محمدٍ صلى الله عليه وسلم');
 
 -- source: https://islam.ms/evocation-doua-tawaf-kaba
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Les évocations recommandées pendant les tours rituels', 'اللهمَّ اجْعَلْه حجًّا مبرورًا وذنبًا مغفورًا وسعيًا مشكورًا', 'Ô Allāh fais que ce pèlerinage [cette ʿOumrah] ait une grande récompense, fais que les péchés soient pardonnés et fais que le trajet soit récompensé', 'Allāhoumma jʿalhou Ḥajjan mabrôurâ [ijʿalhā ʿOumratan mabroūratan] wa dhanban maghfôurâ, wa saʿyan machkôurâ', 'Il a dit : « Et il dit dans les quatre derniers tours:', '', 'dhikr, évocations, recommandées, pendant'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'اللهمَّ اجْعَلْه حجًّا مبرورًا وذنبًا مغفورًا وسعيًا مشكورًا');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Les évocations recommandées pendant les tours rituels', 'اللهمَّ اجْعَلْه حجًّا مبرورًا وذنبًا مغفورًا وسعيًا مشكورًا', 'Ô Allāh fais que ce pèlerinage [cette ʿOumrah] ait une grande récompense, fais que les péchés soient pardonnés et fais que le trajet soit récompensé', 'Allāhoumma jʿalhou Ḥajjan mabrôurâ [ijʿalhā ʿOumratan mabroūratan] wa dhanban maghfôurâ, wa saʿyan machkôurâ', 'Il a dit : « Et il dit dans les quatre derniers tours:', '', 'dhikrs, évocations, recommandées, pendant'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'اللهمَّ اجْعَلْه حجًّا مبرورًا وذنبًا مغفورًا وسعيًا مشكورًا');
 
 -- source: https://islam.ms/evocation-doua-tawaf-kaba
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Les évocations recommandées pendant les tours rituels', 'اللهم اغفر وارحمْ واعفُ عما تعلم وأنتَ الأعزُّ الأكرم، اللهمَّ ءاتنا في الدنيا حسنةً وفي الآخرة حسنةً وقنا عذابَ النار', 'Seigneur pardonne, accorde Ta miséricorde et excuse ce que Tu sais, Tu es certes Celui Qui n’est pas vaincu, Celui Qui accorde à profusion. Ô Allāh accorde nous dans ce bas-monde un bienfait et dans l’Au-delà un bienfait et préserve nous du châtiment de l’enfer', 'Allāhoumma ghfir wa rḥam wa ʿfou ʿammâ taʿlam, wa ’anta l-’âʿazzou l-’âkram, Allāhoumma ’âtinâ fi d-dounyâ ḥaçanah , wa fi l’âkhirati ḥaçanah wa qinâ ʿadhâba n-nâr', 'Et il a été confirmé dans les deux ṣaḥīḥ d’après ’Anas, que Allāh l’agrée, qu’il a dit : « L’invocation que faisait le plus le Messager de Allāh ṣalla l-Lâhou ʿalayhi wa sallam était :', '', 'dhikr, évocations, recommandées, pendant'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'اللهم اغفر وارحمْ واعفُ عما تعلم وأنتَ الأعزُّ الأكرم، اللهمَّ ءاتنا في الدنيا حسنةً وفي الآخرة حسنةً وقنا عذابَ النار');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Les évocations recommandées pendant les tours rituels', 'اللهم اغفر وارحمْ واعفُ عما تعلم وأنتَ الأعزُّ الأكرم، اللهمَّ ءاتنا في الدنيا حسنةً وفي الآخرة حسنةً وقنا عذابَ النار', 'Seigneur pardonne, accorde Ta miséricorde et excuse ce que Tu sais, Tu es certes Celui Qui n’est pas vaincu, Celui Qui accorde à profusion. Ô Allāh accorde nous dans ce bas-monde un bienfait et dans l’Au-delà un bienfait et préserve nous du châtiment de l’enfer', 'Allāhoumma ghfir wa rḥam wa ʿfou ʿammâ taʿlam, wa ’anta l-’âʿazzou l-’âkram, Allāhoumma ’âtinâ fi d-dounyâ ḥaçanah , wa fi l’âkhirati ḥaçanah wa qinâ ʿadhâba n-nâr', 'Et il a été confirmé dans les deux ṣaḥīḥ d’après ’Anas, que Allāh l’agrée, qu’il a dit : « L’invocation que faisait le plus le Messager de Allāh ṣalla l-Lâhou ʿalayhi wa sallam était :', '', 'dhikrs, évocations, recommandées, pendant'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'اللهم اغفر وارحمْ واعفُ عما تعلم وأنتَ الأعزُّ الأكرم، اللهمَّ ءاتنا في الدنيا حسنةً وفي الآخرة حسنةً وقنا عذابَ النار');
 
 -- source: https://islam.ms/evocation-doua-tawaf-kaba
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Les évocations recommandées pendant les tours rituels', 'اللهمَّ ءاتنا في الدنيا حسنةً وفي الآخرة حسنةً وقنا عذابَ النار', 'Ô Allāh accorde nous dans le bas-monde un bienfait et dans l’au-delà un bienfait et préserve-nous du châtiment de l’enfer', 'Allāhoumma ’âtina fi d-dounyâ ḥaçanah wa fi l’âkhirati ḥaçanah wa qinâ ʿadhâba n-nâr', 'Ach-Châfiʿiyy, que Allāh lui fasse miséricorde a dit: « C’est le meilleur de ce qui est souhaité de dire pendant les tours rituels. Et j’approuve que l’on dise cela pendant tous les tours ». Certains châfiʿiyy ont dit : « Et ces paroles sont encore plus recommandées entre le pilier yamâniyy et la Pierre Noire ». Il invoque entre ces tours par ce qu’il veut pour sa religion et les choses de ce bas-monde en faveur de qui il veut, et pour les musulmans en général. Si une personne fait des invocations et qu’un groupe dit ’Amin, cela est bon. Il convient d’être appliqué dans ces lieux honorés. Il a été rapporté de Al-Ḥaçan Al-Baṣriyy, que Allāh taʿālā lui fasse miséricorde, qu’il a dit dans sa Riçâlah - Lettre - très connue pour les gens de La Mecque: « Certes les invocations sont exaucées là-bas en quinze situations: pendant les tours rituels, près du Moultazam (entre la pierre noire la porte de la kaʿbah), sous Al-Mizâb (la gouttière), dans la Maison, auprès de Zamzam, sur Aṣ-Ṣafâ et Al-Marwah, pendant le saʿy (trajet entre Aṣ-Ṣafâ et Al-Marwah), derrière le Maqâm (trace du pas du prophète Ibrâhîm), à ʿArafah, à Mouzdalifah, à Minâ et aux trois jamarât ». Selon l’école de Ach-Châfiʿiyy, que Allāh lui fasse miséricorde, il est recommandé de réciter le Qour’ân lors des tours rituels car c’est un lieu d’évocation et le Qour’ân est la plus éminente des évocations. Certains savants ont dit que la récitation du Qour’ân lors des tours rituels est meilleure que les invocations qui ne sont pas rapportées. Quant aux invocations rapportées (ma’thôur) selon l’avis le plus plausible c’est qu’elles sont meilleures que cette récitation lors des tours rituelles. D’autre part, durant son ṭawāf, depuis la Pierre Noire jusqu’au pilier yamāniyy, il convient de multiplier cette évocation:', '', 'dhikr, évocations, recommandées, pendant'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'اللهمَّ ءاتنا في الدنيا حسنةً وفي الآخرة حسنةً وقنا عذابَ النار');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Les évocations recommandées pendant les tours rituels', 'اللهمَّ ءاتنا في الدنيا حسنةً وفي الآخرة حسنةً وقنا عذابَ النار', 'Ô Allāh accorde nous dans le bas-monde un bienfait et dans l’au-delà un bienfait et préserve-nous du châtiment de l’enfer', 'Allāhoumma ’âtina fi d-dounyâ ḥaçanah wa fi l’âkhirati ḥaçanah wa qinâ ʿadhâba n-nâr', 'Ach-Châfiʿiyy, que Allāh lui fasse miséricorde a dit: « C’est le meilleur de ce qui est souhaité de dire pendant les tours rituels. Et j’approuve que l’on dise cela pendant tous les tours ». Certains châfiʿiyy ont dit : « Et ces paroles sont encore plus recommandées entre le pilier yamâniyy et la Pierre Noire ». Il invoque entre ces tours par ce qu’il veut pour sa religion et les choses de ce bas-monde en faveur de qui il veut, et pour les musulmans en général. Si une personne fait des invocations et qu’un groupe dit ’Amin, cela est bon. Il convient d’être appliqué dans ces lieux honorés. Il a été rapporté de Al-Ḥaçan Al-Baṣriyy, que Allāh taʿālā lui fasse miséricorde, qu’il a dit dans sa Riçâlah - Lettre - très connue pour les gens de La Mecque: « Certes les invocations sont exaucées là-bas en quinze situations: pendant les tours rituels, près du Moultazam (entre la pierre noire la porte de la kaʿbah), sous Al-Mizâb (la gouttière), dans la Maison, auprès de Zamzam, sur Aṣ-Ṣafâ et Al-Marwah, pendant le saʿy (trajet entre Aṣ-Ṣafâ et Al-Marwah), derrière le Maqâm (trace du pas du prophète Ibrâhîm), à ʿArafah, à Mouzdalifah, à Minâ et aux trois jamarât ». Selon l’école de Ach-Châfiʿiyy, que Allāh lui fasse miséricorde, il est recommandé de réciter le Qour’ân lors des tours rituels car c’est un lieu d’évocation et le Qour’ân est la plus éminente des évocations. Certains savants ont dit que la récitation du Qour’ân lors des tours rituels est meilleure que les invocations qui ne sont pas rapportées. Quant aux invocations rapportées (ma’thôur) selon l’avis le plus plausible c’est qu’elles sont meilleures que cette récitation lors des tours rituelles. D’autre part, durant son ṭawāf, depuis la Pierre Noire jusqu’au pilier yamāniyy, il convient de multiplier cette évocation:', '', 'dhikrs, évocations, recommandées, pendant'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'اللهمَّ ءاتنا في الدنيا حسنةً وفي الآخرة حسنةً وقنا عذابَ النار');
 
 -- source: https://islam.ms/evocation-doua-tawaf-kaba
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Les évocations recommandées pendant les tours rituels', 'سبحانَ الله والحمدُ لله ولا إلهَ إلا الله والله أكبر', 'Allāh est exempt de toute imperfection. La louange est à Allāh, il n’est de dieu que Allāh et Allāh mérite plus de vénération et de glorification que tout autre', 'Soubḥāna l-Lâhi wa l-ḥamdou li l-Lâhi wa lâ ’ilâha ’il-la l-Lâh wa l-Lâhou ’akbar', 'Faire les tours les uns à la suite des autres est un acte très recommandé mais qui n’est pas obligatoire. Il est recommandé que la personne soit soumise, en crainte lors de ces tours rituels aussi bien dans son for intérieur que par son aspect extérieur, dans ses mouvements, son regard et son attitude. Il lui est déconseillé de boire et de manger lors de ces tours rituels. Le caractère déconseillé de la boisson étant plus léger. Mais s’il les faisait, les tours rituels ne seraient pas annulés. Il est déconseillé de mettre sa mains sur sa bouche, tout comme cela est déconseillé dans la prière, sauf s’il y a besoin ou en cas de bâillement car la sounnah c’est de poser la main sur la bouche lorsque l’on baille. Il est recommandé de ne pas parler pour autre chose que les évocations sauf si c’est des paroles approuvées comme pour ordonner le bien et interdire le mal ou pour transmettre une science. Il est déconseillé de retenir son urine, ses besoins ou les gaz ou si l’on a extrêmement envie de manger ou ce qui est du même ordre. Tout comme il est déconseillé de faire la prière dans ces situations. Il est un devoir de préserver son regarde de ce qu’il n’est pas licite de regarder. S’il a fini les tours rituels, il accomplit les rakʿah des tours rituels qui est une sounnah très recommandée selon l’avis le plus plausible. La sounnah est de les accomplir derrière le maqâm de ’Ibrahim, mais s’il ne les accomplit pas à cet endroit à cause de la foule ou autre, il les accomplit dans al-Ḥijr: s’il ne les accomplit pas là non plus, alors qu’il les accomplisse dans la Mosquée, ou alors dans le Haram ou encore à l’extérieur du Haram. Pour ces deux rakʿah il ne leur est pas précisé de temps ni d’endroit, il est même permis à la personne de les accomplir une fois de retour dans sa patrie. Il est recommandé de réciter dans la première rakʿah après la Fātiḥah: ( qoul yâ ’ayyouha l-kâfirôun ) et lors de la seconde: ( qoul houwa l-Lâhou ’aḥad ) : à haute voix s’il les accomplit de nuit, ou à voix basse s’il les accomplit de jour. Il est recommandé de faire des invocations après cette prière, derrière le maqâm de ’Ibrahim pour ce qu’il veut des choses de ce bas-monde et de l’au-delà. Une fois terminée, il est recommandé de se diriger vers la Pierre Noire qu’il salue puis il sort par la porte de Aṣ-Ṣafā pour aller vers le lieu des trajets rituels (as-saʿy). Cela a été prouvé du Messager de Allāh, ṣalla l-Lâhou ʿalayhi wa sallam. Al-Mâwardiyy a cité dans son livre Al-Ḥāwī: " Une fois qu’il a salué la Pierre, il lui est recommandé de revenir au Moultazam (entre la pierre noire et la porte) et d’y invoquer, d’entrer au Ḥijr et d’y invoquer sous Al-Mizâb - la gouttière -."', '', 'dhikr, évocations, recommandées, pendant'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'سبحانَ الله والحمدُ لله ولا إلهَ إلا الله والله أكبر');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Les évocations recommandées pendant les tours rituels', 'سبحانَ الله والحمدُ لله ولا إلهَ إلا الله والله أكبر', 'Allāh est exempt de toute imperfection. La louange est à Allāh, il n’est de dieu que Allāh et Allāh mérite plus de vénération et de glorification que tout autre', 'Soubḥāna l-Lâhi wa l-ḥamdou li l-Lâhi wa lâ ’ilâha ’il-la l-Lâh wa l-Lâhou ’akbar', 'Faire les tours les uns à la suite des autres est un acte très recommandé mais qui n’est pas obligatoire. Il est recommandé que la personne soit soumise, en crainte lors de ces tours rituels aussi bien dans son for intérieur que par son aspect extérieur, dans ses mouvements, son regard et son attitude. Il lui est déconseillé de boire et de manger lors de ces tours rituels. Le caractère déconseillé de la boisson étant plus léger. Mais s’il les faisait, les tours rituels ne seraient pas annulés. Il est déconseillé de mettre sa mains sur sa bouche, tout comme cela est déconseillé dans la prière, sauf s’il y a besoin ou en cas de bâillement car la sounnah c’est de poser la main sur la bouche lorsque l’on baille. Il est recommandé de ne pas parler pour autre chose que les évocations sauf si c’est des paroles approuvées comme pour ordonner le bien et interdire le mal ou pour transmettre une science. Il est déconseillé de retenir son urine, ses besoins ou les gaz ou si l’on a extrêmement envie de manger ou ce qui est du même ordre. Tout comme il est déconseillé de faire la prière dans ces situations. Il est un devoir de préserver son regarde de ce qu’il n’est pas licite de regarder. S’il a fini les tours rituels, il accomplit les rakʿah des tours rituels qui est une sounnah très recommandée selon l’avis le plus plausible. La sounnah est de les accomplir derrière le maqâm de ’Ibrahim, mais s’il ne les accomplit pas à cet endroit à cause de la foule ou autre, il les accomplit dans al-Ḥijr: s’il ne les accomplit pas là non plus, alors qu’il les accomplisse dans la Mosquée, ou alors dans le Haram ou encore à l’extérieur du Haram. Pour ces deux rakʿah il ne leur est pas précisé de temps ni d’endroit, il est même permis à la personne de les accomplir une fois de retour dans sa patrie. Il est recommandé de réciter dans la première rakʿah après la Fātiḥah: ( qoul yâ ’ayyouha l-kâfirôun ) et lors de la seconde: ( qoul houwa l-Lâhou ’aḥad ) : à haute voix s’il les accomplit de nuit, ou à voix basse s’il les accomplit de jour. Il est recommandé de faire des invocations après cette prière, derrière le maqâm de ’Ibrahim pour ce qu’il veut des choses de ce bas-monde et de l’au-delà. Une fois terminée, il est recommandé de se diriger vers la Pierre Noire qu’il salue puis il sort par la porte de Aṣ-Ṣafā pour aller vers le lieu des trajets rituels (as-saʿy). Cela a été prouvé du Messager de Allāh, ṣalla l-Lâhou ʿalayhi wa sallam. Al-Mâwardiyy a cité dans son livre Al-Ḥāwī: " Une fois qu’il a salué la Pierre, il lui est recommandé de revenir au Moultazam (entre la pierre noire et la porte) et d’y invoquer, d’entrer au Ḥijr et d’y invoquer sous Al-Mizâb - la gouttière -."', '', 'dhikrs, évocations, recommandées, pendant'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'سبحانَ الله والحمدُ لله ولا إلهَ إلا الله والله أكبر');
 
 -- source: https://islam.ms/evocation-faciliter-subsitance-preservation-contre-mal
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Évocation du prophète al-Khaḍir ʿalayhi ssalām', 'بسمِ اللهِ ما شآءَ الله لا يَسُوْقُ الخَيْرَ إِلا الله', '', '', '', '', 'dhikr, évocation, prophète, al-khaḍir'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'بسمِ اللهِ ما شآءَ الله لا يَسُوْقُ الخَيْرَ إِلا الله');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Évocation du prophète al-Khaḍir ʿalayhi ssalām', 'بسمِ اللهِ ما شآءَ الله لا يَسُوْقُ الخَيْرَ إِلا الله', '', '', '', '', 'dhikrs, évocation, prophète, al-khaḍir'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'بسمِ اللهِ ما شآءَ الله لا يَسُوْقُ الخَيْرَ إِلا الله');
 
 -- source: https://islam.ms/evocation-faciliter-subsitance-preservation-contre-mal
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Évocation du prophète al-Khaḍir ʿalayhi ssalām', 'بسمِ اللهِ ما شآءَ الله لا يَصْرِفُ السُّوءَ إِلا الله', '', '', '', '', 'dhikr, évocation, prophète, al-khaḍir'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'بسمِ اللهِ ما شآءَ الله لا يَصْرِفُ السُّوءَ إِلا الله');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Évocation du prophète al-Khaḍir ʿalayhi ssalām', 'بسمِ اللهِ ما شآءَ الله لا يَصْرِفُ السُّوءَ إِلا الله', '', '', '', '', 'dhikrs, évocation, prophète, al-khaḍir'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'بسمِ اللهِ ما شآءَ الله لا يَصْرِفُ السُّوءَ إِلا الله');
 
 -- source: https://islam.ms/evocation-faciliter-subsitance-preservation-contre-mal
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Évocation du prophète al-Khaḍir ʿalayhi ssalām', 'بسمِ اللهِ ما شآءَ الله مَا كانَ مِن نِّعْمَةٍ فَمِنَ الله', '', '', '', '', 'dhikr, évocation, prophète, al-khaḍir'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'بسمِ اللهِ ما شآءَ الله مَا كانَ مِن نِّعْمَةٍ فَمِنَ الله');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Évocation du prophète al-Khaḍir ʿalayhi ssalām', 'بسمِ اللهِ ما شآءَ الله مَا كانَ مِن نِّعْمَةٍ فَمِنَ الله', '', '', '', '', 'dhikrs, évocation, prophète, al-khaḍir'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'بسمِ اللهِ ما شآءَ الله مَا كانَ مِن نِّعْمَةٍ فَمِنَ الله');
 
 -- source: https://islam.ms/evocation-faciliter-subsitance-preservation-contre-mal
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Évocation du prophète al-Khaḍir ʿalayhi ssalām', 'بسمِ اللهِ ما شآءَ الله لا حَوْلَ وَلا قُوَّةَ إِلا بالله', '', 'Bismi l-Lāhi mā chā’al-Lāh, lā yasoūqou l-khayra ’illa l-Lāh, Bismi l-Lāhi mā chā’al-Lāh, lā yaṣrifou s-soū’a ’illa l-Lāh, Bismi l-Lāhi mā chā’al-Lāh, mā kāna min niʿmatin famina l-Lāh, Bismi l-Lāhi mā chā’al-Lāh, lā ḥawla wa lā qouwwata ’illā bi l-Lāh', '', '', 'dhikr, évocation, prophète, al-khaḍir'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'بسمِ اللهِ ما شآءَ الله لا حَوْلَ وَلا قُوَّةَ إِلا بالله');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Évocation du prophète al-Khaḍir ʿalayhi ssalām', 'بسمِ اللهِ ما شآءَ الله لا حَوْلَ وَلا قُوَّةَ إِلا بالله', '', 'Bismi l-Lāhi mā chā’al-Lāh, lā yasoūqou l-khayra ’illa l-Lāh, Bismi l-Lāhi mā chā’al-Lāh, lā yaṣrifou s-soū’a ’illa l-Lāh, Bismi l-Lāhi mā chā’al-Lāh, mā kāna min niʿmatin famina l-Lāh, Bismi l-Lāhi mā chā’al-Lāh, lā ḥawla wa lā qouwwata ’illā bi l-Lāh', '', '', 'dhikrs, évocation, prophète, al-khaḍir'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'بسمِ اللهِ ما شآءَ الله لا حَوْلَ وَلا قُوَّةَ إِلا بالله');
 
 -- source: https://islam.ms/evocation-inclination-prosternation
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Ce que l’on dit dans l’inclination et la prosternation', 'سُبحانَكَ اللهُمَّ رَبَّنَا وَبِحَمدِكَ اللَّهُمَّ اغفِرْ لِي', 'Tu es exempt d’imperfection Ô Allāh, notre Seigneur à Toi la louange, Ô Allāh pardonne-moi', 'soubḥānaka l-Lāhoumma rabbanā wa bi ḥamdik Allāhoumma ghfir lī', 'Dans la prière, durant l’inclination et la prosternation, il est recommandé de dire:', '', 'dhikr, inclination, prosternation, évocations'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'سُبحانَكَ اللهُمَّ رَبَّنَا وَبِحَمدِكَ اللَّهُمَّ اغفِرْ لِي');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Ce que l’on dit dans l’inclination et la prosternation', 'سُبحانَكَ اللهُمَّ رَبَّنَا وَبِحَمدِكَ اللَّهُمَّ اغفِرْ لِي', 'Tu es exempt d’imperfection Ô Allāh, notre Seigneur à Toi la louange, Ô Allāh pardonne-moi', 'soubḥānaka l-Lāhoumma rabbanā wa bi ḥamdik Allāhoumma ghfir lī', 'Dans la prière, durant l’inclination et la prosternation, il est recommandé de dire:', '', 'dhikrs, inclination, prosternation, évocations'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'سُبحانَكَ اللهُمَّ رَبَّنَا وَبِحَمدِكَ اللَّهُمَّ اغفِرْ لِي');
 
 -- source: https://islam.ms/evocation-matin
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Évocations du matin', 'أصْبَحْنا وأصْبَحَ الـمُلْكُ للهِ وَالحَمْدُ للهِ رَبِّ العَالَمِين', 'Nous sommes parvenus au matin et la souveraineté appartient toujours à Allāh et la louange est à Allāh le Seigneur des mondes', '’aṣbaḥnā wa ’aṣbaḥa l-moulkou li l-Lāhi wa l-ḥamdou li l-Lāhi Rabbi l-ʿālamīn', 'De plus, il est également recommandé de dire le matin: Ainsi que la parole:', '', 'dhikr, évocations, matin'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'أصْبَحْنا وأصْبَحَ الـمُلْكُ للهِ وَالحَمْدُ للهِ رَبِّ العَالَمِين');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Évocations du matin', 'أصْبَحْنا وأصْبَحَ الـمُلْكُ للهِ وَالحَمْدُ للهِ رَبِّ العَالَمِين', 'Nous sommes parvenus au matin et la souveraineté appartient toujours à Allāh et la louange est à Allāh le Seigneur des mondes', '’aṣbaḥnā wa ’aṣbaḥa l-moulkou li l-Lāhi wa l-ḥamdou li l-Lāhi Rabbi l-ʿālamīn', 'De plus, il est également recommandé de dire le matin: Ainsi que la parole:', '', 'dhikrs, évocations, matin'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'أصْبَحْنا وأصْبَحَ الـمُلْكُ للهِ وَالحَمْدُ للهِ رَبِّ العَالَمِين');
 
 -- source: https://islam.ms/evocation-matin
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Évocations du matin', 'اللَّهُمَّ بِكَ أصْبَحْنا، وَبِكَ أمْسَيْنا، وَبِكَ نَحْيا، وَبِكَ نَمُوتُ وَإِلَيْكَ النُّشُورُ', 'Ô Allāh, c’est par Ta puissance que nous parvenons au matin et que nous arrivons au soir, c’est par Ta puissance que nous vivons et que nous mourons et c’est Toi Qui nous ressusciteras au Jour du jugement', 'Allāhoumma bika ’aṣbaḥnā wa bika ’amsaynā wa bika naḥyā wa bika namoūtou wa ’ilayka n-nouchoūr', '', '', 'dhikr, évocations, matin'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'اللَّهُمَّ بِكَ أصْبَحْنا، وَبِكَ أمْسَيْنا، وَبِكَ نَحْيا، وَبِكَ نَمُوتُ وَإِلَيْكَ النُّشُورُ');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Évocations du matin', 'اللَّهُمَّ بِكَ أصْبَحْنا، وَبِكَ أمْسَيْنا، وَبِكَ نَحْيا، وَبِكَ نَمُوتُ وَإِلَيْكَ النُّشُورُ', 'Ô Allāh, c’est par Ta puissance que nous parvenons au matin et que nous arrivons au soir, c’est par Ta puissance que nous vivons et que nous mourons et c’est Toi Qui nous ressusciteras au Jour du jugement', 'Allāhoumma bika ’aṣbaḥnā wa bika ’amsaynā wa bika naḥyā wa bika namoūtou wa ’ilayka n-nouchoūr', '', '', 'dhikrs, évocations, matin'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'اللَّهُمَّ بِكَ أصْبَحْنا، وَبِكَ أمْسَيْنا، وَبِكَ نَحْيا، وَبِكَ نَمُوتُ وَإِلَيْكَ النُّشُورُ');
 
 -- source: https://islam.ms/evocation-vision-lueur-aube
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Évocation lorsqu’on voit la lueur de l’aube', 'أَصْبَحْنَا وَأَصْبَحَ الـمُلْكُ للهِ وَالـحَمْدُ للهِ وَالـخَلْقُ وَالأَمْرُ وَاللَّيْلُ وَالنَّهَارُ للهِ', 'Nous sommes parvenus au matin et la souveraineté appartient toujours à Allāh; la louange est à Allāh; Il est L’unique Créateur, Il ordonne et mérite qu’on Lui obéisse, la nuit et le jour appartiennent à Allāh', '', 'Quand notre Prophète Mouḥammad ṣalla l-Lāhou ʿalayhi wa sallam voyait la lueur de l’aube, il disait: (’aṣbaḥnā wa ’aṣbaḥa l-moulkou li l-Lāh; wa l-ḥamdou li l-Lāh; wa l-khalqou wa l-’amrou wa l-laylou wa n-nahārou li l-Lāh)', '', 'dhikr, évocation, voit, lueur'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'أَصْبَحْنَا وَأَصْبَحَ الـمُلْكُ للهِ وَالـحَمْدُ للهِ وَالـخَلْقُ وَالأَمْرُ وَاللَّيْلُ وَالنَّهَارُ للهِ');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Évocation lorsqu’on voit la lueur de l’aube', 'أَصْبَحْنَا وَأَصْبَحَ الـمُلْكُ للهِ وَالـحَمْدُ للهِ وَالـخَلْقُ وَالأَمْرُ وَاللَّيْلُ وَالنَّهَارُ للهِ', 'Nous sommes parvenus au matin et la souveraineté appartient toujours à Allāh; la louange est à Allāh; Il est L’unique Créateur, Il ordonne et mérite qu’on Lui obéisse, la nuit et le jour appartiennent à Allāh', '', 'Quand notre Prophète Mouḥammad ṣalla l-Lāhou ʿalayhi wa sallam voyait la lueur de l’aube, il disait: (’aṣbaḥnā wa ’aṣbaḥa l-moulkou li l-Lāh; wa l-ḥamdou li l-Lāh; wa l-khalqou wa l-’amrou wa l-laylou wa n-nahārou li l-Lāh)', '', 'dhikrs, évocation, voit, lueur'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'أَصْبَحْنَا وَأَصْبَحَ الـمُلْكُ للهِ وَالـحَمْدُ للهِ وَالـخَلْقُ وَالأَمْرُ وَاللَّيْلُ وَالنَّهَارُ للهِ');
 
 -- source: https://islam.ms/evocations-invocations-protection-doua-citadelle-musulman-adhkar
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Invocations et Évocations (‘Adhkâr) du Messager de Allāh : celui qui les récite matin et soir, rien ne lui nuit et est protégé par la volonté de Allāh.', 'بِسْمِ اللهِ الّذِي لاَ يَضُرُّ مَعَ اسْمِهِ شَىْءٌ في الأَرْضِ وَلا فِي السَّمَاءِ وَهُوَ السَّمِيعُ العَلِيم. (3 مَرّات)', 'Je commence par le nom de Allāh, Celui par le nom duQuel rien ne nuit, ni sur terre ni au ciel (et tout ce qui a lieu sur terre et dans le ciel, a lieu selon Sa volonté) et Il est Celui Qui entend (sans organe) et Il est Celui Qui sait toute chose', '', '(Bismi l-Lâhi l-ladhî lâ yaḍourrou maʿa-smihī chay’oun fi l-’arḍi wa lâ fi s-samâ’i wa houwa s-Samîʿou l-ʿAlîm) [3 fois] [à réciter trois fois matin et soir]', '', 'dhikr, invocations, évocations, adhkâr'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'بِسْمِ اللهِ الّذِي لاَ يَضُرُّ مَعَ اسْمِهِ شَىْءٌ في الأَرْضِ وَلا فِي السَّمَاءِ وَهُوَ السَّمِيعُ العَلِيم. (3 مَرّات)');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Invocations et Évocations (‘Adhkâr) du Messager de Allāh : celui qui les récite matin et soir, rien ne lui nuit et est protégé par la volonté de Allāh.', 'بِسْمِ اللهِ الّذِي لاَ يَضُرُّ مَعَ اسْمِهِ شَىْءٌ في الأَرْضِ وَلا فِي السَّمَاءِ وَهُوَ السَّمِيعُ العَلِيم. (3 مَرّات)', 'Je commence par le nom de Allāh, Celui par le nom duQuel rien ne nuit, ni sur terre ni au ciel (et tout ce qui a lieu sur terre et dans le ciel, a lieu selon Sa volonté) et Il est Celui Qui entend (sans organe) et Il est Celui Qui sait toute chose', '', '(Bismi l-Lâhi l-ladhî lâ yaḍourrou maʿa-smihī chay’oun fi l-’arḍi wa lâ fi s-samâ’i wa houwa s-Samîʿou l-ʿAlîm) [3 fois] [à réciter trois fois matin et soir]', '', 'dhikrs, invocations, évocations, adhkâr'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'بِسْمِ اللهِ الّذِي لاَ يَضُرُّ مَعَ اسْمِهِ شَىْءٌ في الأَرْضِ وَلا فِي السَّمَاءِ وَهُوَ السَّمِيعُ العَلِيم. (3 مَرّات)');
 
 -- source: https://islam.ms/evocations-invocations-protection-doua-citadelle-musulman-adhkar
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Invocations et Évocations (‘Adhkâr) du Messager de Allāh : celui qui les récite matin et soir, rien ne lui nuit et est protégé par la volonté de Allāh.', 'أَعُوذُ بِكَلِمَاتِ اللهِ التّامّاتِ مِن شَرّ مَا خَلَق . (3 مَرّات)', '', '', '(’Aʿôudhou bikalimâti l-Lâhi t-tâmmâti min charri mâ khalaq) [3 fois]', '', 'dhikr, invocations, évocations, adhkâr'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'أَعُوذُ بِكَلِمَاتِ اللهِ التّامّاتِ مِن شَرّ مَا خَلَق . (3 مَرّات)');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Invocations et Évocations (‘Adhkâr) du Messager de Allāh : celui qui les récite matin et soir, rien ne lui nuit et est protégé par la volonté de Allāh.', 'أَعُوذُ بِكَلِمَاتِ اللهِ التّامّاتِ مِن شَرّ مَا خَلَق . (3 مَرّات)', '', '', '(’Aʿôudhou bikalimâti l-Lâhi t-tâmmâti min charri mâ khalaq) [3 fois]', '', 'dhikrs, invocations, évocations, adhkâr'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'أَعُوذُ بِكَلِمَاتِ اللهِ التّامّاتِ مِن شَرّ مَا خَلَق . (3 مَرّات)');
 
 -- source: https://islam.ms/evocations-invocations-protection-doua-citadelle-musulman-adhkar
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Invocations et Évocations (‘Adhkâr) du Messager de Allāh : celui qui les récite matin et soir, rien ne lui nuit et est protégé par la volonté de Allāh.', 'حَسْبِيَ اللهُ لا إِلَـهَ إِلّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ العَرْشِ العَظِيم. (7 مَرّات)', 'Allāh me suffit. Il n’est de dieu que Lui. Je me fie totalement à Lui et Il est le Seigneur du Trône éminent', '', '(Ḥasbiya l-Lâhou lâ ’ilâha ’il-lâ houwa ʿalayhi tawakkaltou wa houwa rabbou l-ʿarchi l-ʿaḍhîm) [7 fois] [à réciter sept fois matin et soir] Information utile: il a été dit au sujet de cette invocation, qu’elle est une cause pour être préservé des tourments du bas-monde et de l’au-delà.', '', 'dhikr, invocations, évocations, adhkâr'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'حَسْبِيَ اللهُ لا إِلَـهَ إِلّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ العَرْشِ العَظِيم. (7 مَرّات)');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Invocations et Évocations (‘Adhkâr) du Messager de Allāh : celui qui les récite matin et soir, rien ne lui nuit et est protégé par la volonté de Allāh.', 'حَسْبِيَ اللهُ لا إِلَـهَ إِلّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ العَرْشِ العَظِيم. (7 مَرّات)', 'Allāh me suffit. Il n’est de dieu que Lui. Je me fie totalement à Lui et Il est le Seigneur du Trône éminent', '', '(Ḥasbiya l-Lâhou lâ ’ilâha ’il-lâ houwa ʿalayhi tawakkaltou wa houwa rabbou l-ʿarchi l-ʿaḍhîm) [7 fois] [à réciter sept fois matin et soir] Information utile: il a été dit au sujet de cette invocation, qu’elle est une cause pour être préservé des tourments du bas-monde et de l’au-delà.', '', 'dhikrs, invocations, évocations, adhkâr'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'حَسْبِيَ اللهُ لا إِلَـهَ إِلّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ العَرْشِ العَظِيم. (7 مَرّات)');
 
 -- source: https://islam.ms/evocations-invocations-protection-doua-citadelle-musulman-adhkar
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Invocations et Évocations (‘Adhkâr) du Messager de Allāh : celui qui les récite matin et soir, rien ne lui nuit et est protégé par la volonté de Allāh.', 'يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ، أَصْلِحْ لِي شَأْنِي كُلَّهُ وَلا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْن. (3 مَرّات)', 'Ô Toi Qui est vivant, Ô Toi pour Qui l’anéantissement est impossible, je recherche le renfort par Ta miséricorde, corrige mon état complètement, et fais que je ne suive pas les mauvais penchants de mon âme, même pas le temps d’un clin d’œil', '', '(Yâ Ḥayyou yâ Qayyôum, biraḥmatika ’astaghîth, ’aṣliḥ lî cha’nî koullahou wa lâ takilnî ’ilâ nafsî ṭarfata ʿayn) [3 fois] [à réciter trois fois matin et soir]. Information utile : il a été dit que cette invocation fait partie des meilleures des invocations', '', 'dhikr, invocations, évocations, adhkâr'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ، أَصْلِحْ لِي شَأْنِي كُلَّهُ وَلا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْن. (3 مَرّات)');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Invocations et Évocations (‘Adhkâr) du Messager de Allāh : celui qui les récite matin et soir, rien ne lui nuit et est protégé par la volonté de Allāh.', 'يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ، أَصْلِحْ لِي شَأْنِي كُلَّهُ وَلا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْن. (3 مَرّات)', 'Ô Toi Qui est vivant, Ô Toi pour Qui l’anéantissement est impossible, je recherche le renfort par Ta miséricorde, corrige mon état complètement, et fais que je ne suive pas les mauvais penchants de mon âme, même pas le temps d’un clin d’œil', '', '(Yâ Ḥayyou yâ Qayyôum, biraḥmatika ’astaghîth, ’aṣliḥ lî cha’nî koullahou wa lâ takilnî ’ilâ nafsî ṭarfata ʿayn) [3 fois] [à réciter trois fois matin et soir]. Information utile : il a été dit que cette invocation fait partie des meilleures des invocations', '', 'dhikrs, invocations, évocations, adhkâr'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ، أَصْلِحْ لِي شَأْنِي كُلَّهُ وَلا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْن. (3 مَرّات)');
 
 -- source: https://islam.ms/evocations-invocations-protection-doua-citadelle-musulman-adhkar
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Invocations et Évocations (‘Adhkâr) du Messager de Allāh : celui qui les récite matin et soir, rien ne lui nuit et est protégé par la volonté de Allāh.', 'رَضِيتُ بِاللهِ رَبّا وَبِالإِسْلاَمِ دِينا وَبِمُحَمَّدٍ نَبِيّا. (3 مَرّات)', 'Je suis satisfait qu’Allāh soit mon Seigneur, que l’Islam soit ma religion et que Mouḥammad soit mon Prophète.', '', '(Raḍītou bi l-Lāhi rabbā, wa bi l-’islāmi dīnā, wa bi Mouḥammadin nabiyyā) [3 fois] [à réciter trois fois matin et soir]', '', 'dhikr, invocations, évocations, adhkâr'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'رَضِيتُ بِاللهِ رَبّا وَبِالإِسْلاَمِ دِينا وَبِمُحَمَّدٍ نَبِيّا. (3 مَرّات)');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Invocations et Évocations (‘Adhkâr) du Messager de Allāh : celui qui les récite matin et soir, rien ne lui nuit et est protégé par la volonté de Allāh.', 'رَضِيتُ بِاللهِ رَبّا وَبِالإِسْلاَمِ دِينا وَبِمُحَمَّدٍ نَبِيّا. (3 مَرّات)', 'Je suis satisfait qu’Allāh soit mon Seigneur, que l’Islam soit ma religion et que Mouḥammad soit mon Prophète.', '', '(Raḍītou bi l-Lāhi rabbā, wa bi l-’islāmi dīnā, wa bi Mouḥammadin nabiyyā) [3 fois] [à réciter trois fois matin et soir]', '', 'dhikrs, invocations, évocations, adhkâr'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'رَضِيتُ بِاللهِ رَبّا وَبِالإِسْلاَمِ دِينا وَبِمُحَمَّدٍ نَبِيّا. (3 مَرّات)');
 
 -- source: https://islam.ms/evocations-invocations-protection-doua-citadelle-musulman-adhkar
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Invocations et Évocations (‘Adhkâr) du Messager de Allāh : celui qui les récite matin et soir, rien ne lui nuit et est protégé par la volonté de Allāh.', 'أَسْتَغْفِرُ اللهَ الّذِي لا إِلَـهَ إِلّا هُوَ الحَيُّ القَيُّومُ وَأَتُوبُ إِلَيْه. (3 مَرّات)', '', '', '(’Astaghfirou l-Lāha l-ladhī lā ’ilāha ’il-lā houwa l-Ḥayyou l-Qayyoūmou wa ’atoūbou ’ilayh) [3 fois]', '', 'dhikr, invocations, évocations, adhkâr'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'أَسْتَغْفِرُ اللهَ الّذِي لا إِلَـهَ إِلّا هُوَ الحَيُّ القَيُّومُ وَأَتُوبُ إِلَيْه. (3 مَرّات)');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Invocations et Évocations (‘Adhkâr) du Messager de Allāh : celui qui les récite matin et soir, rien ne lui nuit et est protégé par la volonté de Allāh.', 'أَسْتَغْفِرُ اللهَ الّذِي لا إِلَـهَ إِلّا هُوَ الحَيُّ القَيُّومُ وَأَتُوبُ إِلَيْه. (3 مَرّات)', '', '', '(’Astaghfirou l-Lāha l-ladhī lā ’ilāha ’il-lā houwa l-Ḥayyou l-Qayyoūmou wa ’atoūbou ’ilayh) [3 fois]', '', 'dhikrs, invocations, évocations, adhkâr'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'أَسْتَغْفِرُ اللهَ الّذِي لا إِلَـهَ إِلّا هُوَ الحَيُّ القَيُّومُ وَأَتُوبُ إِلَيْه. (3 مَرّات)');
 
 -- source: https://islam.ms/evocations-invocations-protection-doua-citadelle-musulman-adhkar
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Invocations et Évocations (‘Adhkâr) du Messager de Allāh : celui qui les récite matin et soir, rien ne lui nuit et est protégé par la volonté de Allāh.', 'رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً، وَ فِي الآخِرَةِ حَسَنَةً ، وَقِنَا عَذَابَ النَّارِ . رَبَّنَا لا تُزِغْ قُلُوبَنَا بَعدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَدُنكَ رَحْمَةً، إِنَّكَ أَنتَ الوَهَّابُ.', '', 'Rabbanâ ’Atinâ fî d-dounyâ ḥaçanah, wa fi l-’âkhirati ḥaçanah, wa qinâ ʿadhâba n-nâr. Rabbanâ lâ touzigh qoulôubanâ baʿda ’idh hadaytanâ wa hab lanâ min ladounka raḥmah, ’innaka ’anta l-Wahhâb', '', '', 'dhikr, invocations, évocations, adhkâr'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً، وَ فِي الآخِرَةِ حَسَنَةً ، وَقِنَا عَذَابَ النَّارِ . رَبَّنَا لا تُزِغْ قُلُوبَنَا بَعدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَدُنكَ رَحْمَةً، إِنَّكَ أَنتَ الوَهَّابُ.');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Invocations et Évocations (‘Adhkâr) du Messager de Allāh : celui qui les récite matin et soir, rien ne lui nuit et est protégé par la volonté de Allāh.', 'رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً، وَ فِي الآخِرَةِ حَسَنَةً ، وَقِنَا عَذَابَ النَّارِ . رَبَّنَا لا تُزِغْ قُلُوبَنَا بَعدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَدُنكَ رَحْمَةً، إِنَّكَ أَنتَ الوَهَّابُ.', '', 'Rabbanâ ’Atinâ fî d-dounyâ ḥaçanah, wa fi l-’âkhirati ḥaçanah, wa qinâ ʿadhâba n-nâr. Rabbanâ lâ touzigh qoulôubanâ baʿda ’idh hadaytanâ wa hab lanâ min ladounka raḥmah, ’innaka ’anta l-Wahhâb', '', '', 'dhikrs, invocations, évocations, adhkâr'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً، وَ فِي الآخِرَةِ حَسَنَةً ، وَقِنَا عَذَابَ النَّارِ . رَبَّنَا لا تُزِغْ قُلُوبَنَا بَعدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَدُنكَ رَحْمَةً، إِنَّكَ أَنتَ الوَهَّابُ.');
 
 -- source: https://islam.ms/evocations-invocations-protection-doua-citadelle-musulman-adhkar
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Invocations et Évocations (‘Adhkâr) du Messager de Allāh : celui qui les récite matin et soir, rien ne lui nuit et est protégé par la volonté de Allāh.', 'أعوذُ بِكلماتِ الله التّامّاتِ الّتي لا يُجاوِزُهُنّ بَرٌّ ولا فاجِر من شرِّ ما يَنزِلُ مِن السَّماء وما يَعرُج فيها ومِن شَرِّ ما ذَرَأ في الأرضِ وما يَخرُج مِنها ومِن شَرِّ فِتَنِ اللَّيلِ والنَّهار ومن شرِّ كُلِّ طارقٍ إلَّا طارِقا يَطرُقُ بِخيرٍ يَا رَحمن', '', '’aʿôudhou bikalimâti l-Lâhi t-tâmmâti al-latî lâ youjâwizouhounna barroun wa lâ fâjir min charri mâ yanzilou mina s-samâ’i wa mâ yaʿroujou fîhâ wa min charri mâ dhara’a fi l-’arḍi wa mâ yakhroujou minhâ wa min charri fitani l-layli wa n-nahâr wa min charri koulli ṭâriqin ’illâ ṭâriqan yaṭrouqou bikhayrin yâ Raḥmân', '', '', 'dhikr, invocations, évocations, adhkâr'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'أعوذُ بِكلماتِ الله التّامّاتِ الّتي لا يُجاوِزُهُنّ بَرٌّ ولا فاجِر من شرِّ ما يَنزِلُ مِن السَّماء وما يَعرُج فيها ومِن شَرِّ ما ذَرَأ في الأرضِ وما يَخرُج مِنها ومِن شَرِّ فِتَنِ اللَّيلِ والنَّهار ومن شرِّ كُلِّ طارقٍ إلَّا طارِقا يَطرُقُ بِخيرٍ يَا رَحمن');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Invocations et Évocations (‘Adhkâr) du Messager de Allāh : celui qui les récite matin et soir, rien ne lui nuit et est protégé par la volonté de Allāh.', 'أعوذُ بِكلماتِ الله التّامّاتِ الّتي لا يُجاوِزُهُنّ بَرٌّ ولا فاجِر من شرِّ ما يَنزِلُ مِن السَّماء وما يَعرُج فيها ومِن شَرِّ ما ذَرَأ في الأرضِ وما يَخرُج مِنها ومِن شَرِّ فِتَنِ اللَّيلِ والنَّهار ومن شرِّ كُلِّ طارقٍ إلَّا طارِقا يَطرُقُ بِخيرٍ يَا رَحمن', '', '’aʿôudhou bikalimâti l-Lâhi t-tâmmâti al-latî lâ youjâwizouhounna barroun wa lâ fâjir min charri mâ yanzilou mina s-samâ’i wa mâ yaʿroujou fîhâ wa min charri mâ dhara’a fi l-’arḍi wa mâ yakhroujou minhâ wa min charri fitani l-layli wa n-nahâr wa min charri koulli ṭâriqin ’illâ ṭâriqan yaṭrouqou bikhayrin yâ Raḥmân', '', '', 'dhikrs, invocations, évocations, adhkâr'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'أعوذُ بِكلماتِ الله التّامّاتِ الّتي لا يُجاوِزُهُنّ بَرٌّ ولا فاجِر من شرِّ ما يَنزِلُ مِن السَّماء وما يَعرُج فيها ومِن شَرِّ ما ذَرَأ في الأرضِ وما يَخرُج مِنها ومِن شَرِّ فِتَنِ اللَّيلِ والنَّهار ومن شرِّ كُلِّ طارقٍ إلَّا طارِقا يَطرُقُ بِخيرٍ يَا رَحمن');
 
 -- source: https://islam.ms/evocations-invocations-protection-doua-citadelle-musulman-adhkar
-INSERT INTO "dhikr" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Invocations et Évocations (‘Adhkâr) du Messager de Allāh : celui qui les récite matin et soir, rien ne lui nuit et est protégé par la volonté de Allāh.', 'أَعُوذُ باللهِ مِنَ الشَّيْطَانِ الرَّجِيم', '', '’Aʿôudhou bi l-Lâhi mina ch-chayṭâni r-rajîm', '', '', 'dhikr, invocations, évocations, adhkâr'
-WHERE NOT EXISTS (SELECT 1 FROM "dhikr" WHERE texte_arabe = 'أَعُوذُ باللهِ مِنَ الشَّيْطَانِ الرَّجِيم');
+INSERT INTO "dhikrs" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Invocations et Évocations (‘Adhkâr) du Messager de Allāh : celui qui les récite matin et soir, rien ne lui nuit et est protégé par la volonté de Allāh.', 'أَعُوذُ باللهِ مِنَ الشَّيْطَانِ الرَّجِيم', '', '’Aʿôudhou bi l-Lâhi mina ch-chayṭâni r-rajîm', '', '', 'dhikrs, invocations, évocations, adhkâr'
+WHERE NOT EXISTS (SELECT 1 FROM "dhikrs" WHERE texte_arabe = 'أَعُوذُ باللهِ مِنَ الشَّيْطَانِ الرَّجِيم');
 
 -- source: https://islam.ms/explication-hadiths-femme-esclave-jariyah
 INSERT INTO "hadiths" (sujet, rapporteur, narrateur, statut, texte_arabe, texte_francais, phonetique, explication, type_id, tag)
@@ -482,804 +482,804 @@ SELECT 'Le grand savant Badrou d-dîn ibnou jamâʿah (728 h) explique le sens d
 WHERE NOT EXISTS (SELECT 1 FROM "hadiths" WHERE texte_arabe = '« مَهْمَا تَصَوَّرْتَ بِباَلِكَ فَالله بِخِلافِ ذَالِك »');
 
 -- source: https://islam.ms/invocation-ablution
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation après les ablutions', 'أَشْهَدُ أَنْ لاَ إلهَ إلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ', '', '', 'Voici ce qu’on dit après avoir fait les [petites] ablutions - le wouḍou’ - :', '', 'invocation, ablutions, wouḍou'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'أَشْهَدُ أَنْ لاَ إلهَ إلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'أَشْهَدُ أَنْ لاَ إلهَ إلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ');
 
 -- source: https://islam.ms/invocation-ablution
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation après les ablutions', 'وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسُولُهُ', '', '', '', '', 'invocation, ablutions, wouḍou'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسُولُهُ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسُولُهُ');
 
 -- source: https://islam.ms/invocation-apres-fajr-maghrib
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation après la prière de al-fajr et de al-maghrib', 'لا إلهَ إلا اللهُ وَحْدَهُ لا شَرِيكَ لَهُ ، لَهُ المُلْكُ وَ لَهُ الحَمْدُ', '', '', 'Il est parvenu que celui qui dit après la prière de al-fajr et après la prière de al-maghrib:', '', 'invocation, prière, al-fajr, al-maghrib'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'لا إلهَ إلا اللهُ وَحْدَهُ لا شَرِيكَ لَهُ ، لَهُ المُلْكُ وَ لَهُ الحَمْدُ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'لا إلهَ إلا اللهُ وَحْدَهُ لا شَرِيكَ لَهُ ، لَهُ المُلْكُ وَ لَهُ الحَمْدُ');
 
 -- source: https://islam.ms/invocation-apres-fajr-maghrib
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation après la prière de al-fajr et de al-maghrib', 'يُحْيِي وَ يُمِيتُ وَهُوَ عَلَى كُلِّ شيء قَدِير', 'Il n’est de dieu que Allāh, Celui Qui est unique et Qui n’a pas d’associé, à Lui la souveraineté et à Lui la louange, Il fait vivre et Il fait mourir, et Il est sur toute chose tout-puissant', 'lā ’ilāha ’il-la l-Lāhou wahdahou lā charīka lah lahou l-moulkou wa lahou l-ḥamdou youḥyī wa youmīt wa houwa ʿalā koulli chay’in qadīr', 'Il dit dix fois cette invocation (après avoir passé le salam dans la prière), avant qu’il ne change de position (qu’il avait lorsqu’il a terminé sa prière), il lui sera écrit dix bonnes actions particulières, il lui sera effacé dix mauvaises actions parmi les grands péchés, il sera protégé contre les mauvaises choses, il sera parmi ceux qui seront en sécurité et qui seront apaisés, et il sera préservé contre le chayṭān et contre la nuisance des jinn et il sera préservé de la nuisance de la sorcellerie.', '', 'invocation, prière, al-fajr, al-maghrib'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'يُحْيِي وَ يُمِيتُ وَهُوَ عَلَى كُلِّ شيء قَدِير');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'يُحْيِي وَ يُمِيتُ وَهُوَ عَلَى كُلِّ شيء قَدِير');
 
 -- source: https://islam.ms/invocation-apres-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Invocations que l’on dit après chacune des cinq prières', 'اللَّهُمَّ أعِنِّي على ذِكْرِكَ وَشُكْرِكَ وحُسْنِ عِبادَتِكَ', 'Ô Allāh aide moi à T’évoquer, à Te remercier et à accomplir les actes d’adoration que Tu agrée', 'Allāhoumma ’aʿinnī ʿalā dhikrika wa choukrika wa ḥousni ʿibādatik', '', '', 'invocation, invocations, chacune, prières'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَّ أعِنِّي على ذِكْرِكَ وَشُكْرِكَ وحُسْنِ عِبادَتِكَ');
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Invocations que l’on dit après chacune des cinq prières', 'اللَّهُمَّ أعِنِّي على ذِكْرِكَ وَشُكْرِكَ وحُسْنِ عِبادَتِكَ', 'Ô Allāh aide moi à T’évoquer, à Te remercier et à accomplir les actes d’adoration que Tu agrée', 'Allāhoumma ’aʿinnī ʿalā dhikrsika wa choukrika wa ḥousni ʿibādatik', '', '', 'invocation, invocations, chacune, prières'
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَّ أعِنِّي على ذِكْرِكَ وَشُكْرِكَ وحُسْنِ عِبادَتِكَ');
 
 -- source: https://islam.ms/invocation-apres-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations que l’on dit après chacune des cinq prières', 'اللَّهُمَ أَنْتَ السَّلام وَمِنْكَ السَّلام تَبَارَكْتَ يَا ذَا الجَلالِ وَالإكْرَام', 'Ô Allāh tu es As-Salām [- Celui Qui est exempt de tout défaut -] et c’est Toi Qui accorde la sauvegarde, Tu es exempt d’imperfection Ô Toi Dhou l-Jalāli wa l-’Ikrām [- Celui Qui mérite d’être glorifié et Qui mérite de ne pas être renié, et Il est Celui Qui accorde aux saints la réussite au Jour du Jugement -]', 'Allāhoumma ’anta s-salāmou wa minka s-salām tabārakta yā dha l-jalāli wa l-’ikrām', 'Aboū Hourayrah, que Allāh l’agrée, rapporte que le Prophète ṣalla l-Lāhou ʿalayhi wa sallam a dit:', '', 'invocation, invocations, chacune, prières'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَ أَنْتَ السَّلام وَمِنْكَ السَّلام تَبَارَكْتَ يَا ذَا الجَلالِ وَالإكْرَام');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَ أَنْتَ السَّلام وَمِنْكَ السَّلام تَبَارَكْتَ يَا ذَا الجَلالِ وَالإكْرَام');
 
 -- source: https://islam.ms/invocation-apres-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations que l’on dit après chacune des cinq prières', 'مَنْ سَبَّحَ اللَّهَ فِي دُبُرِ كُلِّ صَلاةٍ ثَلاثًا وَثَلاثِينَ وَحَمِدَ اللَّهَ ثَلاثًا وَثَلاثِينَ وَكَبَّرَ اللَّهَ ثَلاثًا وَثَلاثِينَ فَتْلِكَ تِسْعَةٌ وَتِسْعُونَ وَقَالَ تَمَامَ الْمِائَةِ : لا إِلَهَ إِلاّ اللَّهُ وَحْدَهُ لا شَرِيكَ لَهُ لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ غُفِرَتْ خَطَايَاهُ وَإِنْ كَانَتْ مِثْلَ زَبَدِ الْبَحْرِ', 'Celui qui dit après chaque prière (soubḥāna l-Lāh) 33 fois, (al-ḥamdou li l-Lāh) 33 fois, (Allāhou ’akbar) 33 fois, soit 99 évocations en tout, et pour la 100ème évocation, il dit: (lā ’ilāha il-la l-Lāhou waḥdahou lā charīka lah, lahou l-moulkou wa lahou l-ḥamdou, wa houwa ʿalā koulli chay’in qadīr), il lui sera pardonné ses péchés même s’ils étaient aussi nombreux que les écumes de la mer', '', '[rapporté par Mouslim]', '', 'invocation, invocations, chacune, prières'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'مَنْ سَبَّحَ اللَّهَ فِي دُبُرِ كُلِّ صَلاةٍ ثَلاثًا وَثَلاثِينَ وَحَمِدَ اللَّهَ ثَلاثًا وَثَلاثِينَ وَكَبَّرَ اللَّهَ ثَلاثًا وَثَلاثِينَ فَتْلِكَ تِسْعَةٌ وَتِسْعُونَ وَقَالَ تَمَامَ الْمِائَةِ : لا إِلَهَ إِلاّ اللَّهُ وَحْدَهُ لا شَرِيكَ لَهُ لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ غُفِرَتْ خَطَايَاهُ وَإِنْ كَانَتْ مِثْلَ زَبَدِ الْبَحْرِ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'مَنْ سَبَّحَ اللَّهَ فِي دُبُرِ كُلِّ صَلاةٍ ثَلاثًا وَثَلاثِينَ وَحَمِدَ اللَّهَ ثَلاثًا وَثَلاثِينَ وَكَبَّرَ اللَّهَ ثَلاثًا وَثَلاثِينَ فَتْلِكَ تِسْعَةٌ وَتِسْعُونَ وَقَالَ تَمَامَ الْمِائَةِ : لا إِلَهَ إِلاّ اللَّهُ وَحْدَهُ لا شَرِيكَ لَهُ لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ غُفِرَتْ خَطَايَاهُ وَإِنْ كَانَتْ مِثْلَ زَبَدِ الْبَحْرِ');
 
 -- source: https://islam.ms/invocation-apres-priere-soubh-maghrib
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations après la prière de aṣ-ṣoubḥ et de al-maghrib', 'اللَّهُمَّ أجِرْنِي مِنَ النَّارِ', 'Ô Allāh préserve moi du feu de l’enfer', 'Allāhoumma ’ajirnī mina n-nār', 'Il a été rapporté dans le ḥadith que le croyant qui dit cette invocation sept fois après la prière de aṣ-ṣoubḥ, s’il meurt durant la journée, Allāh le préserve du feu de l’enfer. Et s’il dit cette invocation sept fois après la prière de al-maghrib, s’il meurt durant la nuit, Allāh le préserve du feu de l’enfer. L’invocation qu’on répète sept fois est la suivante:', '', 'invocation, invocations, prière, aṣ-ṣoubḥ'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَّ أجِرْنِي مِنَ النَّارِ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَّ أجِرْنِي مِنَ النَّارِ');
 
 -- source: https://islam.ms/invocation-assemble-science
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lors des assemblées de science', 'إِنَّ النَّاسَ إِذا اجْتَمَعُوا فِي مَجْلِس ثُمَّ فَارَقُوهُ وَلَمْ يَذْكُرُوا اللهَ', '', '', 'Le Messager de Allāh ṣalla l-Lāhou ʿalayhi wa sallam a dit:', '', 'invocation, lors, assemblées, science'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'إِنَّ النَّاسَ إِذا اجْتَمَعُوا فِي مَجْلِس ثُمَّ فَارَقُوهُ وَلَمْ يَذْكُرُوا اللهَ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'إِنَّ النَّاسَ إِذا اجْتَمَعُوا فِي مَجْلِس ثُمَّ فَارَقُوهُ وَلَمْ يَذْكُرُوا اللهَ');
 
 -- source: https://islam.ms/invocation-assemble-science
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lors des assemblées de science', 'وَلَمْ يُصَلُّوا عَلَى النَّبِي يَكُونُ حَسْرَةً عَلَيْهِم فِي الآخِرَةِ وَإِن دَخَلُوا الجَنَّة', 'Lorsque des croyants se réunissent dans une assemblée de science et qu’ils se séparent sans avoir évoqué Allāh et sans avoir fait l’invocation en faveur du Prophète, ils manqueront d’un bien dans l’au-delà, même s’ils entrent au Paradis', '’inna n-nāça ’idha jtamaʿoū fī majlis thoumma fāraqoūhou wa lam yadhkoūrou l-Lāha wa lam youṣallou ʿala n-nabiyy yakoūnou ḥasratan ʿalayhim fi l-’ākhirati wa ’in dakhalou l-jannah', '[rapporté par Aṭ-Ṭabarāniyy dans son livre Ad-Daʿawat] Dans l’au-delà, la personne dira: « si seulement je n’avais pas raté ce bien ». Même si elle entre au Paradis, elle dira cela sans en ressentir de tristesse. Lorsqu’elle verra l’éminente récompense de l’évocation de Allāh et de l’invocation en faveur du Prophète ṣalla l-Lāhou ʿalayhi wa sallam, elle dira: « si seulement je n’avais pas raté cette récompense ». On peut donc dire après une assemblée de science ( et on peut répéter chacune de ces invocations trois fois ):', '', 'invocation, lors, assemblées, science'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'وَلَمْ يُصَلُّوا عَلَى النَّبِي يَكُونُ حَسْرَةً عَلَيْهِم فِي الآخِرَةِ وَإِن دَخَلُوا الجَنَّة');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'وَلَمْ يُصَلُّوا عَلَى النَّبِي يَكُونُ حَسْرَةً عَلَيْهِم فِي الآخِرَةِ وَإِن دَخَلُوا الجَنَّة');
 
 -- source: https://islam.ms/invocation-assemble-science
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lors des assemblées de science', 'لاَ إِلهَ إِلاَّ اللّه', '', 'lā ’ilāha ’il-la l-Lāh', '', '', 'invocation, lors, assemblées, science'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'لاَ إِلهَ إِلاَّ اللّه');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'لاَ إِلهَ إِلاَّ اللّه');
 
 -- source: https://islam.ms/invocation-assemble-science
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lors des assemblées de science', 'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَ عَلَى آلِهِ وَ صَحْبِهِ وَ سَلِّم', '', 'Allāhoumma ṣalli ʿalā sayyidinā Mouḥammad wa ʿalā ’ālihi wa ṣaḥbihi wa sallim', '', '', 'invocation, lors, assemblées, science'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَ عَلَى آلِهِ وَ صَحْبِهِ وَ سَلِّم');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَ عَلَى آلِهِ وَ صَحْبِهِ وَ سَلِّم');
 
 -- source: https://islam.ms/invocation-assemble-science
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lors des assemblées de science', 'ربِّ اغْفِرْ لِي وَلِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ', '', 'rabbi ghfir lī wa li l-mou’minīna wa l-mou’mināt', '', '', 'invocation, lors, assemblées, science'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'ربِّ اغْفِرْ لِي وَلِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'ربِّ اغْفِرْ لِي وَلِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ');
 
 -- source: https://islam.ms/invocation-avant-deshabiller
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lorsqu’on se déshabille', 'بِاسْمِ اللهِ', 'Je commence en citant le nom de Allāh', 'bismi l-Lāh', 'Lorsqu’on enlève ses vêtements, il est conseillé de dire: ou:', '', 'invocation, déshabille'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'بِاسْمِ اللهِ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'بِاسْمِ اللهِ');
 
 -- source: https://islam.ms/invocation-avant-entrer-toilettes
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations avant d’entrer aux toilettes', 'بِسمِ اللَّه، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الخُبْثِ وَالخَبَائِث', 'J’entre en citant le nom de Allāh, Ô Allāh je recherche Ta protection contre la nuisance des démons mâles et femelles', 'bismi l-Lāh Allāhoumma ’innī ’aʿoūdhou bika mina l-khoubthi wa l-khabā’ith', 'Information utile: il est recommandé d’entrer aux toilettes avec le pied gauche et d’en sortir avec le pied droit. A la sortie des toilettes, on dit:', '', 'invocation, invocations, entrer, toilettes'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'بِسمِ اللَّه، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الخُبْثِ وَالخَبَائِث');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'بِسمِ اللَّه، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الخُبْثِ وَالخَبَائِث');
 
 -- source: https://islam.ms/invocation-avant-entrer-toilettes
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations avant d’entrer aux toilettes', 'الحَمدُ لِلَّهِ الَّذِي أَذهَبَ عَنِّي الأَذَى وَعَافَانِي', 'Je loue Allāh pour m’avoir accordé la sortie de ce qui aurait nuis à ma santé (si c’était resté dans mon corps) et je Le loue pour m’avoir protégé', 'al-ḥamdou li l-Lāhi l-ladhī ’adh-haba ʿanni l-’adhā wa ʿāfānī', '', '', 'invocation, invocations, entrer, toilettes'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'الحَمدُ لِلَّهِ الَّذِي أَذهَبَ عَنِّي الأَذَى وَعَافَانِي');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'الحَمدُ لِلَّهِ الَّذِي أَذهَبَ عَنِّي الأَذَى وَعَافَانِي');
 
 -- source: https://islam.ms/invocation-avant-manger
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation avant de manger', 'اللَّهُمَّ بَارِك لَنَا فِيْمَا رَزَقْتَنَا وَ قِنَا عَذَابَ النَّار', 'Ô Allāh, accorde nous des bénédictions dans ce que Tu nous as accordé comme subsistance et préserve-nous du châtiment de l’enfer', 'Allāhoumma bārik lanā fīmā razaqtanā wa qinā ʿadhāba n-nār', 'On dit avant de manger, afin de rechercher la bénédiction par ce repas, pour qu’il soit une aide et un renfort dans l’obéissance à Allāh: Puis on dit:', '', 'invocation, manger'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَّ بَارِك لَنَا فِيْمَا رَزَقْتَنَا وَ قِنَا عَذَابَ النَّار');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَّ بَارِك لَنَا فِيْمَا رَزَقْتَنَا وَ قِنَا عَذَابَ النَّار');
 
 -- source: https://islam.ms/invocation-avant-manger
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation avant de manger', 'بِسْمِ الله', 'Je commence par le nom de Allāh', 'bismi l-Lāh', 'Et si quelqu’un a oublié de dire (bismi l-Lāh) au début du repas, il dit:', '', 'invocation, manger'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'بِسْمِ الله');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'بِسْمِ الله');
 
 -- source: https://islam.ms/invocation-avant-manger
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation avant de manger', 'بِسْمِ اللهِ أَوَّلَهُ وَآخِرَه', 'Je cite le nom de Allāh pour le début de ce repas et pour sa fin', 'bismi l-Lāhi ’awwalahou wa ’ākhirah', 'Après avoir mangé et après avoir bu, on dit:', '', 'invocation, manger'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'بِسْمِ اللهِ أَوَّلَهُ وَآخِرَه');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'بِسْمِ اللهِ أَوَّلَهُ وَآخِرَه');
 
 -- source: https://islam.ms/invocation-avant-manger
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation avant de manger', 'الحَمْدُ للهِ الذِي أطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مُسْلِمِيْن', 'La louange est à Allāh Qui nous a donné à manger et Qui nous a donné à boire, et Qui a fait de nous des musulmans', 'al-ḥamdou li l-Lāhi l-ladhī ’aṭʿamanā wa saqānā wa jaʿalanā mouslimīn', '', '', 'invocation, manger'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'الحَمْدُ للهِ الذِي أطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مُسْلِمِيْن');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'الحَمْدُ للهِ الذِي أطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مُسْلِمِيْن');
 
 -- source: https://islam.ms/invocation-besoin-tawassoul
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation du Besoin Tawassoul', '« اللَّهُمَّ إِنّي أَسْأَلُكَ وأَتَوَجَّهُ إِلَيكَ بِنَبِيِّكَ مُحَمَّدٍ نَبِيِّ الرَّحْمَةِ. يا مُحَمَّدُ إِنِّي أَتَوَجَّهُ بِكَ إِلى رَبِّي فِي حَاجَتِي لِتُقْضَى لِي »', 'Ô Allāh, je Te demande et je T’adresse mon invocation par le degré de Ton prophète Mouhammad, le prophète de la miséricorde. ô Mouḥammad, j’adresse mon invocation par ton degré à mon Seigneur concernant mon affaire pour qu’elle me soit réglée', '', '(Allāhoumma ’innî ’as’alouka wa ’atawajjahou ’ilayka binabiyyika Mouḥammad, nabiyyi r-raḥmah. Yâ Mouḥammad ’innî ’atawajjahou bika ’ilâ rabbî fî ḥājatî li touqḍā lî). ʿOuthmân ibnou Ḥounayf a dit : « Par Allāh, nous n’étions pas séparés et l’assemblée n’avait pas duré et l’homme (qui été aveugle) est revenu à nous en ayant retrouvé la vue comme s’il n’a jamais eu de mal », At-Ṭabarâniyy a dit : et le ḥadīth est ṣaḥîḥ. Il y’a une deuxième partie où le compagnon ʿOuthmân ibnou Ḥounayf enseigne cette invocation à quelqu’un après la mort du prophète, (dans la période du califat de ʿOuthmân ibnou ʿAffân) et par la cause de cette invocation Dieu lui a facilité son affaire. A voir : L’Invocation de Dieu par le Degré des Êtres Vertueux (Le Tawassoul)', '', 'invocation, besoin, tawassoul'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« اللَّهُمَّ إِنّي أَسْأَلُكَ وأَتَوَجَّهُ إِلَيكَ بِنَبِيِّكَ مُحَمَّدٍ نَبِيِّ الرَّحْمَةِ. يا مُحَمَّدُ إِنِّي أَتَوَجَّهُ بِكَ إِلى رَبِّي فِي حَاجَتِي لِتُقْضَى لِي »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« اللَّهُمَّ إِنّي أَسْأَلُكَ وأَتَوَجَّهُ إِلَيكَ بِنَبِيِّكَ مُحَمَّدٍ نَبِيِّ الرَّحْمَةِ. يا مُحَمَّدُ إِنِّي أَتَوَجَّهُ بِكَ إِلى رَبِّي فِي حَاجَتِي لِتُقْضَى لِي »');
 
 -- source: https://islam.ms/invocation-conserver-chose
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour conserver quelque chose', 'اللَّهُمَّ إنِّي أسْتَوْدِعُكَ هَذَا المَكَانَ وَ مَا فِيهِ وَ مَنْ فِيه', 'Ô Allāh, je Te confie cet endroit, ce qu’il contient, et je Te confie les personnes qui s’y trouvent', 'Allāhoumma ’innī ’astawdiʿouka hadha l-makān wa mā fīhi wa man fīh', 'Quand on veut confier quelque chose pour qu’elle soit conservée comme par exemple un endroit, ou ce qu’il contient, ou des personnes qui sont dans cet endroit, on dit la parole suivante ( avec une bonne prononciation et une bonne intention):', '', 'invocation, conserver, quelque'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَّ إنِّي أسْتَوْدِعُكَ هَذَا المَكَانَ وَ مَا فِيهِ وَ مَنْ فِيه');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَّ إنِّي أسْتَوْدِعُكَ هَذَا المَكَانَ وَ مَا فِيهِ وَ مَنْ فِيه');
 
 -- source: https://islam.ms/invocation-contre-magie-socellerie
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation contre la magie et la sorcellerie (pour être délivré de la magie et la sorcellerie)', 'أَعُوذُ بِوَجْهِ اللَّهِ الْعَظِيمِ الَّذِي لَيْسَ شَيْءٌ أَعْظَمَ مِنْهُ وَبِكَلِمَاتِ اللَّهِ التَّامَّاتِ الَّتِي لَا يُجَاوِزُهُنَّ بَرٌّ وَلَا فَاجِرٌ وَبِأَسْمَاءِ اللَّهِ الْحُسْنَى مَا عَلِمْتُ مِنْهَا وَمَا لَمْ أَعْلَمْ مِنْ شَرِّ مَا خَلَقَ وَذَرَأَ وَبَرَأَ', 'Je cherche protection mar l’Être de Allāh, le Très Eminent, rien n’est plus éminent que Lui ;et par la parole parfaite de Allāh que nul pieux ni pécheur ne peut surpasser ;et par les noms parfaits de Allāh, ceux que je connais et ceux que je ne connais pas, contre le mal de ce qu’Il a créé.', '', 'Invocation contre la magie et la sorcellerie , très efficace pour se protéger et être délivré du mal occulte. (’aʿôudhou biwajhi l-Lâhi l-ʿaḍhîm al-ladhî layça chay’oun ’aʿḍhama minhou wa bi kalimâti l-Lâhi t-tâmmâti al-latī lā youjāwizouhounna barroun wa lā fājir wa bi ’asmâ’i lLâhi l-Ḥousnâ mâ ʿalimtou minhâ wa mâ lam ’aʿlam min charri mâ khalaqa wa dhara’a wa bara’a) Remarque importante: Le terme "Wajh" ici, lorsqu’il est attribué à Allāh, signifie l’Être de Allāh. Il ne s’agit pas du visage au sens physique, car Allāh est exempt de toute ressemblance avec Ses créatures.', '', 'invocation, magie, sorcellerie, être'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'أَعُوذُ بِوَجْهِ اللَّهِ الْعَظِيمِ الَّذِي لَيْسَ شَيْءٌ أَعْظَمَ مِنْهُ وَبِكَلِمَاتِ اللَّهِ التَّامَّاتِ الَّتِي لَا يُجَاوِزُهُنَّ بَرٌّ وَلَا فَاجِرٌ وَبِأَسْمَاءِ اللَّهِ الْحُسْنَى مَا عَلِمْتُ مِنْهَا وَمَا لَمْ أَعْلَمْ مِنْ شَرِّ مَا خَلَقَ وَذَرَأَ وَبَرَأَ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'أَعُوذُ بِوَجْهِ اللَّهِ الْعَظِيمِ الَّذِي لَيْسَ شَيْءٌ أَعْظَمَ مِنْهُ وَبِكَلِمَاتِ اللَّهِ التَّامَّاتِ الَّتِي لَا يُجَاوِزُهُنَّ بَرٌّ وَلَا فَاجِرٌ وَبِأَسْمَاءِ اللَّهِ الْحُسْنَى مَا عَلِمْتُ مِنْهَا وَمَا لَمْ أَعْلَمْ مِنْ شَرِّ مَا خَلَقَ وَذَرَأَ وَبَرَأَ');
 
 -- source: https://islam.ms/invocation-contre-mauvais-oeil
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation contre le mauvais œil', 'أعوذُ بكلماتِ اللهِ التّامّة مِن كُلّ شَيطانٍ وهامّةٍ ومن كُلّ عَينٍ لامّةٍ', '', '’aʿôudhou bi kalimâti l-Lâhi t-tâmmah min koulli chayṭânin wa hâmmah wa min koulli ʿaynin lâmmah', '', '', 'invocation, mauvais'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'أعوذُ بكلماتِ اللهِ التّامّة مِن كُلّ شَيطانٍ وهامّةٍ ومن كُلّ عَينٍ لامّةٍ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'أعوذُ بكلماتِ اللهِ التّامّة مِن كُلّ شَيطانٍ وهامّةٍ ومن كُلّ عَينٍ لامّةٍ');
 
 -- source: https://islam.ms/invocation-contre-mauvais-oeil
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation contre le mauvais œil', 'اللّهُم ذا السُّلطانِ العَظيمِ والمَنِّ القديمِ، ذا الرّحمةِ الكريم وليَّ الكلماتِ التّامّاتِ والدَّعوات المُستَجابات عافِني من أنفس الجنِّ وأعْيُنِ الإنسِ.', '', 'Allāhoumma dha s-soulṭāni l-ʿaḍhīm wa l-manni l-qadīm dha r-raḥmati l-karīm waliyya l-kalimāti t-tāmmāti wa d-daʿawāti l-moustajābāt ʿāfinī min ’anfousi l-jinni wa ’aʿyouni l-’ins', 'Al-Haçan et Al-Houçayn, les petits-fils du Messager de Allāh ṣalla l-Lâhou ʿalayhi wa sallam ont été atteints par le mauvais oeil. Le Messager de Allāh ṣalla l-Lâhou ʿalayhi wa sallam en a été chagriné. L’ange Jibrîl ʿalayhi s-salâm est alors venu à lui et lui a enseigné une rouqyah. Il lui a enseigné de leur faire une rouqyah avec les paroles suivantes :', '', 'invocation, mauvais'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللّهُم ذا السُّلطانِ العَظيمِ والمَنِّ القديمِ، ذا الرّحمةِ الكريم وليَّ الكلماتِ التّامّاتِ والدَّعوات المُستَجابات عافِني من أنفس الجنِّ وأعْيُنِ الإنسِ.');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللّهُم ذا السُّلطانِ العَظيمِ والمَنِّ القديمِ، ذا الرّحمةِ الكريم وليَّ الكلماتِ التّامّاتِ والدَّعوات المُستَجابات عافِني من أنفس الجنِّ وأعْيُنِ الإنسِ.');
 
 -- source: https://islam.ms/invocation-contre-mauvais-oeil
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation contre le mauvais œil', 'اللهمَّ ذَا السلطانِ العظيمِ والْمَنِّ القديـمِ ذَا الرحـمةِ الكريـم', '', '', '', '', 'invocation, mauvais'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللهمَّ ذَا السلطانِ العظيمِ والْمَنِّ القديـمِ ذَا الرحـمةِ الكريـم');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللهمَّ ذَا السلطانِ العظيمِ والْمَنِّ القديـمِ ذَا الرحـمةِ الكريـم');
 
 -- source: https://islam.ms/invocation-contre-mauvais-oeil
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation contre le mauvais œil', 'وَلِيَّ الكلماتِ التَّاماتِ والدَّعواتِ المستجاباتِ', '', '', '', '', 'invocation, mauvais'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'وَلِيَّ الكلماتِ التَّاماتِ والدَّعواتِ المستجاباتِ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'وَلِيَّ الكلماتِ التَّاماتِ والدَّعواتِ المستجاباتِ');
 
 -- source: https://islam.ms/invocation-contre-mauvais-oeil
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation contre le mauvais œil', 'عافِ حَسنًا وحُسينًا من أنفسِ الجِنِّ وأَعيُنِ الإنسِ', '', 'Allāhoumma dha s-soulṭâni l-ʿaḍhîm, wa l-manni l-qadîm, dha r-raḥmati l-karîm, waliyya l-kalimâti t-tâmmâti wa d-daʿawâti l-moustajâbât, ʿâfi Ḥaçanan wa Ḥouçaynan min ’anfouci l-jinni wa ’aʿyouni l-’ins', 'Remarque: on peut réciter cette invocation pour se préserver soi-même contre le mauvais œil, et dans ce cas, on dit : (Allāhoumma dha s-soulṭāni l-ʿaḍhīm, wa l-manni l-qadîm, dha r-raḥmati l-karîm, waliyya l-kalimâti t-tâmmâti wa d-daʿawâti l-moustajâbât, ʿâfinî min ’anfouci l-jinni wa ’aʿyouni l-’ins) Pour réciter cette invocation pour une personne [pour la préserver du mauvais oeil, et également pour celle qui a été atteinte par le mauvais oeil], on remplace la parole (ʿâfinî) par (ʿâfi) et on cite le nom de la personne que l’on souhaite protéger.', '', 'invocation, mauvais'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'عافِ حَسنًا وحُسينًا من أنفسِ الجِنِّ وأَعيُنِ الإنسِ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'عافِ حَسنًا وحُسينًا من أنفسِ الجِنِّ وأَعيُنِ الإنسِ');
 
 -- source: https://islam.ms/invocation-contre-paresse-endettement
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation contre la paresse et l’endettement', 'اللهُمَّ إنِّي أعُوذُ بِكَ مِنَ الهَمِّ والحَزَن وأعُوذُ بِكَ مِنَ العَجْزِ والكَسَل وأعُوذُ بِكَ مِنَ الجُبْنِ والبُخْلِ وأعُوذُ بِكَ من غَلبَةِ الدَّينِ وقَهْرِ الرِّجَالِ. (لقضاء الدّين)', '', 'Allāhoumma innî ’aʿôudhou bika mina l-hammi wa l-ḥazan wa ’aʿôudhou bika mina l-ʿajzi wa l-kasal wa ’aʿôudhou bika mina l-joubni wa l-boukhli wa ’aʿôudhou bika min ghalabati d-dayni wa qahri r-rijāl', '', '', 'invocation, paresse, endettement'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللهُمَّ إنِّي أعُوذُ بِكَ مِنَ الهَمِّ والحَزَن وأعُوذُ بِكَ مِنَ العَجْزِ والكَسَل وأعُوذُ بِكَ مِنَ الجُبْنِ والبُخْلِ وأعُوذُ بِكَ من غَلبَةِ الدَّينِ وقَهْرِ الرِّجَالِ. (لقضاء الدّين)');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللهُمَّ إنِّي أعُوذُ بِكَ مِنَ الهَمِّ والحَزَن وأعُوذُ بِكَ مِنَ العَجْزِ والكَسَل وأعُوذُ بِكَ مِنَ الجُبْنِ والبُخْلِ وأعُوذُ بِكَ من غَلبَةِ الدَّينِ وقَهْرِ الرِّجَالِ. (لقضاء الدّين)');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'At-tawajjouh : l’invocation d’ouverture de la prière', 'وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّموَاتِ وَالأَرْضَ', 'Je vise par mon adoration le Créateur, Celui Qui a créé les cieux et la terre', 'wajjahtou wajhiya li l-Ladhī faṭara s-samāwāti wa l-’arḍa', 'Il est recommandé de réciter cette invocation après la formulation du takbīr d’entrée en rituel [c’est-à-dire dans la première rakʿah] et avant la récitation de la Fātiḥah:', '', 'invocation, at-tawajjouh, ouverture, prière'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّموَاتِ وَالأَرْضَ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّموَاتِ وَالأَرْضَ');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'At-tawajjouh : l’invocation d’ouverture de la prière', 'حَنِيفاً مُسْلِماً وَمَا أَنَا مِنَ الْمُشْرِكِينَ', 'à l’écart de toutes les religions autres que la religion de droiture qu’est l’Islam. Je ne suis pas de ceux qui adorent autre que Dieu', 'ḥanīfan mousliman wa mā ’ana mina l-mouchrikīn', '', '', 'invocation, at-tawajjouh, ouverture, prière'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'حَنِيفاً مُسْلِماً وَمَا أَنَا مِنَ الْمُشْرِكِينَ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'حَنِيفاً مُسْلِماً وَمَا أَنَا مِنَ الْمُشْرِكِينَ');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'At-tawajjouh : l’invocation d’ouverture de la prière', 'إنَّ صَلاَتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلَّهِ رَبِّ العَالَمِينَ لاَ شَرِيكَ لَهُ', 'La prière que j’accomplis, ce que j’égorge pour l’agrément de Dieu, ma vie et ma mort appartiennent à Allāh et sont créés par Lui, Il n’a pas d’associé en cela. En effet, tout comme Allāh est le Créateur de la vie et de la mort qui sont des actes involontaires, Il est également le Créateur des actes volontaires comme la prière et l’égorgement rituel', '’inna ṣalātī wa nouçoukī wa maḥyāya wa mamātī li l-Lāhi rabbi l-ʿālamīn', '', '', 'invocation, at-tawajjouh, ouverture, prière'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'إنَّ صَلاَتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلَّهِ رَبِّ العَالَمِينَ لاَ شَرِيكَ لَهُ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'إنَّ صَلاَتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلَّهِ رَبِّ العَالَمِينَ لاَ شَرِيكَ لَهُ');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'At-tawajjouh : l’invocation d’ouverture de la prière', 'وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ', 'c’est ce que j’ai eu l’ordre de faire et je fais partie des musulmans', 'lā charīka lah, wa bidhālika ’oumirtou wa ’ana mina l-mouslimīn', '', '', 'invocation, at-tawajjouh, ouverture, prière'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'L’invocation du tachahhoud', 'التَّحِيَّاتُ المُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلّه', 'Les salutations que les croyants se passent les uns aux autres appartiennent à Allāh, ces salutations qui sont pleines de bénédictions [- al-barakah: la bénédiction, c’est l’augmentation en bien -], les cinq prières ainsi que les bons actes, tout ceci appartient à Allāh', 'at-taḥiyyātou l-moubārakātou ṣ-ṣalawātou ṭ-ṭayyibā­tou li l-Lāh', '', '', 'invocation, tachahhoud, invocations, prière'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'التَّحِيَّاتُ المُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلّه');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'التَّحِيَّاتُ المُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلّه');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'L’invocation du tachahhoud', 'السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ', 'Je demande à Allāh qu’Il t’élève en degré, et qu’Il protège ta communauté Ô Prophète de ce tu crains pour elle', 'as-salāmou ʿalayka ’ayyouha n-Nabiyyou wa raḥmatou l-Lāhi wa barakātouh', '', '', 'invocation, tachahhoud, invocations, prière'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'L’invocation du tachahhoud', 'السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللهِ الصَّالِحِينَ', 'Je demande que Allāh nous protège et qu’Il préserve Ses esclaves vertueux', 'as-salāmou ʿalaynā wa ʿalā ʿibādi l-Lāhi ṣ-ṣaliḥīn', '', '', 'invocation, tachahhoud, invocations, prière'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللهِ الصَّالِحِينَ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللهِ الصَّالِحِينَ');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'L’invocation du tachahhoud', 'أَشْهَدُ أَن لاَ إِلهَ إِلاَّ اللهُ وَأَشْهَدُ أَنَّ مُحَمَّداً رَسُولُ الله', 'Je témoigne qu’il n’est de dieu que Allāh et je témoigne que Mouḥammad est le Messager de Allāh', '', '(’ach-hadou ’an lā ’ilāha ’il-la l-Lāh wa ’ach-hadou ’anna Mouḥammadan raçoūlou l-Lāh)', '', 'invocation, tachahhoud, invocations, prière'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'أَشْهَدُ أَن لاَ إِلهَ إِلاَّ اللهُ وَأَشْهَدُ أَنَّ مُحَمَّداً رَسُولُ الله');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'أَشْهَدُ أَن لاَ إِلهَ إِلاَّ اللهُ وَأَشْهَدُ أَنَّ مُحَمَّداً رَسُولُ الله');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'L’invocation en faveur du Prophète (aṣ-ṣalātou ʿala n-nabiyy)', 'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ', '', '', 'La meilleure formule d’invocation en faveur du Prophète, c’est aṣ-ṣalātou l-’ibrāhīmiyyah. Si ce n’était pas la meilleure invocation en faveur du Prophète, Allāh aurait enseigné à son Messager une autre formule d’invocation. Certains savants ont composé des formules d’invocation en faveur du Prophète, et ils en ont fait l’éloge. Cependant, nous confirmons que aṣ-ṣalātou l-’ibrāhīmiyyah est bien la meilleure des invocations en faveur du Prophète. Attachez-vous à la réciter chaque jour, elle comporte un grand bienfait.', '', 'invocation, faveur, prophète, aṣ-ṣalātou'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'L’invocation en faveur du Prophète (aṣ-ṣalātou ʿala n-nabiyy)', 'كَمَا صَلَّيْتَ عَلَى إبْرَاهِيمَ وَعَلَى آلِ إبْرَاهِيمَ', '', '', '', '', 'invocation, faveur, prophète, aṣ-ṣalātou'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'كَمَا صَلَّيْتَ عَلَى إبْرَاهِيمَ وَعَلَى آلِ إبْرَاهِيمَ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'كَمَا صَلَّيْتَ عَلَى إبْرَاهِيمَ وَعَلَى آلِ إبْرَاهِيمَ');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'L’invocation en faveur du Prophète (aṣ-ṣalātou ʿala n-nabiyy)', 'إنَّكَ حَمِيدٌ مَجِيدٌ', '', '', '', '', 'invocation, faveur, prophète, aṣ-ṣalātou'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'إنَّكَ حَمِيدٌ مَجِيدٌ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'إنَّكَ حَمِيدٌ مَجِيدٌ');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'L’invocation en faveur du Prophète (aṣ-ṣalātou ʿala n-nabiyy)', 'اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ', '', '', '', '', 'invocation, faveur, prophète, aṣ-ṣalātou'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'L’invocation en faveur du Prophète (aṣ-ṣalātou ʿala n-nabiyy)', 'كَمَا بَارَكْتَ عَلَى إبْرَاهِيمَ وَعَلَى آلِ إبْرَاهِيمَ', '', '', '', '', 'invocation, faveur, prophète, aṣ-ṣalātou'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'كَمَا بَارَكْتَ عَلَى إبْرَاهِيمَ وَعَلَى آلِ إبْرَاهِيمَ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'كَمَا بَارَكْتَ عَلَى إبْرَاهِيمَ وَعَلَى آلِ إبْرَاهِيمَ');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations à dire après le dernier Tachahhoud', 'قَالَ رَسُولُ اللَّهِ ﷺ: « إِذَا فَرَغَ أَحَدُكُمْ مِنَ التَّشَهُدِ الآخِرِ فَلْيَتَعَوَّذْ بِاللَّهِ مِنْ أَرْبَعٍ: مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ الْمَسِيحِ الدَّجَّالِ »', 'Lorsque l’un d’entre vous termine le dernier Tachahhoud, qu’il recherche la préservation de Allāh contre quatre choses : contre le châtiment de l’Enfer, contre le châtiment de la tombe, contre les épreuves de la vie et de la mort, et contre le mal de l’imposteur le Dajjāl', '', 'Il est recommandé de dire après le dernier Tachahhoud les invocations suivantes : Mouslim a rapporté dans son Ṣaḥīḥ d’après ’Aboū Hourayrah que Allāh l’agrée, il a dit : le Messager de Allāh ﷺ a dit: (qāla Raçoūlou l-Lāhi ﷺ: ’idhā faragha ’aḥadoukoum mina t-tachahhoudi l-’ākhiri falyataʿawwadh bi l-Lāhi min ’arbaʿ: min ʿadhābi Jahannama wa min ʿadhābi l-qabri wa min fitnati l-maḥyā wa l-mamāti wa min charri l-Macīḥi d-Dajjāl) On dit alors : (’Allāhoumma ’innī ’aʿoūdhou bika min ʿadhābi Jahannama wa min ʿadhābi l-qabri wa min fitnati l-maḥyā wa l-mamāti wa min charri l-Macīḥi d-Dajjāl) Al-Boukhāriyy et Mouslim ont rapporté dans le Ṣaḥīḥ ainsi que d’autres, d’après ʿĀ’ichah que Allāh l’agrée, que le Prophète ﷺ invoquait dans la prière en disant :', '', 'invocation, invocations, dernier, tachahhoud'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'قَالَ رَسُولُ اللَّهِ ﷺ: « إِذَا فَرَغَ أَحَدُكُمْ مِنَ التَّشَهُدِ الآخِرِ فَلْيَتَعَوَّذْ بِاللَّهِ مِنْ أَرْبَعٍ: مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ الْمَسِيحِ الدَّجَّالِ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'قَالَ رَسُولُ اللَّهِ ﷺ: « إِذَا فَرَغَ أَحَدُكُمْ مِنَ التَّشَهُدِ الآخِرِ فَلْيَتَعَوَّذْ بِاللَّهِ مِنْ أَرْبَعٍ: مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ الْمَسِيحِ الدَّجَّالِ »');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations à dire après le dernier Tachahhoud', '« اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْمَأْثَمِ وَالْمَغْرَمِ »', 'Ô Allāh, je recherche Ta préservation contre le châtiment de la tombe, je recherche Ta préservation contre l’épreuve de l’imposteur le Dajjāl, et je recherche Ta préservation contre les épreuves de la vie et de la mort. Ô Allāh, je recherche Ta préservation contre le péché et la dette', '', '(Allāhoumma ’innī ’aʿoūdhou bika min ʿadhābi l-qabri wa ’aʿoūdhou bika min fitnati l-Macīḥi d-Dajjāli wa ’aʿoūdhou bika min fitnati l-maḥyā wa l-mamāt, Allāhoumma ’innī ’aʿoūdhou bika mina l-ma’thami wa l-maghram) Mouslim a rapporté dans son Ṣaḥīḥ, ainsi que ’Aḥmad dans son Mousnad et Ibnou Ḥibbān dans son Ṣaḥīḥ, d’après ʿAliyy fils de ’Abī Ṭālib que Allāh l’agrée, qu’il a dit : le Messager de Allāh ﷺ, lorsqu’il accomplissait la prière, la dernière chose qu’il disait entre le Tachahhoud et le Salām était:', '', 'invocation, invocations, dernier, tachahhoud'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْمَأْثَمِ وَالْمَغْرَمِ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْمَأْثَمِ وَالْمَغْرَمِ »');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations à dire après le dernier Tachahhoud', '« اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ، وَمَا أَسْرَفْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لا إِلهَ إِلا أَنْتَ »', 'Ô Allāh, pardonne-moi mes péchés passés et futurs, ceux que j’ai faits en secret et ceux que j’ai faits en public, mes excès, et ce que Tu sais mieux que moi. Tu es Al-Mouqaddim (Celui Qui avance ce qu’Il veut) et Tu es Al-Mou’akhkhir (Celui Qui recule ce qu’Il veut), il n’est de Dieu que Toi', '', '(Allāhoumma ghfir lī mā qaddamtou wa mā ’akhkhartou wa mā ’asrartou wa mā ’aʿlantou wa mā ’asraftou wa mā ’Anta ’aʿlamou bihī minnī, ’Anta l-Mouqaddimou wa ’Anta l-Mou’akhkhirou lā ’ilāha ’illā ’Ant) Al-Boukhāriyy et Mouslim dans le Ṣaḥīḥ, ainsi que At-Tirmidhiyy, An-Naçā’iyy, Ibnou Mājah dans les Sounan, ’Aḥmad et d’autres ont rapporté d’après ’Aboū Bakr Aṣ-Ṣiddīq que Allāh l’agrée, qu’il a dit : “Ô Messager de Allāh, enseigne-moi une invocation par laquelle j’invoquerai dans ma prière”. Il a dit :', '', 'invocation, invocations, dernier, tachahhoud'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ، وَمَا أَسْرَفْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لا إِلهَ إِلا أَنْتَ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ، وَمَا أَسْرَفْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لا إِلهَ إِلا أَنْتَ »');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations à dire après le dernier Tachahhoud', '« قُلْ اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِيرًا وَلا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ، فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنِي إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ »', 'Dis : “Ô Allāh, je me suis fait beaucoup de tort à moi-même et nul autre que Toi ne pardonne les péchés. Accorde-moi donc un pardon de Ta part et fais-moi miséricorde, certes Tu es Al-Ghafoūr (Celui Qui pardonne beaucoup), Ar-Raḥīm (Celui Qui est très Miséricordieux)”', '', '(qoul Allāhoumma ’innī dhalamtou nafsī dhoulman kathīran wa lā yaghfirou dh-dhounoūba ’illā ’Anta faghfir lī maghfiratan min ʿindika wa rḥamnī ’innaka ’Anta l-Ghafoūrou r-Raḥīm)', '', 'invocation, invocations, dernier, tachahhoud'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« قُلْ اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِيرًا وَلا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ، فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنِي إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« قُلْ اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِيرًا وَلا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ، فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنِي إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ »');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations à dire après les prières obligatoires suite au Salām', '« لا إِلهَ إِلا اللَّهُ وَحْدَهُ لا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَىءٍ قَدِيرٌ. اللَّهُمَّ لا مَانِعَ لِمَا أَعْطَيْتَ، وَلا مُعْطِيَ لِمَا مَنَعْتَ، وَلا يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ »', 'Il n’est de Dieu que Allāh, Unique sans associé. À Lui appartient la souveraineté et à Lui appartient la louange, et Il est sur toute chose Tout-Puissant. Ô Allāh, nul ne peut empêcher ce que Tu as accordé, et nul ne peut accorder ce que Tu as empêché, et la richesse ne profite pas au riche selon le jugement de Allāh [sans l’adoration de Allāh]', '', '(lā ’ilāha ’illa l-Lāhou waḥdahou lā charīka lah, lahou l-moulkou wa lahou l-ḥamdou wa Houwa ʿalā koulli chay’in qadīr. Allāhoumma lā māniʿa limā ’aʿṭayta wa lā mouʿṭiya limā manaʿta wa lā yanfaʿou dha l-jaddi minka l-jadd) Mouslim a rapporté dans son Ṣaḥīḥ et ’Aboū Dāwoūd et An-Naçā’iyy dans les Sounan et d’autres d’après ʿAbdou l-Lāh fils de Az-Zoubayr que Allāh les agrée tous deux, il a dit : le Messager de Allāh ﷺ disait lorsqu’il faisait le Salām de la prière :', '', 'invocation, invocations, prières, obligatoires'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« لا إِلهَ إِلا اللَّهُ وَحْدَهُ لا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَىءٍ قَدِيرٌ. اللَّهُمَّ لا مَانِعَ لِمَا أَعْطَيْتَ، وَلا مُعْطِيَ لِمَا مَنَعْتَ، وَلا يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« لا إِلهَ إِلا اللَّهُ وَحْدَهُ لا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَىءٍ قَدِيرٌ. اللَّهُمَّ لا مَانِعَ لِمَا أَعْطَيْتَ، وَلا مُعْطِيَ لِمَا مَنَعْتَ، وَلا يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ »');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations à dire après les prières obligatoires suite au Salām', '« لا إِلهَ إِلا اللَّهُ وَحْدَهُ لا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَىءٍ قَدِيرٌ، لا حَوْلَ وَلا قُوَّةَ إِلا بِاللَّهِ، لا إِلهَ إِلا اللَّهُ وَلا نَعْبُدُ إِلا إِيَّاهُ، لَهُ النِّعْمَةُ وَالْفَضْلُ، وَلَهُ الثَّنَاءُ الْحَسَنُ، لا إِلهَ إِلا اللَّهُ مُخْلِصِينَ لَهُ الدِّينَ وَلَوْ كَرِهَ الْكَافِرُونَ »', 'Il n’est de Dieu que Allāh, Unique et sans associé. À Lui appartient la souveraineté et à Lui appartient la louange, et Il est sur toute chose Tout-Puissant. Il n’est de préservation que par Allāh et il n’est de force que par Allāh. Il n’est de Dieu que Allāh et nous n’adorons que Lui. À Lui appartient le bienfait et la grâce, et à Lui appartient la bonne louange. Il n’est de Dieu que Allāh, nous Lui dévouons sincèrement la religion, même si les mécréants en ont de l’aversion', '', '(lā ’ilāha ’illa l-Lāhou waḥdahou lā charīka lah, lahou l-moulkou wa lahou l-ḥamdou wa Houwa ʿalā koulli chay’in qadīr, lā ḥawla wa lā qouwwata ’illā bi l-Lāh, lā ’ilāha ’illa l-Lāhou wa lā naʿboudou ’illā ’iyyāh, lahou n-niʿmatou wa l-faḍlou wa lahou th-thanā’ou l-ḥaçan, lā ’ilāha ’illa l-Lāhou moukhliṣīna lahou d-dīna wa law kariha l-kāfiroūn) Mouslim a rapporté dans son Ṣaḥīḥ d’après Kaʿb fils de ʿOujrah que Allāh l’agrée, d’après le Messager de Allāh ﷺ qu’il a dit :', '', 'invocation, invocations, prières, obligatoires'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« لا إِلهَ إِلا اللَّهُ وَحْدَهُ لا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَىءٍ قَدِيرٌ، لا حَوْلَ وَلا قُوَّةَ إِلا بِاللَّهِ، لا إِلهَ إِلا اللَّهُ وَلا نَعْبُدُ إِلا إِيَّاهُ، لَهُ النِّعْمَةُ وَالْفَضْلُ، وَلَهُ الثَّنَاءُ الْحَسَنُ، لا إِلهَ إِلا اللَّهُ مُخْلِصِينَ لَهُ الدِّينَ وَلَوْ كَرِهَ الْكَافِرُونَ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« لا إِلهَ إِلا اللَّهُ وَحْدَهُ لا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَىءٍ قَدِيرٌ، لا حَوْلَ وَلا قُوَّةَ إِلا بِاللَّهِ، لا إِلهَ إِلا اللَّهُ وَلا نَعْبُدُ إِلا إِيَّاهُ، لَهُ النِّعْمَةُ وَالْفَضْلُ، وَلَهُ الثَّنَاءُ الْحَسَنُ، لا إِلهَ إِلا اللَّهُ مُخْلِصِينَ لَهُ الدِّينَ وَلَوْ كَرِهَ الْكَافِرُونَ »');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations à dire après les prières obligatoires suite au Salām', '« مُعَقِّبَاتٌ لا يَخِيبُ قَائِلُهُنَّ أَوْ فَاعِلُهُنَّ دُبُرَ كُلِّ صَلاةٍ مَكْتُوبَةٍ ثَلاثًا وَثَلاثِينَ تَسْبِيحَةً، وَثَلاثًا وَثَلاثِينَ تَحْمِيدَةً، وَثَلاثًا وَثَلاثِينَ تَكْبِيرَةً »', 'Ce sont des paroles de rappel par lesquelles celui qui les dit ou les fait après chaque prière obligatoire ne sera pas déçu : trente-trois Tasbīḥ (soubḥāna l-Lāh), trente-trois Taḥmīd (Al-ḥamdou lil-Lāh) et trente-trois Takbīr (Allāhou ’Akbar)', '', '(mouʿaqqibātoun lā yakhibou qā’ilouhounna ’aw fāʿilouhounna douboura koulli ṣalātin maktoūbatin thalāthan wa thalāthīna tasbīḥatan wa thalāthan wa thalāthīna taḥmīdatan wa thalāthan wa thalāthīna takbīrah)', '', 'invocation, invocations, prières, obligatoires'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« مُعَقِّبَاتٌ لا يَخِيبُ قَائِلُهُنَّ أَوْ فَاعِلُهُنَّ دُبُرَ كُلِّ صَلاةٍ مَكْتُوبَةٍ ثَلاثًا وَثَلاثِينَ تَسْبِيحَةً، وَثَلاثًا وَثَلاثِينَ تَحْمِيدَةً، وَثَلاثًا وَثَلاثِينَ تَكْبِيرَةً »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« مُعَقِّبَاتٌ لا يَخِيبُ قَائِلُهُنَّ أَوْ فَاعِلُهُنَّ دُبُرَ كُلِّ صَلاةٍ مَكْتُوبَةٍ ثَلاثًا وَثَلاثِينَ تَسْبِيحَةً، وَثَلاثًا وَثَلاثِينَ تَحْمِيدَةً، وَثَلاثًا وَثَلاثِينَ تَكْبِيرَةً »');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations à dire après les prières obligatoires suite au Salām', 'وَفِي حَدِيثٍ ءَاخَرَ لِمُسْلِمٍ عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ عَنْ رَسُولِ اللَّهِ ﷺ أَنَّ مَنْ فَعَلَ ذَلِكَ وَقَالَ تَمَامَ الْمِائَةِ: « لا إِلهَ إِلا اللَّهُ وَحْدَهُ لا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَىءٍ قَدِيرٌ غُفِرَتْ ذُنُوبُهُ وَإِنْ كَانَتْ مِثْلَ زَبَدِ الْبَحْرِ »', 'Et dans un autre hadiths chez Mouslim d’après ’Aboū Hourayrah que Allāh l’agrée, d’après le Messager de Allāh ﷺ que celui qui fait cela et dit pour compléter la centaine : “Il n’est de Dieu que Allāh, Seul et sans associé. À Lui appartient la souveraineté et à Lui appartient la louange, et Il est sur toute chose Tout-Puissant”, ses péchés lui seront pardonnés même s’ils étaient comme l’écume de la mer', '', '(wa fī ḥadīthin ’ākhara li-Mouslimin ʿan ’Abī Hourayrata raḍiya l-Lāhou ʿanhou ʿan Raçoūli l-Lāhi ﷺ ’anna man faʿala dhālika wa qāla tamāma l-mi’ah: lā ’ilāha ’illa l-Lāhou waḥdahou lā charīka lah, lahou l-moulkou wa lahou l-ḥamdou wa Houwa ʿalā koulli chay’in qadīroun ghoufirat dhounoūbouhou wa ’in kānat mithla zabadi l-baḥr) Al-Boukhāriyy a rapporté dans le Ṣaḥīḥ d’après Saʿd fils de ’Abī Waqqāṣ que Allāh l’agrée, que le Messager de Allāh ﷺ recherchait la préservation après la prière par ces paroles :', '', 'invocation, invocations, prières, obligatoires'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'وَفِي حَدِيثٍ ءَاخَرَ لِمُسْلِمٍ عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ عَنْ رَسُولِ اللَّهِ ﷺ أَنَّ مَنْ فَعَلَ ذَلِكَ وَقَالَ تَمَامَ الْمِائَةِ: « لا إِلهَ إِلا اللَّهُ وَحْدَهُ لا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَىءٍ قَدِيرٌ غُفِرَتْ ذُنُوبُهُ وَإِنْ كَانَتْ مِثْلَ زَبَدِ الْبَحْرِ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'وَفِي حَدِيثٍ ءَاخَرَ لِمُسْلِمٍ عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ عَنْ رَسُولِ اللَّهِ ﷺ أَنَّ مَنْ فَعَلَ ذَلِكَ وَقَالَ تَمَامَ الْمِائَةِ: « لا إِلهَ إِلا اللَّهُ وَحْدَهُ لا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَىءٍ قَدِيرٌ غُفِرَتْ ذُنُوبُهُ وَإِنْ كَانَتْ مِثْلَ زَبَدِ الْبَحْرِ »');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations à dire après les prières obligatoires suite au Salām', 'وَرَوَى الْبُخَارِيُّ فِي الصَّحِيحِ عَنْ سَعْدِ بنِ أَبِي وَقَّاصٍ رَضِيَ اللَّهُ عَنْهُ أَنَّ رَسُولَ اللَّهِ ﷺ كَانَ يَتَعَوَّذُ دُبُرَ الصَّلاةِ بِهَؤُلاءِ الْكَلِمَاتِ: « اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْجُبْنِ، وَأَعُوذُ بِكَ أَنْ أُرَدَّ إِلَى أَرْذَلِ الْعُمُرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الدُّنْيَا، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ »', 'Ô Allāh, je recherche Ta préservation contre la lâcheté, et je recherche Ta préservation contre le fait d’être renvoyé à l’âge le plus décrépit, et je recherche Ta préservation contre l’épreuve du bas monde, et je recherche Ta préservation contre le châtiment de la tombe', '', '(Allāhoumma ’innī ’aʿoūdhou bika mina l-joubni wa ’aʿoūdhou bika ’an ’ouradda ’ilā ’ardhali l-ʿoumouri wa ’aʿoūdhou bika min fitnati d-dounyā wa ’aʿoūdhou bika min ʿadhābi l-qabr) ’Aboū Dāwoūd et An-Naçā’iyy dans les Sounan et ’Aḥmad dans son Mousnad ont rapporté d’après Mouʿādh que Allāh l’agrée, que le Messager de Allāh ﷺ prit sa main et dit :', '', 'invocation, invocations, prières, obligatoires'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'وَرَوَى الْبُخَارِيُّ فِي الصَّحِيحِ عَنْ سَعْدِ بنِ أَبِي وَقَّاصٍ رَضِيَ اللَّهُ عَنْهُ أَنَّ رَسُولَ اللَّهِ ﷺ كَانَ يَتَعَوَّذُ دُبُرَ الصَّلاةِ بِهَؤُلاءِ الْكَلِمَاتِ: « اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْجُبْنِ، وَأَعُوذُ بِكَ أَنْ أُرَدَّ إِلَى أَرْذَلِ الْعُمُرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الدُّنْيَا، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'وَرَوَى الْبُخَارِيُّ فِي الصَّحِيحِ عَنْ سَعْدِ بنِ أَبِي وَقَّاصٍ رَضِيَ اللَّهُ عَنْهُ أَنَّ رَسُولَ اللَّهِ ﷺ كَانَ يَتَعَوَّذُ دُبُرَ الصَّلاةِ بِهَؤُلاءِ الْكَلِمَاتِ: « اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْجُبْنِ، وَأَعُوذُ بِكَ أَنْ أُرَدَّ إِلَى أَرْذَلِ الْعُمُرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الدُّنْيَا، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ »');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
-SELECT 'Invocations à dire après les prières obligatoires suite au Salām', 'يَا مُعَاذُ وَاللَّهِ إِنِّي لأُحِبُّكَ ثُمَّ قَالَ: « أُوصِيكَ يَا مُعَاذُ لا تَدَعَنَّ فِي دُبُرِ كُلِّ صَلاةٍ أَنْ تَقُولَ: اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ »', 'Ô Mouʿādh, par Allāh je t’aime”, puis il a dit : “Je te recommande ô Mouʿādh, ne délaisse pas après chaque prière le fait de dire : Ô Allāh, aide-moi à T’évoquer, à Te remercier et à parfaire mon adoration pour Toi', '', '(yā Mouʿādhou wa l-Lāhi ’innī la’ouḥibbouka thoumma qāla: ’oūṣīka yā Mouʿādhou lā tadaʿanna fī doubouri koulli ṣalātin ’an taqoūl: Allāhoumma ’aʿinnī ʿalā dhikrika wa choukrika wa ḥousni ʿibādatik) Ibnou s-Sounniyy, An-Naçā’iyy, ’Aḥmad et d’autres ont rapporté avec une chaîne de transmission jugée bonne (ḥaçan), d’après ’Aboū Bakrah que Allāh l’agrée, que le Messager de Allāh ﷺ disait après la prière :', '', 'invocation, invocations, prières, obligatoires'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'يَا مُعَاذُ وَاللَّهِ إِنِّي لأُحِبُّكَ ثُمَّ قَالَ: « أُوصِيكَ يَا مُعَاذُ لا تَدَعَنَّ فِي دُبُرِ كُلِّ صَلاةٍ أَنْ تَقُولَ: اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ »');
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+SELECT 'Invocations à dire après les prières obligatoires suite au Salām', 'يَا مُعَاذُ وَاللَّهِ إِنِّي لأُحِبُّكَ ثُمَّ قَالَ: « أُوصِيكَ يَا مُعَاذُ لا تَدَعَنَّ فِي دُبُرِ كُلِّ صَلاةٍ أَنْ تَقُولَ: اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ »', 'Ô Mouʿādh, par Allāh je t’aime”, puis il a dit : “Je te recommande ô Mouʿādh, ne délaisse pas après chaque prière le fait de dire : Ô Allāh, aide-moi à T’évoquer, à Te remercier et à parfaire mon adoration pour Toi', '', '(yā Mouʿādhou wa l-Lāhi ’innī la’ouḥibbouka thoumma qāla: ’oūṣīka yā Mouʿādhou lā tadaʿanna fī doubouri koulli ṣalātin ’an taqoūl: Allāhoumma ’aʿinnī ʿalā dhikrsika wa choukrika wa ḥousni ʿibādatik) Ibnou s-Sounniyy, An-Naçā’iyy, ’Aḥmad et d’autres ont rapporté avec une chaîne de transmission jugée bonne (ḥaçan), d’après ’Aboū Bakrah que Allāh l’agrée, que le Messager de Allāh ﷺ disait après la prière :', '', 'invocation, invocations, prières, obligatoires'
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'يَا مُعَاذُ وَاللَّهِ إِنِّي لأُحِبُّكَ ثُمَّ قَالَ: « أُوصِيكَ يَا مُعَاذُ لا تَدَعَنَّ فِي دُبُرِ كُلِّ صَلاةٍ أَنْ تَقُولَ: اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ »');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations à dire après les prières obligatoires suite au Salām', '« اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ وَالْفَقْرِ وَعَذَابِ الْقَبْرِ »', 'Ô Allāh, je recherche Ta préservation contre la mécréance, la pauvreté et le châtiment de la tombe', '', '(Allāhoumma ’innī ’aʿoūdhou bika mina l-koufri wa l-faqri wa ʿadhābi l-qabr) Mouslim dans son Ṣaḥīḥ, ainsi que ’Aboū Dāwoūd, An-Naçā’iyy, Ibnou Ḥibbān, Al-Bayhaqiyy et d’autres ont rapporté d’après ʿAliyy que Allāh l’agrée, que le Prophète ﷺ, lorsqu’il faisait le Salām de la prière, disait :', '', 'invocation, invocations, prières, obligatoires'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ وَالْفَقْرِ وَعَذَابِ الْقَبْرِ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ وَالْفَقْرِ وَعَذَابِ الْقَبْرِ »');
 
 -- source: https://islam.ms/invocation-dans-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations à dire après les prières obligatoires suite au Salām', '« اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لا إِلهَ إِلا أَنْتَ »', 'Ô Allāh, pardonne-moi mes péchés passés et futurs, ceux que j’ai faits en secret et ceux que j’ai faits en public, et ce que Tu sais mieux que moi. Tu es Al-Mouqaddim (Celui Qui avance ce qu’Il veut) et Tu es Al-Mou’akhkhir (Celui Qui recule ce qu’Il veut), il n’est de Dieu que Toi', '', '(Allāhoumma ghfir lī mā qaddamtou wa mā ’akhkhartou wa mā ’asrartou wa mā ’aʿlantou wa mā ’Anta ’aʿlamou bihī minnī, ’Anta l-Mouqaddimou wa ’Anta l-Mou’akhkhirou lā ’ilāha ’illā ’Ant)', '', 'invocation, invocations, prières, obligatoires'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لا إِلهَ إِلا أَنْتَ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لا إِلهَ إِلا أَنْتَ »');
 
 -- source: https://islam.ms/invocation-dire-vendredi-80-annee-peches-effaces
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation à dire le vendredi: 80 années de péchés effacés', '« إن من أفضل أيامكم يوم الجمعة فأكثروا عليّ من الصلاة فيه فإن صلاتكم معروضة علي »', 'Certes, parmi les meilleurs de vos jours, il y a le jour du vendredi. Multipliez-y donc les invocations en ma faveur, car certes vos invocations me sont exposées', '', 'Il est recommandé de multiplier les invocations en faveur du Prophète (aṣ–ṣalātou ʿalā n-Nabiyy) le jour du vendredi après le ʿAṣr et avant le coucher du soleil. Le Messager de Allāh ṣalla l-Lāhou ʿalayhi wa sallam a dit: Rapporté par Aboū Dawoūd Par ailleurs, Ad-Dāraqouṭniyy et autres que lui ont rapporté que le Prophète ṣalla l-Lāhou ʿalayhi wa sallam a dit:', '', 'invocation, vendredi, années, péchés'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« إن من أفضل أيامكم يوم الجمعة فأكثروا عليّ من الصلاة فيه فإن صلاتكم معروضة علي »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« إن من أفضل أيامكم يوم الجمعة فأكثروا عليّ من الصلاة فيه فإن صلاتكم معروضة علي »');
 
 -- source: https://islam.ms/invocation-dire-vendredi-80-annee-peches-effaces
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation à dire le vendredi: 80 années de péchés effacés', '« مَنْ صلّى عليَّ عَصْرَ يومِ الجُمُعَةِ ثمانينَ مرّةً غَفَرَ اللهُ لهُ ذنوبَ ثمانينَ عامًا »', 'Celui qui fait pendant le ʿaṣr du jour de Vendredi 80 invocations d’élévation en degrés en ma faveur, Allāh lui pardonne les péchés de 80 années', '', 'Il lui a été dit: « Comment on fait l’invocation en ta faveur ô Messager de Allāh ? » Il a dit:', '', 'invocation, vendredi, années, péchés'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« مَنْ صلّى عليَّ عَصْرَ يومِ الجُمُعَةِ ثمانينَ مرّةً غَفَرَ اللهُ لهُ ذنوبَ ثمانينَ عامًا »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« مَنْ صلّى عليَّ عَصْرَ يومِ الجُمُعَةِ ثمانينَ مرّةً غَفَرَ اللهُ لهُ ذنوبَ ثمانينَ عامًا »');
 
 -- source: https://islam.ms/invocation-dire-vendredi-80-annee-peches-effaces
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation à dire le vendredi: 80 années de péchés effacés', '« تقول: اللهم صل على محمد عبدك ونبيك ورسولك النبي الأمي وتعقد واحدة »', 'Tu dis: Allāhoumma ṣalli ʿalā Mouḥammadin ʿAbdika wa Nabiyyika wa Raçoūlika n-Nabiyyi l-‘Oummiyy, et tu comptes une fois avec le bout du doigt', '', 'La traduction de cette invocation qui est à dire en arabe est: « Ô Allāh, élève davantage le degré de Mouḥammad, Ton esclave, Ton Prophète et Ton Messager, le Prophète qui ne lisait pas et qui n’écrivait pas ». A noter que le fait que le Prophète ne lisait pas et n’écrivait pas est un éloge à son sujet. Nous vous incitons donc à dire 80 fois pendant le temps du ʿAsr l’invocation suivante: Allāhoumma ṣalli ʿalā Mouḥammadin ʿAbdika wa Nabiyyika wa Raçoūlika n-Nabiyyi l-‘Oummiyy. Puis après la 80ème fois dire une fois: wa ʿalā ‘ālihi wa ṣahbihi wa sallim.', '', 'invocation, vendredi, années, péchés'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« تقول: اللهم صل على محمد عبدك ونبيك ورسولك النبي الأمي وتعقد واحدة »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« تقول: اللهم صل على محمد عبدك ونبيك ورسولك النبي الأمي وتعقد واحدة »');
 
 -- source: https://islam.ms/invocation-eau-zamzam
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lorsqu’on boit de l’eau de Zamzam', 'اللَّهُمَّ إنَّهُ بَلَغَنِي أَنَّ نَبِيَّكَ قَالَ مَاءُ زَمْزَمَ لِمَا شُرِبَ لَه', '', '', 'Si quelqu’un a une affaire pour laquelle il désire voir une issue favorable, qu’il boive de l’eau de Zamzam avec l’intention de voir son affaire se régler, en raison de ce que cette eau comporte comme particularités. Celui qui veut en boire, qu’il dise à ce moment-là:', '', 'invocation, boit, zamzam'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَّ إنَّهُ بَلَغَنِي أَنَّ نَبِيَّكَ قَالَ مَاءُ زَمْزَمَ لِمَا شُرِبَ لَه');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَّ إنَّهُ بَلَغَنِي أَنَّ نَبِيَّكَ قَالَ مَاءُ زَمْزَمَ لِمَا شُرِبَ لَه');
 
 -- source: https://islam.ms/invocation-eau-zamzam
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lorsqu’on boit de l’eau de Zamzam', 'اللَّهُمَّ إِنِّي أَشْرَبُهُ مُسْتَشْفِيًا بِهِ فَاشْفِنِي وَاغْفِرْ لِي', '', '', '', '', 'invocation, boit, zamzam'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَّ إِنِّي أَشْرَبُهُ مُسْتَشْفِيًا بِهِ فَاشْفِنِي وَاغْفِرْ لِي');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَّ إِنِّي أَشْرَبُهُ مُسْتَشْفِيًا بِهِ فَاشْفِنِي وَاغْفِرْ لِي');
 
 -- source: https://islam.ms/invocation-eau-zamzam
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lorsqu’on boit de l’eau de Zamzam', 'اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا وَاسِعًا وَشِفَاء مِنْ كُلِّ دَاء', 'Ô Allāh, il m’est parvenu que Ton Prophète a dit: "L’eau de Zamzam est utile pour ce pour quoi elle est bue". Ô Allāh, j’en bois pour en rechercher la guérison. Guéris-moi et pardonne-moi. Ô Allāh, je Te demande une science utile, une subsistance abondante et une guérison de tout mal', '', '(Allāhoumma ’innahou balaghanī ’anna nabiyyaka qāla: mā’ou zamzama limā chouriba lah ; Allāhoumma ’innī ’achrabouhou moustachfiyan (moustachfiyatan pour la femme) bihi fachfinī wa ghfir lī ; Allāhoumma ’innī ’as’alouka ʿilman nāfiʿan wa rizqan wāciʿan wa chifā’an min koulli dā’) Ensuite on fait d’autres invocations de bien Il est recommandé de boire assis, sur trois fois, dire bismi lLāh a chaque fois et il est recommandé d’invoquer en direction de la kaʿbah.', '', 'invocation, boit, zamzam'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا وَاسِعًا وَشِفَاء مِنْ كُلِّ دَاء');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا وَاسِعًا وَشِفَاء مِنْ كُلِّ دَاء');
 
 -- source: https://islam.ms/invocation-entrant-mosquee
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation en entrant dans une mosquée', '« بِاسْمِ اللهِ، اللَّهُمَّ اِفْتَحْ لِـي أَبْوَابَ رَحْـمَتِكَ وَانْشُرْ عَلَيَّ خَزَائِنَ عِلْمِكَ »', 'J’entre en citant le nom de Allāh, ô Allāh ouvre-moi les portes de Ta miséricorde et accorde moi des trésors de la science', 'bismi l-Lāh; Allāhoumma ftah lī ’abwāba raḥmatika wa nchour ʿalayya khazā’ina ʿilmik', 'Quand notre Prophète bien-aimé Mouḥammad ṣalla l-Lāhou ʿalayhi wa sallam entrait dans la mosquée, il disait: Aussi il est recommandé de dire avant d’entrer dans une mosquée:', '', 'invocation, entrant, mosquée'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« بِاسْمِ اللهِ، اللَّهُمَّ اِفْتَحْ لِـي أَبْوَابَ رَحْـمَتِكَ وَانْشُرْ عَلَيَّ خَزَائِنَ عِلْمِكَ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« بِاسْمِ اللهِ، اللَّهُمَّ اِفْتَحْ لِـي أَبْوَابَ رَحْـمَتِكَ وَانْشُرْ عَلَيَّ خَزَائِنَ عِلْمِكَ »');
 
 -- source: https://islam.ms/invocation-entrant-mosquee
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation en entrant dans une mosquée', 'اللَّهُمَّ صَلِّ على سَيّدِنَا مُحمَّدٍ صَلَّى اللهُ عَلَيْهِ وسَلَّم اللَّهُمَّ افْتَحْ لي أبْوابَ رَحْمَتِكَ', 'Ô Allāh, honore et élève davantage le rang de notre maître Mouḥammad ṣalla l-Lāhou ʿalayhi wa sallam, ô Allāh, ouvre-moi les portes de Ta miséricorde', 'Allāhoumma ṣalli ʿalā sayyidinā Mouḥammad ṣalla l-Lāhou ʿalayhi wa sallam; Allāhoumma ftaḥ lī ’abwāba raḥmatik', '', '', 'invocation, entrant, mosquée'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَّ صَلِّ على سَيّدِنَا مُحمَّدٍ صَلَّى اللهُ عَلَيْهِ وسَلَّم اللَّهُمَّ افْتَحْ لي أبْوابَ رَحْمَتِكَ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَّ صَلِّ على سَيّدِنَا مُحمَّدٍ صَلَّى اللهُ عَلَيْهِ وسَلَّم اللَّهُمَّ افْتَحْ لي أبْوابَ رَحْمَتِكَ');
 
 -- source: https://islam.ms/invocation-entrer-marche
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation à dire à l’entrée du marché', '« مَنْ قَالَ فِي سُوقٍ مَنْ هَذِهِ الأَسْوَاقِ لا إِلهَ إِلا اللَّهُ وَحْدَهُ لا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ حَيٌّ لا يَمُوتُ بِيَدِهِ الْخَيْرُ وَهُوَ عَلَى كُلِّ شَىءٍ قَدِيرٌ، كَتَبَ اللَّهُ عَزَّ وَجَلَّ لَهُ أَلْفَ أَلْفِ حَسَنَةٍ، وَمَحَا عَنْهُ أَلْفَ أَلْفِ سَيِّئَةٍ، وَبَنَى لَهُ بَيْتًا فِي الْجَنَّةِ »', 'celui qui dans l’un de ces marchés: " lā ’ilāha illa l-Lāh waḥdahou lā charīka lah, lahou l-moulkou wa lahou l-ḥamdou youḥyī wa youmīt wa houwa ḥayyoun lā yamoūt, biyadihi l-khayrou wa houwa ʿalā koulli chay’in qadīr " Allāh lui inscrit un million de bonnes actions et lui efface un million de péchés et lui accorde une maison au Paradis', '', 'Le messager de Allāh ṣalla lLāhou ʿalayhi wa sallam a dit: rapporté par at-Tirmīdhiyy, ibnou Mājah, aṭ-Ṭabarāniyy et d’autres d’après ʿOumar ibnou l-Khaṭṭāb que Allāh l’agrée', '', 'invocation, entrée, marché'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« مَنْ قَالَ فِي سُوقٍ مَنْ هَذِهِ الأَسْوَاقِ لا إِلهَ إِلا اللَّهُ وَحْدَهُ لا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ حَيٌّ لا يَمُوتُ بِيَدِهِ الْخَيْرُ وَهُوَ عَلَى كُلِّ شَىءٍ قَدِيرٌ، كَتَبَ اللَّهُ عَزَّ وَجَلَّ لَهُ أَلْفَ أَلْفِ حَسَنَةٍ، وَمَحَا عَنْهُ أَلْفَ أَلْفِ سَيِّئَةٍ، وَبَنَى لَهُ بَيْتًا فِي الْجَنَّةِ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« مَنْ قَالَ فِي سُوقٍ مَنْ هَذِهِ الأَسْوَاقِ لا إِلهَ إِلا اللَّهُ وَحْدَهُ لا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ حَيٌّ لا يَمُوتُ بِيَدِهِ الْخَيْرُ وَهُوَ عَلَى كُلِّ شَىءٍ قَدِيرٌ، كَتَبَ اللَّهُ عَزَّ وَجَلَّ لَهُ أَلْفَ أَلْفِ حَسَنَةٍ، وَمَحَا عَنْهُ أَلْفَ أَلْفِ سَيِّئَةٍ، وَبَنَى لَهُ بَيْتًا فِي الْجَنَّةِ »');
 
 -- source: https://islam.ms/invocation-epoux-apres-contrat-mariage
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Ce que l’on dit aux époux après le contrat de mariage', 'باركَ اللَّهُ لكَ', 'que Allāh t’accorde des bénédictions', '', 'Il est recommandé de dire: (bâraka l-Lâhou laka) [laki pour une femme] ou bien:', '', 'invocation, époux, contrat, mariage'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'باركَ اللَّهُ لكَ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'باركَ اللَّهُ لكَ');
 
 -- source: https://islam.ms/invocation-epoux-apres-contrat-mariage
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Ce que l’on dit aux époux après le contrat de mariage', 'باركَ اللَّهُ عليكَ وجَمعَ بينكما في خير', 'que Allāh t’accorde des bénédictions et qu’Il vous réunisse tous deux dans le bien', '', '(bâraka l-Lâhou ʿalayka wa jamaʿa baynakoumâ fî khayr) [ʿalayki pour une femme] Il est aussi recommandé de dire à chacun des deux époux:', '', 'invocation, époux, contrat, mariage'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'باركَ اللَّهُ عليكَ وجَمعَ بينكما في خير');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'باركَ اللَّهُ عليكَ وجَمعَ بينكما في خير');
 
 -- source: https://islam.ms/invocation-epoux-apres-contrat-mariage
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Ce que l’on dit aux époux après le contrat de mariage', 'باركَ اللَّهُ لكُلِّ واحدٍ منكُما في صاحِبهِ وجَمَعَ بينكما في خير', 'que Allāh accorde des bénédictions à chacun d’entre vous en son conjoint et qu’Il vous réunisse tous deux dans le bien', 'bâraka l-Lâhou li koulli wâḥidin minkouma fî ṣāḥibihi wa jamaʿa baynakoumâ fî khayr', 'Abôu Dāwôud, At-Tirmidhiyy, Ibnou Mâjah et d’autres ont rapporté de Abôu Hourayrah, que Allāh l’agrée, que le Prophète ṣalla l-Lâhou ʿalayhi wa sallam disait à celui qui se mariait:', '', 'invocation, époux, contrat, mariage'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'باركَ اللَّهُ لكُلِّ واحدٍ منكُما في صاحِبهِ وجَمَعَ بينكما في خير');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'باركَ اللَّهُ لكُلِّ واحدٍ منكُما في صاحِبهِ وجَمَعَ بينكما في خير');
 
 -- source: https://islam.ms/invocation-epoux-apres-contrat-mariage
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Ce que l’on dit aux époux après le contrat de mariage', '« بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ »', 'Que Allāh t’accorde des bénédictions et qu’Il vous réunisse tous deux dans le bien', 'bâraka l-Lâhou laka wa bâraka ʿalayka wa jamaʿa baynakoumâ fî khayr', 'At-Tirmidhiyy a dit à son propos: ḥadīth fiable (ḥaçan) et sûr (ṣaḥīḥ)', '', 'invocation, époux, contrat, mariage'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ »');
 
 -- source: https://islam.ms/invocation-epoux-apres-contrat-mariage
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Ce que l’on dit aux époux après le contrat de mariage', '« أسألك من خيرها و خير ما جبلت عليه وأعوذ بك من شرّها و شرّ ما جبلت عليه »', '', '', '', '', 'invocation, époux, contrat, mariage'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« أسألك من خيرها و خير ما جبلت عليه وأعوذ بك من شرّها و شرّ ما جبلت عليه »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« أسألك من خيرها و خير ما جبلت عليه وأعوذ بك من شرّها و شرّ ما جبلت عليه »');
 
 -- source: https://islam.ms/invocation-eternuement
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lorsqu’on éternue', 'الحَمْدُ لله', 'La louange est à Allāh', 'al-ḥamdou li l-Lāh', 'D’après le ḥadīth rapporté par Al-Boukhāriyy dans son ṣaḥīḥ,lorsque le croyant éternue, il est recommandé qu’il dise: On dit alors ( à celui qui a éternué ):', '', 'invocation, éternue'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'الحَمْدُ لله');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'الحَمْدُ لله');
 
 -- source: https://islam.ms/invocation-eternuement
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lorsqu’on éternue', 'يَرْحَمُكَ الله', 'Que Allāh te fasse miséricorde', 'yarḥamouka l-Lāh', '( et si c’est une femme, on lui dit (yarḥamouki l-Lāh) ) Et celui qui a éternué lui répond alors en invoquant Allāh taʿālā en sa faveur en disant:', '', 'invocation, éternue'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'يَرْحَمُكَ الله');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'يَرْحَمُكَ الله');
 
 -- source: https://islam.ms/invocation-eternuement
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lorsqu’on éternue', 'يَهْدِيكُمُ الله ويُصْلِحُ بَالَكُم', 'Que Allāh vous guide ( vers ce qui est un bien pour vous ) et qu’Il apaise votre coeur', 'yahdīkoumou l-Lāh wa youṣliḥou bālakoum', '', '', 'invocation, éternue'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'يَهْدِيكُمُ الله ويُصْلِحُ بَالَكُم');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'يَهْدِيكُمُ الله ويُصْلِحُ بَالَكُم');
 
 -- source: https://islam.ms/invocation-evocation-facilite-reussite
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Douʿā, évocations et invocations pour espérer la réussite d’une affaire', 'اللَّهُمَّ لا سَهْلَ إلاّ مَا جَعَلْتَهُ سَهْلا وَإِنَّكَ تَجْعَلُ الحَزْنَ إِذَا شِئْتَ سَهْلا', 'Ô Allāh, n’est facile que ce que Tu rends facile et si Tu veux Tu rends ce qui est dure facile', 'Allāhoumma lā sahla ’illā mā jaʿaltahou sahlā wa ’innaka tajʿalou l-ḥazna ’idhā chi’ta sahlā', 'Et on dit :', '', 'invocation, douʿā, évocations, invocations'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَّ لا سَهْلَ إلاّ مَا جَعَلْتَهُ سَهْلا وَإِنَّكَ تَجْعَلُ الحَزْنَ إِذَا شِئْتَ سَهْلا');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَّ لا سَهْلَ إلاّ مَا جَعَلْتَهُ سَهْلا وَإِنَّكَ تَجْعَلُ الحَزْنَ إِذَا شِئْتَ سَهْلا');
 
 -- source: https://islam.ms/invocation-evocation-pour-etre-preserver
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour être préservé. Évocation pour la préservation', 'بسم الله، ربّي الله، حسبي الله، توكّلت على الله، اعتصمت بالله، فوّضت أمري إلى الله، ما شاء الله، لا قوّة إلاّ بالله', 'Allāh me suffit. Il n’est de dieu que Lui. Je me fie totalement à Lui, je cherche la préservation par Allāh, ce que Allāh veut est, il n’est de force que par Allāh', 'Bismi l-Lâh, rabbiya l-Lâh, ḥasbiya l-Lâh, tawakkaltou ʿala l-Lâh, ’iʿtaṣamtou bi l-Lâh, fawwaḍtou ’amrî ’ila l-Lâh, mâ châ’a l-Lâh, lâ qouwwata ’illâ bi l-Lâh', '', '', 'invocation, être, préservé, évocation'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'بسم الله، ربّي الله، حسبي الله، توكّلت على الله، اعتصمت بالله، فوّضت أمري إلى الله، ما شاء الله، لا قوّة إلاّ بالله');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'بسم الله، ربّي الله، حسبي الله، توكّلت على الله، اعتصمت بالله، فوّضت أمري إلى الله، ما شاء الله، لا قوّة إلاّ بالله');
 
 -- source: https://islam.ms/invocation-faveur-prohete-nariyyah
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation en faveur du prophète ṣalāt an-Nāriyyah', 'اللهم صلِّ صلاةً كاملةً، وسلِّم سلامًا تامًّا على سيِّدنا محمّد، الذي تَنحَلُّ به العُقد وتَنفَرجُ به الكُرَب، وتُقضى به الحوائجُ، وتُنالُ به الرَّغائِب وحُسنُ الخَواتيم، ويُستسقى الغَمام بوجهِه الكَريم، وعلى ءاله وصحبه وسلِّم.', '', '', '', '', 'invocation, faveur, prophète, ṣalāt'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللهم صلِّ صلاةً كاملةً، وسلِّم سلامًا تامًّا على سيِّدنا محمّد، الذي تَنحَلُّ به العُقد وتَنفَرجُ به الكُرَب، وتُقضى به الحوائجُ، وتُنالُ به الرَّغائِب وحُسنُ الخَواتيم، ويُستسقى الغَمام بوجهِه الكَريم، وعلى ءاله وصحبه وسلِّم.');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللهم صلِّ صلاةً كاملةً، وسلِّم سلامًا تامًّا على سيِّدنا محمّد، الذي تَنحَلُّ به العُقد وتَنفَرجُ به الكُرَب، وتُقضى به الحوائجُ، وتُنالُ به الرَّغائِب وحُسنُ الخَواتيم، ويُستسقى الغَمام بوجهِه الكَريم، وعلى ءاله وصحبه وسلِّم.');
 
 -- source: https://islam.ms/invocation-faveur-prohete-nariyyah
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation en faveur du prophète ṣalāt an-Nāriyyah', 'فضل هذه الصيغة: تسمى هذه الصيغة في الصلاة على النبيّ بـ "الصلاة النارية" وتقال: [4444] مرة لقضاء الحاجة. أو [100] مرة لرؤية الرسول الأعظم صلى الله عليه وسلم', '', '', 'Invocation à réciter 4444 fois pour le besoin et à réciter 100 fois pour voir le prophète en rêve.', '', 'invocation, faveur, prophète, ṣalāt'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'فضل هذه الصيغة: تسمى هذه الصيغة في الصلاة على النبيّ بـ "الصلاة النارية" وتقال: [4444] مرة لقضاء الحاجة. أو [100] مرة لرؤية الرسول الأعظم صلى الله عليه وسلم');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'فضل هذه الصيغة: تسمى هذه الصيغة في الصلاة على النبيّ بـ "الصلاة النارية" وتقال: [4444] مرة لقضاء الحاجة. أو [100] مرة لرؤية الرسول الأعظم صلى الله عليه وسلم');
 
 -- source: https://islam.ms/invocation-guerison
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour la guérison (lorsque la personne est malade)', '« اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ البَأْسَ، اِشْفِ أَنْتَ الشَّافِـي، لاَ شِفَاءَ إِلاَّ شِفَاءُكَ »', 'Ô Allāh, Seigneur des gens, fais partir le mal ; accorde la guérison, c’est Toi Celui Qui guérit ; il n’y a pas de guérison si ce n’est la guérison que Tu accordes', 'Allāhoumma Rabba n-nās ; ’adh-hibi l-ba’s ; ’ichfi ’anta ch-chāfī ; lā chifā’a ’il-lā chifā’ouk', 'Quand notre Prophète Mouḥammad ṣalla l-Lāhou ʿalayhi wa sallam était touché par une maladie, il disait: Lorsqu’on ressent de la douleur, on pose sa main sur l’endroit douloureux de son corps et on dit:', '', 'invocation, guérison, personne, malade'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ البَأْسَ، اِشْفِ أَنْتَ الشَّافِـي، لاَ شِفَاءَ إِلاَّ شِفَاءُكَ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ البَأْسَ، اِشْفِ أَنْتَ الشَّافِـي، لاَ شِفَاءَ إِلاَّ شِفَاءُكَ »');
 
 -- source: https://islam.ms/invocation-guerison
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour la guérison (lorsque la personne est malade)', 'باِسْمِ اللهِ، بِاسْمِ اللهِ، بِاسْمِ اللهِ', 'Je cite le nom de Allāh, je cite le nom de Allāh, je cite le nom de Allāh', 'bismi l-Lāh, bismi l-Lāh, bismi l-Lāh', 'par recherche de Ses bénédictions et en demandant Son aide Puis on dit:', '', 'invocation, guérison, personne, malade'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'باِسْمِ اللهِ، بِاسْمِ اللهِ، بِاسْمِ اللهِ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'باِسْمِ اللهِ، بِاسْمِ اللهِ، بِاسْمِ اللهِ');
 
 -- source: https://islam.ms/invocation-guerison
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour la guérison (lorsque la personne est malade)', 'أعُوذُ بِعِزَّةِ اللهِ وَقُدْرَتِهِ مِنْ شَرِّ ما أجِدُ وأُحاذِرُ (للشّفاء، 7 مرّات)', 'Je recherche la préservation par la gloire de Allāh et Sa toute-puissance, contre le mal de ce que je ressens et de ce que j’appréhende', '’ouʿīdhouka[i] biʿizzati l-Lāhi wa qoudratihi min charri mā tajidou[īna] wa touḥādhir[īn]) (quand on fait cela à une autre personne', '(’aʿoūdhou biʿizzati l-Lāhi wa qoudratihi min charri mā ’ajidou wa ’ouḥādhir) {7 fois} [Invocation rapportée par l’ange Jibrîl ʿalayhi s-salâm] On peut réciter pour quelqu’un qui est malade :', '', 'invocation, guérison, personne, malade'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'أعُوذُ بِعِزَّةِ اللهِ وَقُدْرَتِهِ مِنْ شَرِّ ما أجِدُ وأُحاذِرُ (للشّفاء، 7 مرّات)');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'أعُوذُ بِعِزَّةِ اللهِ وَقُدْرَتِهِ مِنْ شَرِّ ما أجِدُ وأُحاذِرُ (للشّفاء، 7 مرّات)');
 
 -- source: https://islam.ms/invocation-guerison
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour la guérison (lorsque la personne est malade)', 'بِسْمِ اللهِ أَرْقِيكَ مِنْ كُلِّ شَىءٍ يُؤذِيكَ مِنْ شَرِّ كُلِّ نَفْسٍ أَو عَيْنِ حَاسِدٍ', '', '', '', '', 'invocation, guérison, personne, malade'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'بِسْمِ اللهِ أَرْقِيكَ مِنْ كُلِّ شَىءٍ يُؤذِيكَ مِنْ شَرِّ كُلِّ نَفْسٍ أَو عَيْنِ حَاسِدٍ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'بِسْمِ اللهِ أَرْقِيكَ مِنْ كُلِّ شَىءٍ يُؤذِيكَ مِنْ شَرِّ كُلِّ نَفْسٍ أَو عَيْنِ حَاسِدٍ');
 
 -- source: https://islam.ms/invocation-guerison
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour la guérison (lorsque la personne est malade)', 'اللهُ يَشْفِيكَ بِسْمِ اللهِ أَرْقِيك', '', 'bismi l-Lâhi ’arqîka, min koulli chay’in you’dhîka min charri koulli nafsin ’aw ʿayni ḥâçidin, Allāhou yachfîka, bismi l-Lâhi ’arqîk', 'Pour une femme on dit: « ’arqîki », « you’dhîki », « yachfîki ». C’est une rouqyah qui est utile pour celui qui est malade et pour celui qui a été ensorcelé également. La récitation des deux mouʿawwidhât après chaque prière est une forte protection [et également une cause pour ne pas tomber dans la paresse et c’est une cause pour repousser le mal des ennemis]. Les deux mouʿawwidhât sont les deux dernières sôurat du Qour’ân, c’est à dire sôurat Al-Falaq, et sôurat An-Nās. Ce sont là des invocations de protection pour la personne et pour autre qu’elle. C’est une rouqyah pour elle et pour autre qu’elle. Si on la récite sur quelqu’un qui est malade, c’est une éminente rouqyah. Et quand on ne sait pas quelle est la maladie, on récite les deux mouʿawwidhāt, soit une fois, soit trois fois, durant trois jours successifs, avant le dhouhr et après le dhouhr.', '', 'invocation, guérison, personne, malade'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللهُ يَشْفِيكَ بِسْمِ اللهِ أَرْقِيك');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللهُ يَشْفِيكَ بِسْمِ اللهِ أَرْقِيك');
 
 -- source: https://islam.ms/invocation-habiller
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lorsqu’on s’habille', 'الـحَمْدُ للهِ الَّذِي كَسَانِـي مَا أُوَارِي بِهِ عَوْرَتـِي وأَتَـجَمَّلُ بِهِ فِي حَيَاتِـي', 'La louange est à Allāh Qui m’a accordé de mettre ce qui me permet de couvrir ma zone de pudeur et d’avoir un bel aspect durant ma vie', 'al-ḥamdou lil-Lāhi l-ladhī kaçānī mā ’ouwārī bihi ʿawratī wa ’atajammalou bihi fī ḥayātī', 'Quand notre Prophète Mouḥammad ṣalla l-Lāhou ʿalayhi wa sallam mettait un habit, il disait:', '', 'invocation, habille'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'الـحَمْدُ للهِ الَّذِي كَسَانِـي مَا أُوَارِي بِهِ عَوْرَتـِي وأَتَـجَمَّلُ بِهِ فِي حَيَاتِـي');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'الـحَمْدُ للهِ الَّذِي كَسَانِـي مَا أُوَارِي بِهِ عَوْرَتـِي وأَتَـجَمَّلُ بِهِ فِي حَيَاتِـي');
 
 -- source: https://islam.ms/invocation-insomnie
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lors de l’insomnie', 'اللَّهُمَّ غَارَتِ النُّجُومُ وَهَدَأَتِ الْعُيُونُ وَأَنْتَ حَيٌّ قَيُّومٌ', '', '', 'Zayd Ibnou Thābit, que Allāh l’agrée, a rapporté que le messager de Allāh ṣalla l-Lāhou ʿalayhi wa sallam a transmis cette invocation contre l’insomnie:', '', 'invocation, lors, insomnie'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَّ غَارَتِ النُّجُومُ وَهَدَأَتِ الْعُيُونُ وَأَنْتَ حَيٌّ قَيُّومٌ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَّ غَارَتِ النُّجُومُ وَهَدَأَتِ الْعُيُونُ وَأَنْتَ حَيٌّ قَيُّومٌ');
 
 -- source: https://islam.ms/invocation-insomnie
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lors de l’insomnie', 'لا تَأْخُذُكَ سِنَةٌ وَلا نَوْمٌ ، يَا حَيُّ يَا قَيُّومُ أَهْدِئْ لَيْلِي وَأَنِمْ عَيْنِي', 'Ô Allāh, les étoiles sont apparues, des yeux se sont reposés. Tu es Celui Qui a pour attribut une vie éternelle et Tu es Celui dont l’anéantissement est impossible, Tu n’es pas atteint par la somnolence ni par le sommeil. Ô Toi Qui a pour attribut la vie, Toi Qui prédestine toute chose, apaise ma nuit et fais que mes yeux se referment [- pour mon sommeil -]', 'Allāhoumma ghārati n-noujoūm wa hada’ati l-ʿouyoūn wa ’anta Ḥayyoun Qayyoūm, lā ta’khoudhouka sinatoun wa lā nawm, Yā Ḥayyou Yā Qayyoūm, ’ahdi’ laylī wa ’anim ʿaynī', '[rapporté par Ibnou Ḥibbān]', '', 'invocation, lors, insomnie'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'لا تَأْخُذُكَ سِنَةٌ وَلا نَوْمٌ ، يَا حَيُّ يَا قَيُّومُ أَهْدِئْ لَيْلِي وَأَنِمْ عَيْنِي');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'لا تَأْخُذُكَ سِنَةٌ وَلا نَوْمٌ ، يَا حَيُّ يَا قَيُّومُ أَهْدِئْ لَيْلِي وَأَنِمْ عَيْنِي');
 
 -- source: https://islam.ms/invocation-miroir
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lorsqu’on regarde dans un miroir', 'الحَمْدُ لله اللَّهمَّ كما حَسَّنْتَ خَلْقِي فَحَسِّنْ خُلُقِي', 'La louange est à Allāh. Ô Allāh, tout comme tu m’as accordé un bel aspect, fais que mon comportement soit bon', 'al-ḥamdou li l-Lāh Allāhoumma kamā ḥassanta khalqī faḥassin khoulouqī', 'Lorsqu’on regarde dans un miroir, il est recommandé de dire: Dans une autre version:', '', 'invocation, regarde, miroir'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'الحَمْدُ لله اللَّهمَّ كما حَسَّنْتَ خَلْقِي فَحَسِّنْ خُلُقِي');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'الحَمْدُ لله اللَّهمَّ كما حَسَّنْتَ خَلْقِي فَحَسِّنْ خُلُقِي');
 
 -- source: https://islam.ms/invocation-miroir
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lorsqu’on regarde dans un miroir', 'الـحَمْدُ للهِ الَّذِي خَلَقَنِـي فَسَوَّانِـي، اللَّهُمَّ كَمَا حَسَّنْتَ خَلْقِي فَحَسِّنْ خُلُقِي', 'La louange est à Allāh Qui m’a créé et qui a fait que je sois bien proportionné. Ô Allāh tout comme Tu m’as accordé un bel aspect accorde moi un comportement d’excellence', 'Al-ḥamdou li l-Lāhi l-ladhī khalaqanī façawwānī, Allāhoumma kamā ḥassanta khalqī faḥassin khoulouqī', '', '', 'invocation, regarde, miroir'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'الـحَمْدُ للهِ الَّذِي خَلَقَنِـي فَسَوَّانِـي، اللَّهُمَّ كَمَا حَسَّنْتَ خَلْقِي فَحَسِّنْ خُلُقِي');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'الـحَمْدُ للهِ الَّذِي خَلَقَنِـي فَسَوَّانِـي، اللَّهُمَّ كَمَا حَسَّنْتَ خَلْقِي فَحَسِّنْ خُلُقِي');
 
 -- source: https://islam.ms/invocation-nouvelle-annee-mois-lunaire
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Ce que l’on dit pour la nouvelle année ou le nouveau mois lunaire', '« اللَّهُمَّ أَدْخِلْهُ عَلَيْنَا بِالْأَمْنِ وَالْإِيمَانِ، وَالسَّلَامَةِ وَالْإِسْلَامِ، وَرِضْوَانٍ مِنَ الرَّحْمَنِ، وَجِوَارٍ (أيْ حِفْظٍ) مِنَ الشَّيْطَانِ »', 'Ô Allāh fais que son arrivée soit accompagnée de sécurité et de foi, de protection et d’Islam, d’agrément de Ar-Raḥmān, et de préservation contre le chayṭān', 'Allāhoumma adkhilhou ʿalaynā bi l ’amni wa l-’īmān, wa s-salāmati wa l-’islām, wa riḍwānin mina r-Raḥmān, wa jiwārin mina ch-chayṭān', 'D’après Abdou l-Lāh fils de Hichām: Les compagnons du Messager de Allāh apprenaient cette invocation qu’ils disaient lorsqu’une nouvelle année ou un nouveau mois commençait: Le Ḥafiḍh Nouroud-Dīn al-Haythamiyy a dit dans Majmaʿ az Zawā’id: Cela a été rapporté par Aṭ–Ṭabarāniyy dans Al-’Awsaṭ et sa chaîne de transmission est bonne. Le Ḥafiḍḥ Ibnou Ḥajar, que Dieu lui fasse miséricorde, l’a rapporté dans Al-’Iṣabah dans la biographie de ʿAbdou l-Lāh fils de Hichām que Allāh l’agrée, par l’intermédiaire de Ibnou Wahb, et il a cité la même chose. Le Ḥafiḍḥ a dit: Ce ḥadīth est mawqoūf (c’est-à-dire sa chaîne s’arrête au compagnon) et remplit les critères du ṣaḥīḥ.', '', 'invocation, nouvelle, année, nouveau'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« اللَّهُمَّ أَدْخِلْهُ عَلَيْنَا بِالْأَمْنِ وَالْإِيمَانِ، وَالسَّلَامَةِ وَالْإِسْلَامِ، وَرِضْوَانٍ مِنَ الرَّحْمَنِ، وَجِوَارٍ (أيْ حِفْظٍ) مِنَ الشَّيْطَانِ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« اللَّهُمَّ أَدْخِلْهُ عَلَيْنَا بِالْأَمْنِ وَالْإِيمَانِ، وَالسَّلَامَةِ وَالْإِسْلَامِ، وَرِضْوَانٍ مِنَ الرَّحْمَنِ، وَجِوَارٍ (أيْ حِفْظٍ) مِنَ الشَّيْطَانِ »');
 
 -- source: https://islam.ms/invocation-nouvelle-annee-mois-lunaire
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Ce que l’on dit pour la nouvelle année ou le nouveau mois lunaire', 'بِسْمِ الإلــــٰهِ وَبِهِ بَدَيْنَا وَلَوْ عَبَـدْنا غَيْرَهُ شَـقِينَا وَحَبـَّذَا رَبـًّا وَحَبَّ دِينــا وَحَبَّذَا مُـحَمَّدٌ هَادِينَا', '', '', '', '', 'invocation, nouvelle, année, nouveau'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'بِسْمِ الإلــــٰهِ وَبِهِ بَدَيْنَا وَلَوْ عَبَـدْنا غَيْرَهُ شَـقِينَا وَحَبـَّذَا رَبـًّا وَحَبَّ دِينــا وَحَبَّذَا مُـحَمَّدٌ هَادِينَا');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'بِسْمِ الإلــــٰهِ وَبِهِ بَدَيْنَا وَلَوْ عَبَـدْنا غَيْرَهُ شَـقِينَا وَحَبـَّذَا رَبـًّا وَحَبَّ دِينــا وَحَبَّذَا مُـحَمَّدٌ هَادِينَا');
 
 -- source: https://islam.ms/invocation-nouvelle-annee-mois-lunaire
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Ce que l’on dit pour la nouvelle année ou le nouveau mois lunaire', '{سُبْحَانَ رَبِّكَ رَبِّ الْعِزَّةِ عَمَّا يَصِفُونَ (180) وَسَلَامٌ عَلَى الْمُرْسَلِينَ (181) وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ (182)} [سورة الصافات 180 - 182]', '', '', '', '', 'invocation, nouvelle, année, nouveau'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '{سُبْحَانَ رَبِّكَ رَبِّ الْعِزَّةِ عَمَّا يَصِفُونَ (180) وَسَلَامٌ عَلَى الْمُرْسَلِينَ (181) وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ (182)} [سورة الصافات 180 - 182]');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '{سُبْحَانَ رَبِّكَ رَبِّ الْعِزَّةِ عَمَّا يَصِفُونَ (180) وَسَلَامٌ عَلَى الْمُرْسَلِينَ (181) وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ (182)} [سورة الصافات 180 - 182]');
 
 -- source: https://islam.ms/invocation-objet-perdu-vole
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour retrouver un objet perdu ou volé en Islam', 'اللَّهُمَّ رَادَّ الضَّالَّةِ، وَهَادِيَ الضَّلَالَةِ تَهْدِي مِنَ الضَّلَالَةِ، ارْدُدْ عَلَيَّ ضَالَّتِي بِقُدْرَتِكِ وَسُلْطَانِكَ، فَإِنَّهَا مِنْ عَطَائِكَ وَفَضْلِكَ', 'Ô Allāh, Toi Qui fais revenir ce qui est perdu, et Qui guide de l''égarement, Tu guides de l''égarement, ramène-moi ce que j''ai perdu par Ta toute-puissance et Ton autorité, car cela fait partie de Ton don et de Ta grâce.', '', 'Allāhoumma rāddaḍ-ḍāllati, wa hādīyaḍ-ḍalālati tahdī minaḍ-ḍalālati, ''ourdoud ʿalayya ḍāllatī biqoudratika wa soultanika, fa''innahā min ʿaṭā''ika wa faḍlika. Il est également utile de réciter sourat Aḍ-Ḍouḥā sept fois et de dire trois fois :', '', 'invocation, retrouver, objet, perdu'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَّ رَادَّ الضَّالَّةِ، وَهَادِيَ الضَّلَالَةِ تَهْدِي مِنَ الضَّلَالَةِ، ارْدُدْ عَلَيَّ ضَالَّتِي بِقُدْرَتِكِ وَسُلْطَانِكَ، فَإِنَّهَا مِنْ عَطَائِكَ وَفَضْلِكَ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَّ رَادَّ الضَّالَّةِ، وَهَادِيَ الضَّلَالَةِ تَهْدِي مِنَ الضَّلَالَةِ، ارْدُدْ عَلَيَّ ضَالَّتِي بِقُدْرَتِكِ وَسُلْطَانِكَ، فَإِنَّهَا مِنْ عَطَائِكَ وَفَضْلِكَ');
 
 -- source: https://islam.ms/invocation-objet-perdu-vole
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour retrouver un objet perdu ou volé en Islam', 'يا جامعَ النَّاسِ ليومٍ لا ريبَ فيه اجمعْ عَلَيَّ ضَالَّتِي', 'Ô Toi Qui rassembles les gens en un Jour sur lequel il n''y a pas de doute, rassemble pour moi ce que j''ai perdu.', '', 'Ya Jāmiʿa n-nāsi liyawmin lā rayba fīhi ''ijmaʿ ʿalayya ḍāllatī. D''après ʿOumar fils de Kathīri fils de ''Aflaḥa, d''après le fils de ʿOumar, d''après le prophète صلى الله عليه وسلم :', '', 'invocation, retrouver, objet, perdu'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'يا جامعَ النَّاسِ ليومٍ لا ريبَ فيه اجمعْ عَلَيَّ ضَالَّتِي');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'يا جامعَ النَّاسِ ليومٍ لا ريبَ فيه اجمعْ عَلَيَّ ضَالَّتِي');
 
 -- source: https://islam.ms/invocation-objet-perdu-vole
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour retrouver un objet perdu ou volé en Islam', 'اللَّهُمَّ رَادَّ الضَّالَّةِ، هَادِيَ الضَّالَّةِ، تَهْدِي مِنَ الضَّلَالَةِ، رُدَّ عَلَيَّ ضَالَّتِي، بِعِزَّتِكَ وَسُلْطَانِكَ، فَإِنَّهَا مِنْ فَضْلِكَ وَعَطَائِكَ', 'Ô Allāh, Toi Qui fais revenir ce qui est perdu, Toi Qui guides de l''égarement, Tu guides de l''égarement, ramène-moi ce que j''ai perdu, par Ta puissance et Ton autorité, car cela fait partie de Ta grâce et de Ton don.', '', 'Allāhoumma rāddaḍ-ḍāllati, hādīyaḍ-ḍāllati, tahdī minaḍ-ḍalālati, rouddu ʿalayya ḍāllatī, biʿizzatika wa soultanika, fa''innahā min faḍlika wa ʿaṭā''ika. Et il a dit : « Ceci est mawqoūf et il est ḥasan. »', '', 'invocation, retrouver, objet, perdu'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَّ رَادَّ الضَّالَّةِ، هَادِيَ الضَّالَّةِ، تَهْدِي مِنَ الضَّلَالَةِ، رُدَّ عَلَيَّ ضَالَّتِي، بِعِزَّتِكَ وَسُلْطَانِكَ، فَإِنَّهَا مِنْ فَضْلِكَ وَعَطَائِكَ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَّ رَادَّ الضَّالَّةِ، هَادِيَ الضَّالَّةِ، تَهْدِي مِنَ الضَّلَالَةِ، رُدَّ عَلَيَّ ضَالَّتِي، بِعِزَّتِكَ وَسُلْطَانِكَ، فَإِنَّهَا مِنْ فَضْلِكَ وَعَطَائِكَ');
 
 -- source: https://islam.ms/invocation-obtenir-besoin
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour obtenir ce dont on a besoin', 'سورة الفاتحة (3 مرات)', '', '', 'On récite: soūrat Al-Fātihah (3fois)', '', 'invocation, obtenir, besoin'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'سورة الفاتحة (3 مرات)');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'سورة الفاتحة (3 مرات)');
 
 -- source: https://islam.ms/invocation-obtenir-besoin
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour obtenir ce dont on a besoin', 'ءاية الكرسي (3 مرات)', '', '', '’āyatou l-Koursiyy (3fois)', '', 'invocation, obtenir, besoin'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'ءاية الكرسي (3 مرات)');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'ءاية الكرسي (3 مرات)');
 
 -- source: https://islam.ms/invocation-obtenir-besoin
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour obtenir ce dont on a besoin', 'سورة القدر (3 مرات)', '', '', 'soūrat Al-Qadr (3fois)', '', 'invocation, obtenir, besoin'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'سورة القدر (3 مرات)');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'سورة القدر (3 مرات)');
 
 -- source: https://islam.ms/invocation-obtenir-besoin
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour obtenir ce dont on a besoin', 'سورة النصر (3 مرات)', '', '', 'soūrat An-Naṣr (3 fois)', '', 'invocation, obtenir, besoin'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'سورة النصر (3 مرات)');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'سورة النصر (3 مرات)');
 
 -- source: https://islam.ms/invocation-obtenir-besoin
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour obtenir ce dont on a besoin', 'سورة الإخلاص (3 مرات)', '', '', 'soūrat Al-’Ikhlāṣ (3fois)', '', 'invocation, obtenir, besoin'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'سورة الإخلاص (3 مرات)');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'سورة الإخلاص (3 مرات)');
 
 -- source: https://islam.ms/invocation-obtenir-besoin
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour obtenir ce dont on a besoin', 'سورة الفلق (3 مرات)', '', '', 'soūrat Al-Falaq (3fois)', '', 'invocation, obtenir, besoin'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'سورة الفلق (3 مرات)');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'سورة الفلق (3 مرات)');
 
 -- source: https://islam.ms/invocation-obtenir-besoin
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour obtenir ce dont on a besoin', 'سورة الناس (3 مرات)', '', '', 'soūrat An-Nās (3fois)', '', 'invocation, obtenir, besoin'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'سورة الناس (3 مرات)');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'سورة الناس (3 مرات)');
 
 -- source: https://islam.ms/invocation-obtenir-besoin
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour obtenir ce dont on a besoin', 'سَلَامٌ قَوْلًا مِّن رَّبٍّ رَّحِيمٍ (21 مرات)', '', 'sālamoun qawlan min r-rabbi r-raḥīm', '', '', 'invocation, obtenir, besoin'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'سَلَامٌ قَوْلًا مِّن رَّبٍّ رَّحِيمٍ (21 مرات)');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'سَلَامٌ قَوْلًا مِّن رَّبٍّ رَّحِيمٍ (21 مرات)');
 
 -- source: https://islam.ms/invocation-obtenir-besoin
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour obtenir ce dont on a besoin', 'رَبَّنَا آتِنَا مِن لَّدُنكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا (21 مرات)', '', '', '(rabbanā ātinā min ladounka raḥmatan wa hayyi’ lanā min amrinā rachadā) 21 fois', '', 'invocation, obtenir, besoin'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'رَبَّنَا آتِنَا مِن لَّدُنكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا (21 مرات)');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'رَبَّنَا آتِنَا مِن لَّدُنكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا (21 مرات)');
 
 -- source: https://islam.ms/invocation-obtenir-besoin
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour obtenir ce dont on a besoin', 'لا إله إلا الله (121 مرات)', '', '', '(lā ’ilāha ’illa l-Lāh) 121 fois', '', 'invocation, obtenir, besoin'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'لا إله إلا الله (121 مرات)');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'لا إله إلا الله (121 مرات)');
 
 -- source: https://islam.ms/invocation-obtenir-besoin
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour obtenir ce dont on a besoin', 'لفظ الجلالة الله (121 مرات)', '', '', 'Allāh (121 fois)', '', 'invocation, obtenir, besoin'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'لفظ الجلالة الله (121 مرات)');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'لفظ الجلالة الله (121 مرات)');
 
 -- source: https://islam.ms/invocation-obtenir-besoin
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour obtenir ce dont on a besoin', 'الصَّلاةُ وَالسَّلامُ عَلَيكَ يَا سَيِّدِي يَا رَسُولَ اللهَ يَا أَحْمَد قَلَّتْ حِيلَتِي وَأَنتَ وَسِيلَتِي فَأَدْرِكْنِي (21 مرات)', '', '', '(Aṣ-ṣalātou wa s-salāmou ʿalayka yā sayyidī yā raçoūla l-Lāh yā aḥmad qallat ḥīlatī wa ’anta wasīlatī fa’driknī) 21 fois', '', 'invocation, obtenir, besoin'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'الصَّلاةُ وَالسَّلامُ عَلَيكَ يَا سَيِّدِي يَا رَسُولَ اللهَ يَا أَحْمَد قَلَّتْ حِيلَتِي وَأَنتَ وَسِيلَتِي فَأَدْرِكْنِي (21 مرات)');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'الصَّلاةُ وَالسَّلامُ عَلَيكَ يَا سَيِّدِي يَا رَسُولَ اللهَ يَا أَحْمَد قَلَّتْ حِيلَتِي وَأَنتَ وَسِيلَتِي فَأَدْرِكْنِي (21 مرات)');
 
 -- source: https://islam.ms/invocation-obtenir-besoin
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour obtenir ce dont on a besoin', 'يَا عِبَادَ الله أغِيثُونَا (3 مرات)', '', '', '(yā ʿibāda l-Lāhi ’aghīthoūnā) 3fois', '', 'invocation, obtenir, besoin'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'يَا عِبَادَ الله أغِيثُونَا (3 مرات)');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'يَا عِبَادَ الله أغِيثُونَا (3 مرات)');
 
 -- source: https://islam.ms/invocation-obtenir-besoin
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour obtenir ce dont on a besoin', 'اللّهُم أَمِدَّنَا بِأمدَادِ السَّيِّد أَحمَد الرِّفَاعِيِّ (3 مرات)', '', '', '(Allāhoumma ’amiddanā bi’amdādi s-sayyidi aḥmad r-rifaʿiyy) 3fois', '', 'invocation, obtenir, besoin'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللّهُم أَمِدَّنَا بِأمدَادِ السَّيِّد أَحمَد الرِّفَاعِيِّ (3 مرات)');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللّهُم أَمِدَّنَا بِأمدَادِ السَّيِّد أَحمَد الرِّفَاعِيِّ (3 مرات)');
 
 -- source: https://islam.ms/invocation-obtenir-besoin
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour obtenir ce dont on a besoin', 'الفاتحة على النية (مرة واحدة)', '', '', 'soūrat Al-Fātihah (1fois)', '', 'invocation, obtenir, besoin'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'الفاتحة على النية (مرة واحدة)');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'الفاتحة على النية (مرة واحدة)');
 
 -- source: https://islam.ms/invocation-occasion-rapport-conjugal
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Ce que l’on dit à l’occasion du rapport conjugal', '« لَوْ أَنَّ أَحَدَكُمْ إِذَا أَتَى أَهْلَهُ قَالَ : بِسْمِ اللَّه ، اللَّهُمَّ جَنِّبْنَا الشَّيْطَانَ ، وَجَنِّب الشَّيْطَانَ مَا رَزَقْتَنَا ، فَقُضِيَ بَيْنَهُمَا وَلَدٌ لَمْ يَضُرَّهُ »', 'Si quelqu’un d’entre vous, lorsqu’il a un rapport avec sa femme, dit: bismi l-Lâh, Allāhoumma jannibna ch-chayṭāna wa jannibi ch-chayṭānâ mâ razaqtanâ – par le nom de Allāh, ô Allāh, éloigne de nous le chayṭān et éloigne le chaytan de ce que Tu nous pourvoies – , alors dans le cas où il leur est donné un enfant, le chayṭān ne lui nuira pas', '', 'Al-Boukhâriyy et Mouslim ont rapporté de Ibnou ʿAbbâs, que Allāh les agrée tous deux, que le Prophète ṣalla l-Lâhou ʿalayhi wa sallam a dit: Dans une version de Al-Boukhâriyy:', '', 'invocation, occasion, rapport, conjugal'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« لَوْ أَنَّ أَحَدَكُمْ إِذَا أَتَى أَهْلَهُ قَالَ : بِسْمِ اللَّه ، اللَّهُمَّ جَنِّبْنَا الشَّيْطَانَ ، وَجَنِّب الشَّيْطَانَ مَا رَزَقْتَنَا ، فَقُضِيَ بَيْنَهُمَا وَلَدٌ لَمْ يَضُرَّهُ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« لَوْ أَنَّ أَحَدَكُمْ إِذَا أَتَى أَهْلَهُ قَالَ : بِسْمِ اللَّه ، اللَّهُمَّ جَنِّبْنَا الشَّيْطَانَ ، وَجَنِّب الشَّيْطَانَ مَا رَزَقْتَنَا ، فَقُضِيَ بَيْنَهُمَا وَلَدٌ لَمْ يَضُرَّهُ »');
 
 -- source: https://islam.ms/invocation-occasion-rapport-conjugal
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Ce que l’on dit à l’occasion du rapport conjugal', '« لَمْ يَضُرَّهُ شَيْطَانٌ أَبَداً »', 'Nul chayṭān ne lui nuira jamais', '', '', '', 'invocation, occasion, rapport, conjugal'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« لَمْ يَضُرَّهُ شَيْطَانٌ أَبَداً »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« لَمْ يَضُرَّهُ شَيْطَانٌ أَبَداً »');
 
 -- source: https://islam.ms/invocation-pardon-istighfar
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour la demande de pardon sayyidou al-’istighfār', 'اللهُمَّ أنْتَ رَبِّي لا إلهَ إلا أنْتَ خَلَقْتَنِي وَأنَا عَبْدُكَ وَأنَا عَلَى عَهْدِكَ وَوَعْدِكَ ما اسْتَطَعْتُ أعُوْذُ بِكَ مِن شَرِّ مَا صَنَعْتُ أبُوْءُ لَكَ بِنِعْمَتِكَ عَلَيَّ وَأبُوْءُ بِذَنْبِي فَاغْفِرْ لِي فَإنَّهُ لا يَغْفِرُ الذُّنُوبَ إلا أنْتَ', 'Ô Allāh Tu es mon Seigneur. Il n’est de dieu que Toi. Tu m’as créé et je suis Ton esclave, et je suis sur l’engagement que j’ai pris (la foi et l’obéissance à Dieu) autant que je peux. Je recherche Ta préservation contre le mal que j’ai fais. Je reconnais les bienfaits que Tu m’as accordés et je reconnais mes péchés, alors, je te demande de me pardonner. Certes nul autre que Toi ne pardonne les péchés', 'Allāhoumma ’anta rabbī lā ’ilāha ’il-lā ’anta khalaqtanī wa ’anā ʿabdouk wa ’anā ʿalā ʿahdika wa waʿdika mastaṭaʿt ’aʿoūdhou bika min charri mā ṣanaʿt aboū’ou laka bi niʿmatika ʿalayya wa aboū’ou bi dhanbī faghfir lī fa ’innahoū lā yaghfirou dh-dhounoūba ’il-lā ’ant', 'Al-Boukhāriyy a rapporté dans son ṣaḥīḥ, ainsi que ’Aḥmad dans son Mousnad, d’après Chaddād Ibnou ’Aws, d’après le Prophète ṣalla l-Lāhou ʿalayhi wa sallam, l’invocation suivante appelée sayyidou l-’istighfār - la maîtresse des invocations pour la demande du pardon -:', '', 'invocation, demande, pardon, sayyidou'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللهُمَّ أنْتَ رَبِّي لا إلهَ إلا أنْتَ خَلَقْتَنِي وَأنَا عَبْدُكَ وَأنَا عَلَى عَهْدِكَ وَوَعْدِكَ ما اسْتَطَعْتُ أعُوْذُ بِكَ مِن شَرِّ مَا صَنَعْتُ أبُوْءُ لَكَ بِنِعْمَتِكَ عَلَيَّ وَأبُوْءُ بِذَنْبِي فَاغْفِرْ لِي فَإنَّهُ لا يَغْفِرُ الذُّنُوبَ إلا أنْتَ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللهُمَّ أنْتَ رَبِّي لا إلهَ إلا أنْتَ خَلَقْتَنِي وَأنَا عَبْدُكَ وَأنَا عَلَى عَهْدِكَ وَوَعْدِكَ ما اسْتَطَعْتُ أعُوْذُ بِكَ مِن شَرِّ مَا صَنَعْتُ أبُوْءُ لَكَ بِنِعْمَتِكَ عَلَيَّ وَأبُوْءُ بِذَنْبِي فَاغْفِرْ لِي فَإنَّهُ لا يَغْفِرُ الذُّنُوبَ إلا أنْتَ');
 
 -- source: https://islam.ms/invocation-parent
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour ses parents', 'رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَارْحَمْهُمَا كَمَا رَبَّيانِي صَغِيرا', 'Ô Seigneur, pardonne-moi ainsi qu’à mes parents, et fais-leur miséricorde à tous deux comme ils m’ont élevé lorsque j’étais petit', 'rabbi ghfir lī wa li wālidayya wa rḥamhoumā kamā rabbayānī ṣaghīrā', 'On fait cette invocation en faveur des parents [durant leur vie et après leur mort] s’ils sont musulmans :', '', 'invocation, parents'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَارْحَمْهُمَا كَمَا رَبَّيانِي صَغِيرا');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَارْحَمْهُمَا كَمَا رَبَّيانِي صَغِيرا');
 
 -- source: https://islam.ms/invocation-pluie
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lorsqu’il pleut', 'اللهم اجعله صَيِّبًا هنيئا', 'Ô mon Dieu, fais que ce soit une pluie profitable', 'Allāhoumma jʿalhou ṣayyiban hanī’ā', 'Ce que l’on dit lorsqu’il pleut:', '', 'invocation, pleut'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللهم اجعله صَيِّبًا هنيئا');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللهم اجعله صَيِّبًا هنيئا');
 
 -- source: https://islam.ms/invocation-priere-consultation-istikharah
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lorsqu’on souhaite entreprendre une chose (istikhārah prière de consultation)', 'اللَّهُمَّ إِنِّي أَسْتَخِيرُكَ بِعِلْمِكَ وَأَسْتَقْدِرُكَ بِقُدْرَتِكَ وَأَسْأَلُكَ مِنْ فَضْلِكَ فَإِنَّكَ تَعْلَمُ وَلَا أَعْلَمُ وَتَقْدِرُ وَلَا أَقْدِرُ وَأَنْتَ عَلَّامُ الغُيُوب اللَّهُمَّ إِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ خَيْرٌ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي أَوْ فِي عَاجِلِ أَمْرِي وَءَاجِلِه فَاقْدِرْهُ لِي وَيَسِّرْهُ لِي وَإِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ شَرٌّ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي أَوْ فِي عَاجِلِ أَمْرِي وَءَاجِلِه فَاصْرِفْهُ عَنِّي وَاصْرِفْنِي عَنْهُ وَاقْدِرْ لِي الخَيْرَ حَيْثُ كَانَ وَرَضِّنِي بِهِ', 'Ô Allāh, je Te demande l’aide pour m’accorder ce qui est le mieux, Toi Qui a la science de toute chose, je te demande de m’accorder la force de réaliser le bien, je Te fais cette demande, Toi Qui est éminent par le mérite et Qui accorde à Tes esclaves des bienfaits par Ta grâce, Tu es certes Tout-Puissant sur toute chose, et je n’ai de capacité à faire le bien que par Ton aide, et Tu es Celui Qui a la science de toute chose, alors que je ne sais que ce que Tu m’as accordé de savoir, et Tu es Celui Qui a la science des choses cachées et des choses à venir. Ô Allāh, Toi Qui sait toute chose, si cette chose que je souhaite entreprendre (et on cite à ce moment la chose qu’on souhaite entreprendre) serait pour moi une source de bien pour ma religion, pour ma vie d’ici-bas, et pour mon au-delà, fais qu’elle me soit accordée, qu’elle me soit facilitée et qu’il y ait en elle une bénédiction pour moi ; et si cette chose que je souhaite entreprendre ( et on cite à ce moment la chose qu’on souhaite entreprendre) serait pour moi une chose qui ne soit pas bénéfique pour ma religion, pour ma vie d’ici-bas, et pour mon au-delà, fais qu’elle soit éloignée de moi et que je m’éloigne d’elle, accordes-moi ce qui est un bien où qu’il se trouve et fais que j’en sois satisfait.', '', 'Al-Boukhāriyy a rapporté, d’après le compagnon Jabir Ibni ʿAbdi l-Lāh, que Allāh l’agrée, que le Messager de Allāh ṣalla l-Lāhou ʿalayhi wa sallam leur a enseigné une invocation à réciter lorsqu’ils souhaitaient entreprendre une chose, cette invocation est appelée: douʿā’ al-’istikhārah. C’est une invocation que l’on récite après avoir accompli deux rakʿah (cycles de prière) d’une prière surérogatoire ( en ayant l’intention d’accomplir la sounnah de al-’istikhārah ). On dit alors après avoir accompli ces deux rakʿah (c’est-à-dire après avoir passé le salam), l’invocation suivante, que le Messager de Allāh ṣalla l-Lāhou ʿalayhi wa sallam a enseigné à ses compagnons: Allāhoumma innî ‘astakhîrouka biʿilmika wa ‘astaqdirouka bi qoudratika, wa ‘as’alouka min faḍlika, fa ’innaka taʿlamou wa lâ ‘aʿlamou, wa taqdirou wa lâ ‘aqdirou wa ‘anta ʿallâmou l-ghouyôub, Allāhoumma ‘in kounta taʿlamou anna hâdha l-‘amra (on cite la chose) khayroun lî fî dînî wa maʿâchî wa ʿâqibati ‘amrî ‘aw fî ʿâjili ‘amrî wa ‘âjilih faqdirhou lî wa yassirhou lî, wa ‘in kounta taʿlamou anna hâdha l- ‘amra (on cite la chose) charroun lî fî dînî wa maʿâchî wa ʿâqibati ‘amrî ‘aw fî ʿâjili ‘amrî wa ‘âjilih faṣrifhou ʿannî wa ṣrifnî ʿanhou wa qdir liya l-khayra ḥaythou kâna wa raḍḍinî bih. Information importante: Cette invocation est réalisée pour une chose licite (ḥalal) que l’on souhaite entreprendre, qui ne comporte donc pas de péché, ni de caractère déconseillé (makroūh). En effet, par définition, le péché (al-ḥarām) est une chose interdite que la personne doit éviter, et la chose déconseillée est une chose à éviter, celui qui l’évite par recherche de l’agrément de Dieu a des recompenses. Information complémentaire: Une fois que le croyant a réalisé cette invocation de al-’istikhārah, il s’engage alors dans le choix pour lequel son coeur est apaisé, il n’est pas une condition qu’il voit quelque chose de particulier dans son rêve suite à cette invocation.', '', 'invocation, souhaite, entreprendre, istikhārah'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَّ إِنِّي أَسْتَخِيرُكَ بِعِلْمِكَ وَأَسْتَقْدِرُكَ بِقُدْرَتِكَ وَأَسْأَلُكَ مِنْ فَضْلِكَ فَإِنَّكَ تَعْلَمُ وَلَا أَعْلَمُ وَتَقْدِرُ وَلَا أَقْدِرُ وَأَنْتَ عَلَّامُ الغُيُوب اللَّهُمَّ إِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ خَيْرٌ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي أَوْ فِي عَاجِلِ أَمْرِي وَءَاجِلِه فَاقْدِرْهُ لِي وَيَسِّرْهُ لِي وَإِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ شَرٌّ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي أَوْ فِي عَاجِلِ أَمْرِي وَءَاجِلِه فَاصْرِفْهُ عَنِّي وَاصْرِفْنِي عَنْهُ وَاقْدِرْ لِي الخَيْرَ حَيْثُ كَانَ وَرَضِّنِي بِهِ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَّ إِنِّي أَسْتَخِيرُكَ بِعِلْمِكَ وَأَسْتَقْدِرُكَ بِقُدْرَتِكَ وَأَسْأَلُكَ مِنْ فَضْلِكَ فَإِنَّكَ تَعْلَمُ وَلَا أَعْلَمُ وَتَقْدِرُ وَلَا أَقْدِرُ وَأَنْتَ عَلَّامُ الغُيُوب اللَّهُمَّ إِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ خَيْرٌ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي أَوْ فِي عَاجِلِ أَمْرِي وَءَاجِلِه فَاقْدِرْهُ لِي وَيَسِّرْهُ لِي وَإِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ شَرٌّ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي أَوْ فِي عَاجِلِ أَمْرِي وَءَاجِلِه فَاصْرِفْهُ عَنِّي وَاصْرِفْنِي عَنْهُ وَاقْدِرْ لِي الخَيْرَ حَيْثُ كَانَ وَرَضِّنِي بِهِ');
 
 -- source: https://islam.ms/invocation-prophete
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation que le Prophète disait souvent', 'رَبَّنا ءاتِنا فِي الدُّنيا حَسَنَةً وفِي الآخِرَةِ حَسَنَةً، وقِنَا عَذَابَ النَّار', 'Ô Notre Seigneur, accorde-nous un bienfait dans ce bas-monde, et accorde nous un bienfait dans l’au-delà et préserve-nous du châtiment de l’enfer', 'rabbanā ’ātina fi d-dounya ḥaçanah wa fi l-’ākhirati ḥaçanah wa qinā ʿadhaba n-nār', 'Il a été rapporté que l’invocation que le Prophète faisait le plus souvent est la suivante : [soūrat Al-Baqarah / ’āyah 201]', '', 'invocation, prophète, souvent'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'رَبَّنا ءاتِنا فِي الدُّنيا حَسَنَةً وفِي الآخِرَةِ حَسَنَةً، وقِنَا عَذَابَ النَّار');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'رَبَّنا ءاتِنا فِي الدُّنيا حَسَنَةً وفِي الآخِرَةِ حَسَنَةً، وقِنَا عَذَابَ النَّار');
 
 -- source: https://islam.ms/invocation-remercier
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations pour remercier en Islam', 'بَارَكَ اللَّهُ فِيكَ', 'Que Allāh t’accorde des bénédictions', 'bāraka l-Lāhou fīk', 'Information utile: la bénédiction (al-barakah) signifie l’augmentation en bien.', '', 'invocation, invocations, remercier'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'بَارَكَ اللَّهُ فِيكَ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'بَارَكَ اللَّهُ فِيكَ');
 
 -- source: https://islam.ms/invocation-remercier
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations pour remercier en Islam', 'أَحْسَنَ اللَّهُ إلَيْكَ', 'Que Allāh t’augmente en bienfaits', '’aḥsana l-Lāhou ’ilayk', '', '', 'invocation, invocations, remercier'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'أَحْسَنَ اللَّهُ إلَيْكَ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'أَحْسَنَ اللَّهُ إلَيْكَ');
 
 -- source: https://islam.ms/invocation-remercier
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations pour remercier en Islam', 'جَزَاكَ اللَّهُ خَيْراً', 'Que Allāh te rétribue en bien', 'jazāka l-Lāhou khayrā', '', '', 'invocation, invocations, remercier'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'جَزَاكَ اللَّهُ خَيْراً');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'جَزَاكَ اللَّهُ خَيْراً');
 
 -- source: https://islam.ms/invocation-rentrant-maison
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lorsqu’on rentre à la maison', 'بِاسْمِ اللَّه، اللَّهُمَّ إِنّىِ أَسْأَلُكَ خيْر المَوْلَجِ وَخَيْرَ الْمَخْرَجِ، بِاسْمِ اللَّهِ وَلَجْنا، وَبِاسْمِ اللَّهِ خَرَجْنا، وَعَلَى اللَّهِ رَبِنا تَوَكَّلْنا', 'Je commence par le nom de Allāh, Ô Allāh je Te demande un bien dans mon entrée et un bien dans ma sortie par le nom de Allāh nous entrons et par le nom de Allāh nous sortons et c’est Allāh notre Seigneur à Qui nous nous fions', 'Bismi l-Lāh, Allāhoumma ’innī ’as’alouka khayra l-mawlaji wakhayra I-makhraj, bismi I-Lāhi walajnā wabismi l-Lāhi kharajnā, waʿalā l-Lāhi Rabbinā tawakkalnā', '', '', 'invocation, rentre, maison'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'بِاسْمِ اللَّه، اللَّهُمَّ إِنّىِ أَسْأَلُكَ خيْر المَوْلَجِ وَخَيْرَ الْمَخْرَجِ، بِاسْمِ اللَّهِ وَلَجْنا، وَبِاسْمِ اللَّهِ خَرَجْنا، وَعَلَى اللَّهِ رَبِنا تَوَكَّلْنا');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'بِاسْمِ اللَّه، اللَّهُمَّ إِنّىِ أَسْأَلُكَ خيْر المَوْلَجِ وَخَيْرَ الْمَخْرَجِ، بِاسْمِ اللَّهِ وَلَجْنا، وَبِاسْمِ اللَّهِ خَرَجْنا، وَعَلَى اللَّهِ رَبِنا تَوَكَّلْنا');
 
 -- source: https://islam.ms/invocation-reveil
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lors du réveil', 'الحَمْدُللهِ الذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَ إِلَيْهِ النُّشُور', 'La louange est à Allāh Qui nous a maintenu en vie après nous avoir accordé le sommeil, et c’est pour Son jugement que nous serons ressuscités au Jour Dernier', 'al-ḥamdou li l-Lāhi l-ladhī ’aḥyanā baʿda mā ’amātanā wa ’ilayhi n-nouchoūr', 'Al-Boukhāriyy a rapporté que le Prophète ṣalla l-Lāhou ʿalayhi wa sallam disait lors du réveil:', '', 'invocation, lors, réveil'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'الحَمْدُللهِ الذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَ إِلَيْهِ النُّشُور');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'الحَمْدُللهِ الذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَ إِلَيْهِ النُّشُور');
 
 -- source: https://islam.ms/invocation-rever-prophete-mouhammad
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation pour rêver du Prophète Mouḥammad', 'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ النَّبِيِّ وَأَزْوَاجِهِ أُمَّهَاتِ الْمُؤْمِنِينَ وَذُرِّيَّتِهِ وَأَهْلِ بَيْتِهِ كَمَا صَلَّيْتَ عَلَى ءَالِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ', '', 'Allāhoumma ṣalli ʿalā Mouḥammadini n-nabiyyi wa ’azwājihī ’oummahāti l-mou’minīn wa dhourriyyatihī wa ’ahli baytihī kamā ṣallayta ʿalā ’āli ’Ibrāhīma ’innaka ḥamīdoun majīd', 'Nous citerons ici une formule d’invocation en faveur du Prophète qui est parvenue dans le ḥadīth et appelée al-Mikyāl al’awfā. Beaucoup de ceux qui l’ont récité ont vu le Prophète Mouḥammad ṣalla l-Lāhou ʿalayhi wa sallam dans le rêve. C’est une invocation à dire chaque jour 100 fois [ou plus que 100 fois] le matin ou le soir. L’invocation est la suivante:', '', 'invocation, rêver, prophète, mouḥammad'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ النَّبِيِّ وَأَزْوَاجِهِ أُمَّهَاتِ الْمُؤْمِنِينَ وَذُرِّيَّتِهِ وَأَهْلِ بَيْتِهِ كَمَا صَلَّيْتَ عَلَى ءَالِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ النَّبِيِّ وَأَزْوَاجِهِ أُمَّهَاتِ الْمُؤْمِنِينَ وَذُرِّيَّتِهِ وَأَهْلِ بَيْتِهِ كَمَا صَلَّيْتَ عَلَى ءَالِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ');
 
 -- source: https://islam.ms/invocation-rompre-jeune
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lorsqu’on rompt le jeûne', 'اللَّهُمَّ لَكَ صُمْت وَعَلَى رِزْقِكَ أَفْطَرْت', 'Ô Allāh, c’est par recherche de Ton agrément que j’ai jeûné et c’est avec la subsistance que Tu m’as accordée que je romps le jeûne', 'Allāhoumma laka ṣoumt, wa ʿalā rizqika ’afṭart', 'Aboū Dawoūd a rapporté que le Messager de Allāh ṣalla l-Lāhou ʿalayhi wa sallam disait lorsqu’il rompait le jeûne:', '', 'invocation, rompt, jeûne'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَّ لَكَ صُمْت وَعَلَى رِزْقِكَ أَفْطَرْت');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَّ لَكَ صُمْت وَعَلَى رِزْقِكَ أَفْطَرْت');
 
 -- source: https://islam.ms/invocation-secret-faciliter-subsistance
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Evocations et secrets pour faciliter la subsistance', 'سُبحَانَ الله وَبِحمدِهِ هِيَ سَببٌ لِتَيسيرِ الرِّزقِ، الَّذِي يُكثِرُ من سُبحَانَ الله وَبِحمدِهِ اللهُ تَعَالَى يُيَسِرُ لَهُ بَابَ الرِّزقِ، مَنَافِعُهَا عَظِيمَةٌ.', '', '', '(Soubḥāna lLāhi wa biḥamdihi hiyā sababoun litayasīri l-rizqi al-ladhī youkathirou min soubḥāna l-Lāh wa bi ḥamdihi l-Lāhou taʿālā youyasirou lahou bāba l-rizqi manāfiʿouhā ʿaṭīmatoun) C’est une cause pour faciliter la subsistance. Celui qui répète plusieurs fois « Soubḥāna l-Lāhi wa biḥamdih », Dieu lui facilite une porte pour la subsistance. Son bénéfice est grand. Cette phrase signifie : Dieu est exempt d’imperfection, à Lui la louange.', '', 'invocation, evocations, secrets, faciliter'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'سُبحَانَ الله وَبِحمدِهِ هِيَ سَببٌ لِتَيسيرِ الرِّزقِ، الَّذِي يُكثِرُ من سُبحَانَ الله وَبِحمدِهِ اللهُ تَعَالَى يُيَسِرُ لَهُ بَابَ الرِّزقِ، مَنَافِعُهَا عَظِيمَةٌ.');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'سُبحَانَ الله وَبِحمدِهِ هِيَ سَببٌ لِتَيسيرِ الرِّزقِ، الَّذِي يُكثِرُ من سُبحَانَ الله وَبِحمدِهِ اللهُ تَعَالَى يُيَسِرُ لَهُ بَابَ الرِّزقِ، مَنَافِعُهَا عَظِيمَةٌ.');
 
 -- source: https://islam.ms/invocation-secret-faciliter-subsistance
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Evocations et secrets pour faciliter la subsistance', 'لا إله إلا اللهُ الملِكُ الحَقُّ المُبين', '', '', 'Aussi dire : lā ’lāha ’illa lLāhou l-Malikou l-Ḥaqqou l-Moubīn 100 fois tous les jours est une grande cause pour faciliter la subsistance.', '', 'invocation, evocations, secrets, faciliter'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'لا إله إلا اللهُ الملِكُ الحَقُّ المُبين');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'لا إله إلا اللهُ الملِكُ الحَقُّ المُبين');
 
 -- source: https://islam.ms/invocation-secret-faciliter-subsistance
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Evocations et secrets pour faciliter la subsistance', 'لتَيْسِير الرِّزْقِ مِائَة مَرّة (يا وَهَّاب) بعدَ صَلاة الضُّحَى.', '', '', 'Pour faciliter la subsistance, on dit « Yā Wahhāb » cent fois après la prière de Aḍ-Ḍouḥā.', '', 'invocation, evocations, secrets, faciliter'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'لتَيْسِير الرِّزْقِ مِائَة مَرّة (يا وَهَّاب) بعدَ صَلاة الضُّحَى.');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'لتَيْسِير الرِّزْقِ مِائَة مَرّة (يا وَهَّاب) بعدَ صَلاة الضُّحَى.');
 
 -- source: https://islam.ms/invocation-secret-faciliter-subsistance
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Evocations et secrets pour faciliter la subsistance', 'لتَيْسِير الرِّزْقِ (سُورَة الواقِعَة) بعدَ صَلاة المغرب.', '', '', 'Pour faciliter la subsistance, on récite soūrat Al-Wāqiʿah après la prière de Al-Maghrib.', '', 'invocation, evocations, secrets, faciliter'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'لتَيْسِير الرِّزْقِ (سُورَة الواقِعَة) بعدَ صَلاة المغرب.');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'لتَيْسِير الرِّزْقِ (سُورَة الواقِعَة) بعدَ صَلاة المغرب.');
 
 -- source: https://islam.ms/invocation-secret-faciliter-subsistance
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Evocations et secrets pour faciliter la subsistance', 'كتابة البسملة خَمسًا وثلاثين مرة لتيسير الرزق يوضع على باب الدكان لرواج البضاعة. (تُكتَبُ البَسمَلَة خمسًا وثَلاثِينَ مَرّةً وتُحمَلُ أو تُعَلَّقُ على بابِ البَيتِ أو الدُّكّان لتَيسِير الرّزْقِ فيهَا سِرٌّ عَظِيم).', '', '', 'L’écriture de la basmalah (bismi l-Lāhi r-Rḥmāni r-Raḥīm بسم الله الرحمن الرحيم) trente cinq fois est utile pour faciliter la subsistance. Elle est accrochée sur la porte de la boutique pour l’écoulement de la marchandise. Pour cela, on écrit trente cinq fois la basmalah puis on la porte ou on l’accroche sur la porte de la boutique pour faciliter la subsistance. Elle comporte un grand et éminent secret. On peut la dire aussi 35 fois pour faciliter la subsistance. Le fais de dire la basmalah (bismi l-Lāhi r-Rḥmāni r-Raḥīm) 21 fois après chaque prière obligatoire est une causse pour avoir beaucoup de bien et pour facilité ce qui est difficile pour nous.', '', 'invocation, evocations, secrets, faciliter'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'كتابة البسملة خَمسًا وثلاثين مرة لتيسير الرزق يوضع على باب الدكان لرواج البضاعة. (تُكتَبُ البَسمَلَة خمسًا وثَلاثِينَ مَرّةً وتُحمَلُ أو تُعَلَّقُ على بابِ البَيتِ أو الدُّكّان لتَيسِير الرّزْقِ فيهَا سِرٌّ عَظِيم).');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'كتابة البسملة خَمسًا وثلاثين مرة لتيسير الرزق يوضع على باب الدكان لرواج البضاعة. (تُكتَبُ البَسمَلَة خمسًا وثَلاثِينَ مَرّةً وتُحمَلُ أو تُعَلَّقُ على بابِ البَيتِ أو الدُّكّان لتَيسِير الرّزْقِ فيهَا سِرٌّ عَظِيم).');
 
 -- source: https://islam.ms/invocation-secret-faciliter-subsistance
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Evocations et secrets pour faciliter la subsistance', 'وَرَدَ في الحَديث القُدسيّ: "يَا دُنيَا مَن خَدَمَنِي فَاخْدُمِيْهِ ومَن خَدَمَكِ فأَتْعِبِيْه". ومعناه: اللهُ تعالى يُيَسّر الرّزقَ لمن اتّقَى الله واشْتَغَل بطَاعَتِه. ومَعنى "خَدَمَني" في هذا الحديث: أطَاعَني.', '', '', 'Il est parvenu dans le Ḥadīth qoudsiyy ce qui signifie : « Ô toi bas-monde, celui qui M’obéit, alors sois à son service, et celui qui est à ton service alors épuise-le » .Cela veut dire que Dieu facilite la subsistance à celui qui fait preuve de piété envers Dieu, et qui s’occupe à lui obéir.', '', 'invocation, evocations, secrets, faciliter'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'وَرَدَ في الحَديث القُدسيّ: "يَا دُنيَا مَن خَدَمَنِي فَاخْدُمِيْهِ ومَن خَدَمَكِ فأَتْعِبِيْه". ومعناه: اللهُ تعالى يُيَسّر الرّزقَ لمن اتّقَى الله واشْتَغَل بطَاعَتِه. ومَعنى "خَدَمَني" في هذا الحديث: أطَاعَني.');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'وَرَدَ في الحَديث القُدسيّ: "يَا دُنيَا مَن خَدَمَنِي فَاخْدُمِيْهِ ومَن خَدَمَكِ فأَتْعِبِيْه". ومعناه: اللهُ تعالى يُيَسّر الرّزقَ لمن اتّقَى الله واشْتَغَل بطَاعَتِه. ومَعنى "خَدَمَني" في هذا الحديث: أطَاعَني.');
 
 -- source: https://islam.ms/invocation-secret-faciliter-subsistance
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Evocations et secrets pour faciliter la subsistance', 'عن سَلّام بنِ شُرَحْبِيْلَ عن حَبَّةَ وسَوَاء ابنَي خَالدٍ رَضيَ اللهُ تَعالى عنهُما قَالا أَتَينَا رَسولَ الله صلى الله عليه وسلم فقال : "لَا تَيْئَسَا مِنَ الرّزْقِ مَا تَهَزْهَزَت رُؤوسُكُما فإنّ الإنسَانَ تَلِدُه أُمُّهُ أَحمرَ لا قِشْرَ عَلَيهِ ثم يَرزُقُهُ اللهُ عَزَّ وَجَلّ". هذا حَديثٌ صَحِيحٌ أخرَجَه أَحمَد.', '', '', 'D’après Salām fils de Chouraḥbīl, d’après Ḥabbah et Sawā’ tous deux fils de Khālid que Dieu l’agrée, ont dit : " Nous sommes partis chez le Messager de Dieu, que Dieu l’honore et l’élève davantage en degré, qui nous a dit [ce qui signifie] : « Ne désespérez pas de la subsistance tant que vous êtes encore en vie. L’être humain, sa mère lui donne naissance alors qu’il est tout nu, sans enveloppe, puis Dieu lui accorde sa subsistance.»" Ḥadīth authentique rapporté par l’Imam Aḥmad.', '', 'invocation, evocations, secrets, faciliter'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'عن سَلّام بنِ شُرَحْبِيْلَ عن حَبَّةَ وسَوَاء ابنَي خَالدٍ رَضيَ اللهُ تَعالى عنهُما قَالا أَتَينَا رَسولَ الله صلى الله عليه وسلم فقال : "لَا تَيْئَسَا مِنَ الرّزْقِ مَا تَهَزْهَزَت رُؤوسُكُما فإنّ الإنسَانَ تَلِدُه أُمُّهُ أَحمرَ لا قِشْرَ عَلَيهِ ثم يَرزُقُهُ اللهُ عَزَّ وَجَلّ". هذا حَديثٌ صَحِيحٌ أخرَجَه أَحمَد.');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'عن سَلّام بنِ شُرَحْبِيْلَ عن حَبَّةَ وسَوَاء ابنَي خَالدٍ رَضيَ اللهُ تَعالى عنهُما قَالا أَتَينَا رَسولَ الله صلى الله عليه وسلم فقال : "لَا تَيْئَسَا مِنَ الرّزْقِ مَا تَهَزْهَزَت رُؤوسُكُما فإنّ الإنسَانَ تَلِدُه أُمُّهُ أَحمرَ لا قِشْرَ عَلَيهِ ثم يَرزُقُهُ اللهُ عَزَّ وَجَلّ". هذا حَديثٌ صَحِيحٌ أخرَجَه أَحمَد.');
 
 -- source: https://islam.ms/invocation-secret-faciliter-subsistance
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Evocations et secrets pour faciliter la subsistance', 'ورَد حديثٌ صَحيح: "مَنْ لَزِمَ الاستِغفَارَ جَعَلَ اللهُ لهُ مِن كُلّ ضِيقٍ مَخرَجًا ومِن كُلّ هَمّ فَرَجًا ورَزقَه مِن حَيثُ لا يَحتَسِب" رواه أبو داود ، وابن ماجه ، والبيهقى عن ابن عباس ورواه أبو داود والطبراني)', '', '', 'Il est parvenu un Ḥadīth authentique: celui qui s’attache à al-istighfār (comme en disant Rabbi ghfir lī), Dieu lui accorde une issue de toute épreuve, une délivrance de tout tourment et Il lui accorde une subsistance d’une voie à partir de laquelle il ne s’attendait pas à en recevoir. Rapporté par Aboū Dāwoūd, Ibn Mājah, et Al-Bayhaqiyy d’après Ibn Abbās, tout comme Aboū Dāwoūd et Aṭ-Ṭabarāniyy.', '', 'invocation, evocations, secrets, faciliter'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'ورَد حديثٌ صَحيح: "مَنْ لَزِمَ الاستِغفَارَ جَعَلَ اللهُ لهُ مِن كُلّ ضِيقٍ مَخرَجًا ومِن كُلّ هَمّ فَرَجًا ورَزقَه مِن حَيثُ لا يَحتَسِب" رواه أبو داود ، وابن ماجه ، والبيهقى عن ابن عباس ورواه أبو داود والطبراني)');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'ورَد حديثٌ صَحيح: "مَنْ لَزِمَ الاستِغفَارَ جَعَلَ اللهُ لهُ مِن كُلّ ضِيقٍ مَخرَجًا ومِن كُلّ هَمّ فَرَجًا ورَزقَه مِن حَيثُ لا يَحتَسِب" رواه أبو داود ، وابن ماجه ، والبيهقى عن ابن عباس ورواه أبو داود والطبراني)');
 
 -- source: https://islam.ms/invocation-secret-faciliter-subsistance
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Evocations et secrets pour faciliter la subsistance', 'لمن يَشكُو الضّيقَ مِن حيث المال أكثِر مِن الاستغفار، استَغفِر الله كلَّ يَوم ثَلاثمائة مَرّة.', '', '', 'Pour celui qui se plaint de difficultés financières, qu’il fasse beaucoup al-istighfār, (astaghfirou l-Lāh) trois cents fois par jour. Cette parole signifie : Ô mon Dieu, pardonne-moi mes péchés.', '', 'invocation, evocations, secrets, faciliter'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'لمن يَشكُو الضّيقَ مِن حيث المال أكثِر مِن الاستغفار، استَغفِر الله كلَّ يَوم ثَلاثمائة مَرّة.');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'لمن يَشكُو الضّيقَ مِن حيث المال أكثِر مِن الاستغفار، استَغفِر الله كلَّ يَوم ثَلاثمائة مَرّة.');
 
 -- source: https://islam.ms/invocation-secret-faciliter-subsistance
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Evocations et secrets pour faciliter la subsistance', 'مَنْ قَرَأَ هَذَا الدُّعاءَ فِي اليَوْمِ عِشْرِيْنَ مَرَّةً لَم يَرَ قِلَّةً أَبَدًا، وَهُوَ مُجَرَّبٌ صَحِيْحٌ : "بِسْمِ اللهِ الرَّحمنِ الرَّحِيمِ، يَا عَظِيمَ الجَلَالِ، يَا بَدِيعَ الكَمَالِ، يَا كَثِيْرَ النَّوَالِ، يَا دَائِمَ الإِفْضَالِ، يَا حَسَنَ الفَعَالِ، يَا قَائِمُ بِلَا زَوَالٍ، وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى ءَالِهِ وَصَحْبِهِ وَسَلَّم"', '', '', 'Celui qui récite cette invocation vingt fois par jour, ne sera jamais éprouvé par le manque. Elle a été expérimentée et est authentique: (Bismi l-Lāhi r-Raḥmāni r-Raḥīm ; yā ʿaḍḥīma l-Jalāl ; yā badīʿa l-kamāl ; yā kathīra n-nawāl ; yā dā’ima l-’ifḍāl; yā ḥasana l-faʿāl ; yā Qā’imou bilā zawāl ; wa ṣalla l-Lāhou ʿalā sayyidinā Mouḥammadin wa ʿalā ’ālihi wa ṣaḥbihi wa sallam)', '', 'invocation, evocations, secrets, faciliter'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'مَنْ قَرَأَ هَذَا الدُّعاءَ فِي اليَوْمِ عِشْرِيْنَ مَرَّةً لَم يَرَ قِلَّةً أَبَدًا، وَهُوَ مُجَرَّبٌ صَحِيْحٌ : "بِسْمِ اللهِ الرَّحمنِ الرَّحِيمِ، يَا عَظِيمَ الجَلَالِ، يَا بَدِيعَ الكَمَالِ، يَا كَثِيْرَ النَّوَالِ، يَا دَائِمَ الإِفْضَالِ، يَا حَسَنَ الفَعَالِ، يَا قَائِمُ بِلَا زَوَالٍ، وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى ءَالِهِ وَصَحْبِهِ وَسَلَّم"');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'مَنْ قَرَأَ هَذَا الدُّعاءَ فِي اليَوْمِ عِشْرِيْنَ مَرَّةً لَم يَرَ قِلَّةً أَبَدًا، وَهُوَ مُجَرَّبٌ صَحِيْحٌ : "بِسْمِ اللهِ الرَّحمنِ الرَّحِيمِ، يَا عَظِيمَ الجَلَالِ، يَا بَدِيعَ الكَمَالِ، يَا كَثِيْرَ النَّوَالِ، يَا دَائِمَ الإِفْضَالِ، يَا حَسَنَ الفَعَالِ، يَا قَائِمُ بِلَا زَوَالٍ، وَصَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى ءَالِهِ وَصَحْبِهِ وَسَلَّم"');
 
 -- source: https://islam.ms/invocation-secret-faciliter-subsistance
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Evocations et secrets pour faciliter la subsistance', 'شَخصٍ لم يُرزَق أَولادًا مُنذُ عَشرِ سنِينَ : لِيُكثِرُوا مِنَ الاستِغفَار، ليَلزَم. شَخصٌ لَزِمَ الاستِغفَارَ فرُزِقَ.', '', '', 'Un couple qui n’a pas eu d’enfant depuis dix ans : qu’ils multiplient al-istighfār. Qu’ils le fassent régulièrement. Il y a quelqu’un qui s’est attaché à al-istighfār et il a eu des enfants.', '', 'invocation, evocations, secrets, faciliter'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'شَخصٍ لم يُرزَق أَولادًا مُنذُ عَشرِ سنِينَ : لِيُكثِرُوا مِنَ الاستِغفَار، ليَلزَم. شَخصٌ لَزِمَ الاستِغفَارَ فرُزِقَ.');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'شَخصٍ لم يُرزَق أَولادًا مُنذُ عَشرِ سنِينَ : لِيُكثِرُوا مِنَ الاستِغفَار، ليَلزَم. شَخصٌ لَزِمَ الاستِغفَارَ فرُزِقَ.');
 
 -- source: https://islam.ms/invocation-secret-faciliter-subsistance
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Evocations et secrets pour faciliter la subsistance', 'وَرَدَ حَدِيثٌ بِإِسْنَادٍ ضَعِيفٌ: "الصُّبْحَةُ تَمْنَعُ الرِّزْقَ"، الصُّبْحَةُ فَمَعْنَاهُ النَّوْمُ بَعْدَ صَلَاةِ الصُّبْحِ (أي أوَّلَ النَّهَارِ)، لَكِنَّهُ إِنْ كَانَ الشَّخْصُ يَنَامُ بِلَا فَائِدَةٍ (هذَا الذِي نَقُولُ) لَا خَيْرَ فِيهِ (لأنَّهُ قَد يَكُونُ نَوْمُهُ لِمَرَضٍ).', '', '', 'Il est parvenu dans un Ḥadīth de faible fiabilité que le fait de dormir le matin après la prière de l’aube, c’est-à-dire en début de journée, prive de la subsistance. Néanmoins, c’est dans le cas où la personne se rendort inutilement. C’est ce que nous disons. C’est dans ce cas qu’il n’y a pas de bien en cela. Il se peut en effet que la personne se rendort en raison d’une maladie.', '', 'invocation, evocations, secrets, faciliter'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'وَرَدَ حَدِيثٌ بِإِسْنَادٍ ضَعِيفٌ: "الصُّبْحَةُ تَمْنَعُ الرِّزْقَ"، الصُّبْحَةُ فَمَعْنَاهُ النَّوْمُ بَعْدَ صَلَاةِ الصُّبْحِ (أي أوَّلَ النَّهَارِ)، لَكِنَّهُ إِنْ كَانَ الشَّخْصُ يَنَامُ بِلَا فَائِدَةٍ (هذَا الذِي نَقُولُ) لَا خَيْرَ فِيهِ (لأنَّهُ قَد يَكُونُ نَوْمُهُ لِمَرَضٍ).');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'وَرَدَ حَدِيثٌ بِإِسْنَادٍ ضَعِيفٌ: "الصُّبْحَةُ تَمْنَعُ الرِّزْقَ"، الصُّبْحَةُ فَمَعْنَاهُ النَّوْمُ بَعْدَ صَلَاةِ الصُّبْحِ (أي أوَّلَ النَّهَارِ)، لَكِنَّهُ إِنْ كَانَ الشَّخْصُ يَنَامُ بِلَا فَائِدَةٍ (هذَا الذِي نَقُولُ) لَا خَيْرَ فِيهِ (لأنَّهُ قَد يَكُونُ نَوْمُهُ لِمَرَضٍ).');
 
 -- source: https://islam.ms/invocation-sortant-maison
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lorsqu’on sort de chez soi', 'بِسْمِ الله ، تَوَكَّلْتُ عَلَى الله ، وَلا حَوْلَ وَلا قُوَّةَ إلا بِالله', 'Je commence par le nom de Allāh, je me fie à Allāh. Il n’est de préservation [contre la désobéissance à Allāh que par la préservation de Allāh] et il n’est de force [pour l’obéissance à Allāh] que par [l’aide de] Allāh', 'bismi l-Lāh tawakkaltou ʿala l-Lāh wa lā ḥawla wa lā qouwwata ’il-lā bi l-Lāh', 'Information utile: il a été dit que cette invocation préserve par la volonté de Allāh contre le mal du chayṭān.', '', 'invocation, sort, chez, maison'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'بِسْمِ الله ، تَوَكَّلْتُ عَلَى الله ، وَلا حَوْلَ وَلا قُوَّةَ إلا بِالله');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'بِسْمِ الله ، تَوَكَّلْتُ عَلَى الله ، وَلا حَوْلَ وَلا قُوَّةَ إلا بِالله');
 
 -- source: https://islam.ms/invocation-sortant-maison
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lorsqu’on sort de chez soi', 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أَضِلَّ أَو أُضَلَّ أَو أَزِلَّ أَو أُزَلَّ، أَو أَظْلِمَ أَو أُظْلَمَ، أَو أَجْهَلَ أَو يُجْهَلَ عَلَيَّ', 'Ô Allāh, je Te demande de me préserver contre le fait d’égarer [autrui] ou d’être égaré [par autrui], je Te demande de me préserver de tomber [dans le péché] ou qu’on me fasse tomber [dans le péché], je Te demande de me préserver de commettre une injustice ou de subir moi-même une injustice', 'Allāhoumma ’innī ’aʿoūdhou bika ’an aḍil-la ’aw ’ouḍall ’aw ’azilla ’aw ’ouzall ’aw ’aḍhlima ’aw ’ouḍhlama ’aw ’ajhala ’aw youjhala ʿalayy', '', '', 'invocation, sort, chez, maison'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أَضِلَّ أَو أُضَلَّ أَو أَزِلَّ أَو أُزَلَّ، أَو أَظْلِمَ أَو أُظْلَمَ، أَو أَجْهَلَ أَو يُجْهَلَ عَلَيَّ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أَضِلَّ أَو أُضَلَّ أَو أَزِلَّ أَو أُزَلَّ، أَو أَظْلِمَ أَو أُظْلَمَ، أَو أَجْهَلَ أَو يُجْهَلَ عَلَيَّ');
 
 -- source: https://islam.ms/invocation-sortant-mosquee
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation en sortant de la mosquée', 'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وسَلَّم. اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ', 'Ô Allāh honore et élève davantage en degré notre maître Mouḥammad, ô Allâh je Te demande une part de ce que Tu accordes par Ta grâce', 'Allāhoumma ṣalli ʿalā sayyidinā Mouḥammad, ṣalla l-Lāhou ʿalayhi wa sallam. Allāhoumma ’inni ’as’alouka min faḍlik', 'On sort avec son pied gauche et on dit:', '', 'invocation, sortant, mosquée'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وسَلَّم. اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وسَلَّم. اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ');
 
 -- source: https://islam.ms/invocation-tawassoul-tabarrouk
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Introduction pour préciser le sens du tawassoul', '« لـمّا اقترف آدمُ الخطيئة قال : يا ربّ أسألك بحق محمد إلا ما غفرت لي »', 'Lorsque ‘Adam a commis le petit péché, il a dit : Ô Seigneur, je Te demande par le degré de Mouḥammad, de me pardonner', '', 'Dans la suite du ḥadīth il est cité que Adam a vu inscrit sur les piliers du Trône: il n’est de dieu que Dieu et Mouḥammad est le messager de Dieu, et il a dit j’ai su par cela que Mouḥammad est la créature que Dieu agrée le plus. Ceci est rapporté par al-Bayhaqiyy avec une chaîne de transmission qui remonte jusqu’au compagnon Òumar ibnou l-Khaṭṭâb que Dieu l’agrée Ibnou Majah a rapporté que le Messager de Allāh a dit ce qui signifie: « Lorsqu’un homme sort de sa maison pour aller faire la prière et dit: "Allāhoumma ’innî ’as’alouka bi-ḥaqqi s-sâ’ilîn ʿalayk wa bi-ḥaqqi mamchâyâ hadhâ. Fa ’innî lam ’akhrouj bataran wa lâ ’acharan wa la soumʿatan. Kharajtou t-tiqâ’a Sakhatika wa btighâ’a marḍâtik. ’As’alouka ’an tounqidhanî mina n-nâr wa ’an taghfira lî dhounoûbî. ’Innahou lâ yaghfirou dh-dhounôuba ’il-lâ ’ant " » Allāh charge pour lui soixante-dix mille anges qui demandent qu’il soit pardonné et Allāh l’agrée jusqu’à ce qu’il finisse sa prière ». Le sens du douʿa’ est : « Ô Allāh, je Te demande par le degré de ceux qui Te demandent et par le degré de ces pas que je fais maintenant. Je ne suis pas sorti par recherche de bonne reputation, ni orgueil, ni par insincérité, ni par recherche d’éloges. Je suis sorti par crainte de la menace de ton châtiment et par recherche de Ton agrément. Je Te demande de me sauver de l’enfer et de me pardonner mes péchés. Certes, ne pardonne les péchés que Toi ». Al-Boukhâriyy, (Mouḥammad Ibnou Ismaʿîl, mort en 265 H), dans son livre Al-’Adabou l-Moufrad, chapitre de ce qu’on dit si la personne a été atteint par une paralysie, d’après Ibnou ʿOumar, rapporte que sa jambe s’était quasiment paralysée. On lui avait alors dit : "cite la personne que tu aimes le plus". Il a dit alors: " Yâ Mouḥammad – ô Mouḥammad –" et sa jambe a guéri, comme s’il n’avait rien eu.', '', 'invocation, introduction, préciser, sens'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« لـمّا اقترف آدمُ الخطيئة قال : يا ربّ أسألك بحق محمد إلا ما غفرت لي »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« لـمّا اقترف آدمُ الخطيئة قال : يا ربّ أسألك بحق محمد إلا ما غفرت لي »');
 
 -- source: https://islam.ms/invocation-tonnerre
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lorsqu’on entend le tonnerre', 'سُبْحَانَ الذِي يُسَبِّحُ الرَعْدُ بِحَمْدِهِ وَالمَلائِكَةُ مِنْ خِيفَتِه', 'Il est exempt d’imperfection Celui pour Qui Ar-Raʿd ainsi que les anges font le tasbiḥ et les louanges par la crainte qu’ils ont pour Lui', 'soubḥāna l-ladhī yousabbiḥou r-raʿdou biḥamdihi wa l-malā’ikatou min khīfatih', 'Lorsqu’on entend le tonnerre, il est recommandé de dire: Information utile: Ar-Raʿd, c’est le nom de l’ange qui est chargé de faire déplacer les nuages. L’ange Ar-Raʿd a été distingué des autres anges, et il y a une soūrah dans le Qour’ān qui porte son nom. Et Ar-Raʿd peut aussi désigner le tonnerre. Il a été dit que les anges ont des fouets avec lesquels ils frappent les nuages, et c’est cela qui émet le bruit du tonnerre.', '', 'invocation, entend, tonnerre'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'سُبْحَانَ الذِي يُسَبِّحُ الرَعْدُ بِحَمْدِهِ وَالمَلائِكَةُ مِنْ خِيفَتِه');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'سُبْحَانَ الذِي يُسَبِّحُ الرَعْدُ بِحَمْدِهِ وَالمَلائِكَةُ مِنْ خِيفَتِه');
 
 -- source: https://islam.ms/invocation-transport
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lorsqu’on prend place dans un moyen de transport', 'اللهُ أكْبَر اللهُ أكْبَر اللهُ أكْبَر سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَٰذَا', '', '', 'L’Imam Mouslim a rapporté dans son saḥīḥ que le Messager de Allāh ṣalla l-Lāhou ʿalayhi wa sallam a enseigné cette invocation lorsqu’on prend place sur une monture:', '', 'invocation, prend, place, moyen'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللهُ أكْبَر اللهُ أكْبَر اللهُ أكْبَر سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَٰذَا');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللهُ أكْبَر اللهُ أكْبَر اللهُ أكْبَر سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَٰذَا');
 
 -- source: https://islam.ms/invocation-transport
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocation lorsqu’on prend place dans un moyen de transport', 'وَمَا كُنَّا لَهُ مُقْرِنِينَ وَ إنَّا إلى رَبِّنَا لَمُنْقَلِبُوْن', 'Allāh mérite plus de vénération que tout autre, Allāh mérite plus de vénération que tout autre, Allāh mérite plus de vénération que tout autre, Il est exempt d’imperfection Celui Qui a mis à notre disposition ce moyen pour nous déplacer, et nous n’aurions pu le maîtriser ni l’utiliser si Allāh ne nous l’avait pas accordé ; et certes nous reviendrons au jugement de notre Seigneur au Jour Dernier', 'Allāhou ’akbar, Allāhou ’akbar, Allāhou ’akbar, soubḥāna l-ladhī sakh-khara lanā hādhā wa mā kounnā lahou mouqrinīn wa ’innā ’ilā rabbinā lamounqaliboūn', '', '', 'invocation, prend, place, moyen'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'وَمَا كُنَّا لَهُ مُقْرِنِينَ وَ إنَّا إلى رَبِّنَا لَمُنْقَلِبُوْن');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'وَمَا كُنَّا لَهُ مُقْرِنِينَ وَ إنَّا إلى رَبِّنَا لَمُنْقَلِبُوْن');
 
 -- source: https://islam.ms/invocation-visite-malade
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Ce que l’on dit lorsqu’on visite un malade', 'أسألُ اللهَ العظيمَ ربَّ العرشِ العظيمِ أنْ يشفيَك', 'Je demande à Allāh, Celui Qui est éminent, le Seigneur du Trône éminent de t’accorder la guérison', '’as’alou l-Lāha l-ʿAḍḥīm, Rabba l-ʿarchi l-ʿaḍḥim ’an yachfiyak', 'Lorsque l’on rend visite à un malade, il est conseillé de dire: 7 fois', '', 'invocation, visite, malade'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'أسألُ اللهَ العظيمَ ربَّ العرشِ العظيمِ أنْ يشفيَك');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'أسألُ اللهَ العظيمَ ربَّ العرشِ العظيمِ أنْ يشفيَك');
 
 -- source: https://islam.ms/invocation-voyage
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations pour le voyage', 'أَسْتَوْدِعُكَ اللهَ الَّذِي لاَ تَضِيعُ وَدَائِعُهُ', 'Je te confie à Allāh, Celui qui préserve ce qui Lui est confié', '’astawdiʿouka l-Lāha l-Ladhī lā taḍīʿou wadā’ʿouh', '[ḥadīth rapporté par l’Imam ’Aḥmad et autre d’après Aboū Hourayrah] ʿAbdou l-Lāh Ibnou ʿOumar Ibnou l-Khaṭṭāb, que Allāh les agrée, disait lorsque quelqu’un venait le voir avant d’entamer un voyage: « Rapproche-toi de moi afin que je te salue tout comme nous saluait le Messager de Allāh ṣalla l-Lahou ʿalayhi wa sallam, il nous saluait pour un départ en voyage en nous disant:', '', 'invocation, invocations, voyage, voyageur'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'أَسْتَوْدِعُكَ اللهَ الَّذِي لاَ تَضِيعُ وَدَائِعُهُ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'أَسْتَوْدِعُكَ اللهَ الَّذِي لاَ تَضِيعُ وَدَائِعُهُ');
 
 -- source: https://islam.ms/invocation-voyage
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations pour le voyage', 'أستَودِعُ اللَّهَ دِينَكَ وَأَمَانَتَكَ وَخَوَاتِيمَ عَمَلِكَ', 'Je confie à Allāh ta religion, ton honnêteté et tes dernières œuvres', '’astawdiʿou l-Lāha dīnaka wa ’amānataka wa khawātīma ʿamalik', '[ḥadīth ṣaḥīḥ rapporté par l’Imam ’Aḥmad et At-Tirmīdhiyy] ʿAbdou l-Lāh Ibnou ʿOumar, que Allāh l’agrée lui et son père, a rapporté que le Messager de Allāh ṣalla l-Lāhou ʿalayhi wa sallam a enseigné cette invocation pour celui qui part en voyage:', '', 'invocation, invocations, voyage, voyageur'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'أستَودِعُ اللَّهَ دِينَكَ وَأَمَانَتَكَ وَخَوَاتِيمَ عَمَلِكَ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'أستَودِعُ اللَّهَ دِينَكَ وَأَمَانَتَكَ وَخَوَاتِيمَ عَمَلِكَ');
 
 -- source: https://islam.ms/invocation-voyage
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Invocations pour le voyage', 'اللهُ أكْبَر، اللهُ أكْبَر، اللهُ أكْبَر، اللَّهُمَّ إِنَّا نَسْأَلُكَ في سَفَرِنَا هذا البِرَّ والتَّقوى ومِنَ العَمَلِ ما تَرْضى، اللَّهُمَّ هَوِّنْ علَيْنا سفَرَنَا هذا وَاطْوِ عنَّا بُعْدَهُ، اللَّهُمَّ أَنتَ الصَّاحِبُ في السَّفَرِ وَالخَلِيفَةُ في الأهْلِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ وعْثَاءِ السَّفَرِ، وكآبةِ المَنظَرِ، وَسُوءِ المُنْقلَبِ في المالِ والأهلِ', 'Allāh mérite plus de vénération que tout autre. Ô Allāh, nous Te demandons pour notre voyage que voici la bienfaisance et la piété, et nous Te demandons de nous accorder d’accomplir des oeuvres que Tu agrées. Ô Allāh, facilite-nous ce voyage que nous voulons entreprendre et fais que la distance nous soit raccourcie. Ô Allāh, Tu es Celui Qui nous préserve durant ce voyage par Ta grâce et Tu es Celui à Qui nous confions nos familles. Ô Allāh, nous recherchons Ta préservation contre les difficultés du voyage et contre le fait de voir de mauvaises choses durant ce voyage, et contre un mauvais retour aux biens et à la famille', 'Allāhou ’akbar, Allāhou ’akbar, Allāhou ’akbar, Allāhoumma ’inna nas’alouka fi safarinā hādhā l-birra wa t-taqwā, wa mina l-ʿamali ma tarḍā, Allāhoumma hawwin ʿalaynā safaranā hādhā wa ṭwi ʿannā bouʿdah, Allāhoumma ’anta ṣ-ṣāḥibou fi s-safari wa l-khalīfatou fi l-’ahli, Allāhoumma ’innī ’aʿoūdhou bika min waʿthā’i s-safari wa ka’ābati l-manḍhari wa soū’i l-mounqalabi fi l-māli wa l-’ahl', '[rapporté par Mouslim]', '', 'invocation, invocations, voyage, voyageur'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللهُ أكْبَر، اللهُ أكْبَر، اللهُ أكْبَر، اللَّهُمَّ إِنَّا نَسْأَلُكَ في سَفَرِنَا هذا البِرَّ والتَّقوى ومِنَ العَمَلِ ما تَرْضى، اللَّهُمَّ هَوِّنْ علَيْنا سفَرَنَا هذا وَاطْوِ عنَّا بُعْدَهُ، اللَّهُمَّ أَنتَ الصَّاحِبُ في السَّفَرِ وَالخَلِيفَةُ في الأهْلِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ وعْثَاءِ السَّفَرِ، وكآبةِ المَنظَرِ، وَسُوءِ المُنْقلَبِ في المالِ والأهلِ');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللهُ أكْبَر، اللهُ أكْبَر، اللهُ أكْبَر، اللَّهُمَّ إِنَّا نَسْأَلُكَ في سَفَرِنَا هذا البِرَّ والتَّقوى ومِنَ العَمَلِ ما تَرْضى، اللَّهُمَّ هَوِّنْ علَيْنا سفَرَنَا هذا وَاطْوِ عنَّا بُعْدَهُ، اللَّهُمَّ أَنتَ الصَّاحِبُ في السَّفَرِ وَالخَلِيفَةُ في الأهْلِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ وعْثَاءِ السَّفَرِ، وكآبةِ المَنظَرِ، وَسُوءِ المُنْقلَبِ في المالِ والأهلِ');
 
 -- source: https://islam.ms/merite-invocation-faveur-prophete-faire-eloge-mouhammad-salat-ala-nabiyy
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Le mérite de l’invocation en faveur du Prophète Mouḥammad et de faire son éloge. Salat ʿala n-Nabiyy', 'نطق الفؤاد وبالغرام أجابكم أنا مذهبي عن حبّكم لا أذهب', '', '', 'Le cœur s’est exprimé et vous a répondu Ô Messager, avec un amour éperdu Ma voie quant à moi est et sera pour toujours de ne jamais dévier de celle de votre amour Esclaves de Allāh, je vous recommande ainsi qu’à moi-même la piété à l’égard de Allāh, Lui Qui dit dans Son livre qui ne comporte pas de défaut:', '', 'invocation, mérite, faveur, prophète'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'نطق الفؤاد وبالغرام أجابكم أنا مذهبي عن حبّكم لا أذهب');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'نطق الفؤاد وبالغرام أجابكم أنا مذهبي عن حبّكم لا أذهب');
 
 -- source: https://islam.ms/merite-invocation-faveur-prophete-faire-eloge-mouhammad-salat-ala-nabiyy
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Le mérite de l’invocation en faveur du Prophète Mouḥammad et de faire son éloge. Salat ʿala n-Nabiyy', 'الله عظَّمَ قَدْرَ محمّدٍ وأَنالهُ فضلًا لديهِ عظيمًا في مُحكَمِ التَنزيلِ قال لِخلقِهِ صَلُّوا عليهِ وسَلّموا تَسليمًا', '', '', 'Allāh a glorifié le rang de Mouḥammad Et lui a accordé une éminente grâce Dans un verset explicite de Son Livre révélé Il dit à Ses créatures Demandez en sa faveur toujours davantage D’élévation d’honneur et de sérénité Chers frères de foi, il a été rapporté dans le mérite de l’invocation en faveur du Prophète ṣalla l-Lāhou ʿalayhi wa sallam plusieurs ḥadīth parmi lesquels il y a ce qu’a rapporté An-Naçā’iyy:', '', 'invocation, mérite, faveur, prophète'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'الله عظَّمَ قَدْرَ محمّدٍ وأَنالهُ فضلًا لديهِ عظيمًا في مُحكَمِ التَنزيلِ قال لِخلقِهِ صَلُّوا عليهِ وسَلّموا تَسليمًا');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'الله عظَّمَ قَدْرَ محمّدٍ وأَنالهُ فضلًا لديهِ عظيمًا في مُحكَمِ التَنزيلِ قال لِخلقِهِ صَلُّوا عليهِ وسَلّموا تَسليمًا');
 
 -- source: https://islam.ms/merite-invocation-faveur-prophete-faire-eloge-mouhammad-salat-ala-nabiyy
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Le mérite de l’invocation en faveur du Prophète Mouḥammad et de faire son éloge. Salat ʿala n-Nabiyy', '« مَنْ صَلَّى عَلَيَّ مِنْ أُمَّتِي صَلاةً مُخْلِصًا مِنْ قَلْبِهِ صَلَّى اللهُ عَلَيْهِ بِها عَشْرَ صَلَواتٍ ورَفَعَهُ بِها عَشْرَ دَرَجاتٍ وكَتَبَ لَهُ بِها عَشْرَ حَسَناتٍ ومَحَا عَنْهُ عَشْرَ سَيِّئاتٍ »', 'Celui de ma communauté qui fait en ma faveur, en étant sincère pour Dieu, une invocation venant de son cœur, Allāh l’augmente en honneur grâce à elle et l’élève de dix degrés grâce à elle, Il lui inscrit dix bonnes actions grâce à elle et Il lui efface dix mauvaises actions.', 'man ṣallā ʿalayya min ’oummatī ṣalātan moukhliṣan min qalbihī ṣalla l-Lāhou ʿalayhi bihā ʿachra ṣalawātin wa rafaʿahoū bihā ʿachra darajātin wa kataba lahoū bihā ʿachra ḥaçanātin wa maḥā ʿanhou ʿachra sayyi’āt', 'Et le Prophète ṣalla l-Lāhou ʿalayhi wa sallam a dit, dans ce qu’a rapporté l’Imam Aḥmad,', '', 'invocation, mérite, faveur, prophète'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« مَنْ صَلَّى عَلَيَّ مِنْ أُمَّتِي صَلاةً مُخْلِصًا مِنْ قَلْبِهِ صَلَّى اللهُ عَلَيْهِ بِها عَشْرَ صَلَواتٍ ورَفَعَهُ بِها عَشْرَ دَرَجاتٍ وكَتَبَ لَهُ بِها عَشْرَ حَسَناتٍ ومَحَا عَنْهُ عَشْرَ سَيِّئاتٍ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« مَنْ صَلَّى عَلَيَّ مِنْ أُمَّتِي صَلاةً مُخْلِصًا مِنْ قَلْبِهِ صَلَّى اللهُ عَلَيْهِ بِها عَشْرَ صَلَواتٍ ورَفَعَهُ بِها عَشْرَ دَرَجاتٍ وكَتَبَ لَهُ بِها عَشْرَ حَسَناتٍ ومَحَا عَنْهُ عَشْرَ سَيِّئاتٍ »');
 
 -- source: https://islam.ms/merite-invocation-faveur-prophete-faire-eloge-mouhammad-salat-ala-nabiyy
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Le mérite de l’invocation en faveur du Prophète Mouḥammad et de faire son éloge. Salat ʿala n-Nabiyy', '« صَلُّوا عَلَيَّ فَإِنَّها زَكاةٌ لَكُمْ وٱسْأَلُوا اللهَ لِي الوَسِيلَةَ فَإِنَّها دَرَجَةٌ في أَعْلَى الجَنَّةِ لا يَنالُها إِلَّا رَجُلٌ وأَرْجُو أَنْ أَكُونَ أَنا هُوَ »', 'Faites des invocations en ma faveur car ce sera une source de purification pour vous et demandez à Allāh qu’Il m’accorde la wacîlah car c’est un haut degré au paradis que n’obtiendra qu’un seul homme et j’espère être celui-là.', 'ṣalloū ʿalayya fa’innahā zakātoun lakoum wa s’alou l-Lāha li l-wacīlata fa’innahā darajatoun fī ’aʿla l-jannati lā yanālouhā ’il-lā rajouloun wa ’arjoū ’an ’akoūna ’anā hoū', 'Et le Prophète ʿalayhi ṣ-ṣalātou wa s-salām a dit dans ce qu’a rapporté Mouslim:', '', 'invocation, mérite, faveur, prophète'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« صَلُّوا عَلَيَّ فَإِنَّها زَكاةٌ لَكُمْ وٱسْأَلُوا اللهَ لِي الوَسِيلَةَ فَإِنَّها دَرَجَةٌ في أَعْلَى الجَنَّةِ لا يَنالُها إِلَّا رَجُلٌ وأَرْجُو أَنْ أَكُونَ أَنا هُوَ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« صَلُّوا عَلَيَّ فَإِنَّها زَكاةٌ لَكُمْ وٱسْأَلُوا اللهَ لِي الوَسِيلَةَ فَإِنَّها دَرَجَةٌ في أَعْلَى الجَنَّةِ لا يَنالُها إِلَّا رَجُلٌ وأَرْجُو أَنْ أَكُونَ أَنا هُوَ »');
 
 -- source: https://islam.ms/merite-invocation-faveur-prophete-faire-eloge-mouhammad-salat-ala-nabiyy
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Le mérite de l’invocation en faveur du Prophète Mouḥammad et de faire son éloge. Salat ʿala n-Nabiyy', '« إِذا سَمِعْتُمُ الْمُؤَذِّنَ فَقُولُوا مِثْلَ ما يَقُولُ ثُمَّ صَلُّوا عَلَيَّ فَإِنَّهُ مَنْ صَلَّى عَلَيَّ صَلاةً صَلَّى اللهُ عَلَيْهِ بِها عَشْرًا ثُمَّ سَلُوا اللهَ لِي الوَسِيلَةَ فَإِنَّها مَنْزِلَةٌ في الجَنَّةِ لا تَنْبَغِي إِلَّا لِعَبْدٍ مِنْ عِبادِ اللهِ وأَرْجُو أَنْ أَكُونَ أَنا هُوَ فَمَنْ سَأَلَ لِي الوَسِيلَةَ حَلَّتْ لَهُ الشَّفاعَةُ »', 'Lorsque vous entendez le mou’adh-dhin, répétez ce qu’il dit; puis faites l’invocation en ma faveur car celui qui fait une invocation en ma faveur, Allāh l’élève de dix degrés; puis demandez à Allāh qu’Il m’accorde la wacīlah car c’est un degré au paradis qui ne convient qu’à un seul des esclaves de Allāh et j’espère être celui-là; celui qui demande en ma faveur la wacīlah aura mon intercession.', '’idhā samiʿtoumou l-mou’adh-dhina faqoūloū mithlamā yaqoūlou thoumma ṣalloū ʿalayya fa’innahoū man ṣallā ʿalayya ṣalātan ṣalla l-Lāhou ʿalayhi bihā ʿachran thoumma salou l-Lāha li l-wacīlata fa’innahā manzilatoun fi l-jannati la yanbaghī ’il-lāliʿabdin min ʿibādi l-Lāhi wa ’arjoū ’an ’akoūna ’anā houwa faman sa’ala li l-wacīlata ḥallat lahou ch-chafāʿah', 'Et le Prophète ʿalayhi ṣ-ṣalātou wa s-salām, dans ce qu’a rapporté At-Tirmidhiyy et Ibnou Hibbān, a dit:', '', 'invocation, mérite, faveur, prophète'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« إِذا سَمِعْتُمُ الْمُؤَذِّنَ فَقُولُوا مِثْلَ ما يَقُولُ ثُمَّ صَلُّوا عَلَيَّ فَإِنَّهُ مَنْ صَلَّى عَلَيَّ صَلاةً صَلَّى اللهُ عَلَيْهِ بِها عَشْرًا ثُمَّ سَلُوا اللهَ لِي الوَسِيلَةَ فَإِنَّها مَنْزِلَةٌ في الجَنَّةِ لا تَنْبَغِي إِلَّا لِعَبْدٍ مِنْ عِبادِ اللهِ وأَرْجُو أَنْ أَكُونَ أَنا هُوَ فَمَنْ سَأَلَ لِي الوَسِيلَةَ حَلَّتْ لَهُ الشَّفاعَةُ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« إِذا سَمِعْتُمُ الْمُؤَذِّنَ فَقُولُوا مِثْلَ ما يَقُولُ ثُمَّ صَلُّوا عَلَيَّ فَإِنَّهُ مَنْ صَلَّى عَلَيَّ صَلاةً صَلَّى اللهُ عَلَيْهِ بِها عَشْرًا ثُمَّ سَلُوا اللهَ لِي الوَسِيلَةَ فَإِنَّها مَنْزِلَةٌ في الجَنَّةِ لا تَنْبَغِي إِلَّا لِعَبْدٍ مِنْ عِبادِ اللهِ وأَرْجُو أَنْ أَكُونَ أَنا هُوَ فَمَنْ سَأَلَ لِي الوَسِيلَةَ حَلَّتْ لَهُ الشَّفاعَةُ »');
 
 -- source: https://islam.ms/merite-invocation-faveur-prophete-faire-eloge-mouhammad-salat-ala-nabiyy
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Le mérite de l’invocation en faveur du Prophète Mouḥammad et de faire son éloge. Salat ʿala n-Nabiyy', '« إِنَّ أَوْلَى الناسِ بِي يَوْمَ القِيامَةِ أَكْثَرُهُمْ عَلَيَّ صَلاةً »', '', '’inna ’awla n-nāci bī yawma l-qiyāmati ’aktharahoum ʿalayya ṣalātan', 'Ô Allāh fais que nous soyons de leur nombre. Ô Toi le plus généreux de ceux qui sont généreux, ô Allāh, honore et élève d’avantage en degrés notre maître Mouḥammad, celui à qui Tu as accordé un mérite par lequel il a dépassé les gens de l’Orient et de l’Occident. Ô Allāh, honore et élève d’avantage en degrés le Prophète Mouḥammad autant de fois que l’évoquent ceux qui évoquent et autant de fois qu’oublient de l’évoquer ceux qui l’oublient. Mes frères de foi, Allāh soubḥānah nous a ordonnés de glorifier notre maître Mouḥammad, Il dit:', '', 'invocation, mérite, faveur, prophète'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« إِنَّ أَوْلَى الناسِ بِي يَوْمَ القِيامَةِ أَكْثَرُهُمْ عَلَيَّ صَلاةً »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« إِنَّ أَوْلَى الناسِ بِي يَوْمَ القِيامَةِ أَكْثَرُهُمْ عَلَيَّ صَلاةً »');
 
 -- source: https://islam.ms/merite-invocation-faveur-prophete-faire-eloge-mouhammad-salat-ala-nabiyy
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Le mérite de l’invocation en faveur du Prophète Mouḥammad et de faire son éloge. Salat ʿala n-Nabiyy', '« اللهُ يَعْلَمُ إِنِّي لَأُحِبُّكُنَّ »', 'Allāh sait que vraiment je vous aime.', '', 'Et ceci chers bien-aimés est une preuve qu’il est méritoire de faire l’éloge du Messager de Allāh tout en tapant du douff, car le Messager ne s’est jamais tu devant quelque chose de blâmable. Non seulement il ne les a pas blâmées pour ce qu’elles étaient en train de faire mais au contraire il leur a adressé des paroles de louange pour cela. Ceci indique que faire l’éloge du Prophète, en étant seul ou en groupe, avec ou sans douff, est un acte qui fait mériter l’agrément de Allāh, c’est un acte qui est agréé, ce n’est pas une mauvaise innovation comme le prétendent ceux qui interdisent le Mawlid honoré Allāh soubḥānahoū wa taʿālā fait l’éloge de Son Prophète, celui qu’Il agrée le plus, l’Élu, par de nombreuses ’āyah dans Son Livre honoré. Il a ainsi manifesté ses caractères louables, l’honneur de son état et l’éminence de son degré et de son mérite. Il a dit:', '', 'invocation, mérite, faveur, prophète'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« اللهُ يَعْلَمُ إِنِّي لَأُحِبُّكُنَّ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« اللهُ يَعْلَمُ إِنِّي لَأُحِبُّكُنَّ »');
 
 -- source: https://islam.ms/nuit-15-chabane-invocation
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Dieu fait changer les créatures et Lui ne change pas', '« يغفر ذنبًا ويكشف كربًا ويرفع قومًا ويضع آخرين »', 'Il pardonne un péché, Il lève une épreuve, Il élève un peuple et Il en rabaisse d’autres', '', 'Ainsi Dieu fait changer les créatures et lui ne change pas Ceci est en accord avec la parole des musulmans qui disent:', '', 'invocation, dieu, changer, créatures'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« يغفر ذنبًا ويكشف كربًا ويرفع قومًا ويضع آخرين »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« يغفر ذنبًا ويكشف كربًا ويرفع قومًا ويضع آخرين »');
 
 -- source: https://islam.ms/nuit-15-chabane-invocation
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Dieu fait changer les créatures et Lui ne change pas', '« سُبحان الّذي يُغَيّر ولا يتغيَّر »', 'Il est exempt de toute imperfection Celui Qui fait changer alors que Lui Il ne change pas', 'soubḥâna l-Ladhî youghayyir wa lâ yataghayyar', 'Ce sont de belles paroles parce que le changement advient aux créatures et non pas à Allāh ni à Ses attributs. Voir: Les Attributs de Dieu. Ainsi attribuer à Dieu le changement est de la mécréance qui fait sortir de l’Islam, voir: Comment le Musulman Préserve sa Foi. Éviter Apostasie, Mécréance, Blasphème Allāh taʿālā dit:', '', 'invocation, dieu, changer, créatures'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« سُبحان الّذي يُغَيّر ولا يتغيَّر »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« سُبحان الّذي يُغَيّر ولا يتغيَّر »');
 
 -- source: https://islam.ms/nuit-15-chabane-invocation
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Dieu fait changer les créatures et Lui ne change pas', '« لَا يَرُدُّ القَضَاءَ إِلّا الدُّعَاءُ »', '', 'lā yarouddou l-qaḍā’a ‘il-la d-douʿā’', 'ce qui en est visé, c’est la destinée conditionnée. Il y a en effet ce qui est de l’ordre de la destinée conditionnée et ce qui est de l’ordre de la destinée inéluctable, c’est-à-dire qui aura lieu quoi qu’il arrive. La destinée conditionnée, c’est par exemple quand il est inscrit dans les livrets des anges qu’Untel subira telle épreuve et demeurera ainsi pendant telle période sauf s’il invoque Dieu pour que l’épreuve lui soit levée : s’il fait cette invocation, l’épreuve lui sera levée immédiatement après l’invocation, sinon il restera dans l’épreuve toute cette période. Ou bien si Untel entretient les relations avec ses proches parents ou s’il agit avec bienfaisance avec ses parents, il vivra jusqu’à cent ans, ou bien il lui sera donné tant et tant de subsistance et de santé, et s’il ne le fait pas, il vivra jusqu’à soixante ans et ne recevra pas cette subsistance et cette santé. Cependant, Dieu sait laquelle des deux éventualités aura lieu, rien n’échappe à Sa science, et Il veut de toute éternité ce qu’Il sait que cela aura lieu, la volonté de Dieu ne change pas. Cela ne veut pas dire que la prédestination éternelle de Dieu, qui est Son attribut, est conditionnée par le fait que telle personne agisse ou que telle personne invoque, non ! Dieu sait ce qui arrivera à cet esclave et s’il fera une invocation ou pas. Parmi les choses contre lesquelles il convient de mettre en garde, il y a une invocation que certaines personnes se sont habituées à répéter durant cette nuit ; ils disent : (Allāhoumma ’in kounta katabtanî ʿindaka fî ’oummi l-kitâbi maḥrôuman ’aw maṭrôudan ’aw mouqattaran ʿalayya fi r-rizq famḥou l-Lâhoumma bifaḍlika chaqâwatî wa ḥirmânî wa ṭardî wa ’iqtâra rizqî …), ces termes, certains les ont rapportés de ʿOumar, Ibnou Masʿôud et de Moujâhid mais cela n’a pas été confirmé. En effet, celui qui croit que Allāh change Sa volonté par l’invocation de quelqu’un qui invoque, sa croyance a été corrompue parce que la volonté de Allāh est éternelle exempte de début et exempte de fin. Il n’advient à la volonté de Allāh ni changement ni modification, ni à aucun de Ses attributs, ni à Sa science, ni à Sa puissance ni à Sa prédestination. Ainsi, il n’est pas permis à l’homme de croire qu’il pourrait advenir à Allāh de vouloir une chose qu’Il ne voulait pas de toute éternité, tout comme il n’est pas permis de dire qu’il Lui advient la connaissance d’une chose qu’Il ne savait pas de toute éternité. Ainsi, la volonté de Allāh ne change pas par l’invocation de quelqu’un qui invoque ou par l’aumône de quelqu’un qui donne une aumône ou par le vœu de celui qui fait le vœu. Le Messager de Allāh a dit:', '', 'invocation, dieu, changer, créatures'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« لَا يَرُدُّ القَضَاءَ إِلّا الدُّعَاءُ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« لَا يَرُدُّ القَضَاءَ إِلّا الدُّعَاءُ »');
 
 -- source: https://islam.ms/nuit-15-chabane-invocation
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Dieu fait changer les créatures et Lui ne change pas', '« إنَّ النّذرَ لا يَرُدُّ منْ قدَرِ اللهِ وإِنّمَا يُستَخْرَجُ بِهِ مِنَ البَخيلِ »', 'Le vœu n’empêche pas la destinée de Allāh, seulement c’est par le vœu que l’avare donne', 'Inna n-nadhra lâ yarouddou min qadari l-Lâh wa ’innamâ youstakhrajou bihi mina l-bakhîl', '[rapporté par Mouslim]. La chose dont Allāh sait et veut l’existence de toute éternité, il est indispensable qu’elle soit et cela ne change pas. La chose qu’Il sait qu’elle n’aura pas lieu, n’entrera pas en existence. Voir: Croire en la Volonté de Dieu. Prédestination du Bien et du Mal Quant à la parole de Allāh taʿālā:', '', 'invocation, dieu, changer, créatures'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« إنَّ النّذرَ لا يَرُدُّ منْ قدَرِ اللهِ وإِنّمَا يُستَخْرَجُ بِهِ مِنَ البَخيلِ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« إنَّ النّذرَ لا يَرُدُّ منْ قدَرِ اللهِ وإِنّمَا يُستَخْرَجُ بِهِ مِنَ البَخيلِ »');
 
 -- source: https://islam.ms/nuit-15-chabane-invocation
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Dieu fait changer les créatures et Lui ne change pas', '« سألت ربي أربعًا فأعطاني ثلاثًا ومنعني واحدة : سألته أن لا يُكْفِرَ أمتي جملة فأعطانيها وسألته أن لا يهلكهم بما أهلك به الأمم قبلهم فأعطانيها، وسألته أن لا يظهر عليهم عدوًا من غيرهم فيستأصلهم فأعطانيها، وسألته أن لا يجعل بأسهم بينهم فمنعنيها »', 'J’ai demandé à Mon Seigneur quatre choses. Il m’en a accordées trois et ne m’en a pas exaucé une. Je lui ai demandé de faire que ma communauté ne soit pas dans sa totalité non-croyante. Il me l’a accordé. Je lui ai demandé de ne pas les faire périr par ce par quoi Il a fait périr les communautés avant eux. Il me l’a accordé. Je lui ai demandé de faire qu’il n’y ait pas un ennemi étranger à eux qui prenne le dessus sur eux tous et les déracine. Il me l’a accordé. Et je lui ai demandé de faire qu’il n’y ait pas de guerres entre eux mais Il ne me l’a pas exaucé', 'sa’altou rabbi ’arbaʿan fa’aʿṭânî thalâthan wa manaʿanî wâḥidah : …', '[rapporté par le ḥâfiḍh ʿAbdou r-Raḥmān Ibnou Abî Hâtim d’après Abôu Hourayrah] Mouslim a rapporté ce ḥadīth d’après Thawbân, d’après le Messager de Allāh:', '', 'invocation, dieu, changer, créatures'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« سألت ربي أربعًا فأعطاني ثلاثًا ومنعني واحدة : سألته أن لا يُكْفِرَ أمتي جملة فأعطانيها وسألته أن لا يهلكهم بما أهلك به الأمم قبلهم فأعطانيها، وسألته أن لا يظهر عليهم عدوًا من غيرهم فيستأصلهم فأعطانيها، وسألته أن لا يجعل بأسهم بينهم فمنعنيها »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« سألت ربي أربعًا فأعطاني ثلاثًا ومنعني واحدة : سألته أن لا يُكْفِرَ أمتي جملة فأعطانيها وسألته أن لا يهلكهم بما أهلك به الأمم قبلهم فأعطانيها، وسألته أن لا يظهر عليهم عدوًا من غيرهم فيستأصلهم فأعطانيها، وسألته أن لا يجعل بأسهم بينهم فمنعنيها »');
 
 -- source: https://islam.ms/nuit-15-chabane-invocation
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Dieu fait changer les créatures et Lui ne change pas', '« سألت ربي ثلاثًا فأعطاني ثنتين ومنعني واحدة »', 'J’ai demandé à mon Seigneur trois choses Il m’a accordé deux et m’en a refusée une', 'sa’altou Rabbî thalâthan fa’aʿṭânî thintayn wa manaʿanî wâḥidah', 'Et dans une autre version:', '', 'invocation, dieu, changer, créatures'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« سألت ربي ثلاثًا فأعطاني ثنتين ومنعني واحدة »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« سألت ربي ثلاثًا فأعطاني ثنتين ومنعني واحدة »');
 
 -- source: https://islam.ms/nuit-15-chabane-invocation
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Dieu fait changer les créatures et Lui ne change pas', '« قال لي يا محمد إني إذا قضيت قضاء فإنه لا يرد »', 'Il m’a dit: Ô Mouḥammad, ce que je prédestine ne sera pas changée', 'Qâla lî yâ Mouḥammad ’Innî ’idhâ qaḍaytou qaḍâ’an fa’innahou lâ youradd', 'Alors mieux que le douʿâ’ cité précédemment qui comprend ces mauvaises paroles, il y a cette invocation même si elle n’a pas été rapportée du Messager de Allāh, qui est la suivante:', '', 'invocation, dieu, changer, créatures'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« قال لي يا محمد إني إذا قضيت قضاء فإنه لا يرد »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« قال لي يا محمد إني إذا قضيت قضاء فإنه لا يرد »');
 
 -- source: https://islam.ms/nuit-15-chabane-invocation
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Dieu fait changer les créatures et Lui ne change pas', 'اللّهمّ يا الله يا الله يا الله يا حيّ يا قيّوم يا غفور يا توّاب يا فتّاح يا رزّاق يا واسع يا معين يا باسط يا مبدئ يا وهّاب يا متين ويا حافظ يا وليّ يا كافي يا حسيب يا أرحم الرّاحمين يا ذا المنّ ويا ذا الفضل ويا ذا الجلال والإكرام ويا ذا الطّول والإنعام ويا من تمحو ما تشاء وتثبت ما تشاء ويا من عندك أمّ الكتاب بحقّ أسماءك الحسنى وآياتك العظمى وبحقّ اسمك العظيم الأعظم وبالتجلّي في ليلة النّصف من شعبان المكرّم صلّ على سيّدنا ومولانا وحبيبنا وشفيعنا وملاذنا محمّد رسولك ونبيّك الأكرم صلاة كاملة دائمة تكتبنا بها عندك في هذه اللّيلة المباركة مغفورين لهم مسعودين معمّرين بالخير مرزوقين موفّقين للأذكار والطّاعات والخيرات والحسنات ومستغنين بفضلك في الدّارين عمّن سواك وصلّ على سيّدنا محمّد صلاة تكتبنا بها في هذه اللّيلة من السّعداء والصّالحين وترزقنا بها في الدّارين إيمانا كاملا وكمال اليقين بحقّ سيّدنا محمّد سيّد المرسلين وإمام المتّقين ومحبوب ربّ العالمين وتكشف بها عنا البليات والآفات والعاهات الواردة بإرادتك هذه السّنة لتصيب بها من تشاء من عبادك إنّك مجيب الدّعوات وما ذلك على الله بعزيز وصلّى الله على سيّدنا محمّد وعلى آله وصحبه وسلّم.', '', '', 'Allāhoumma yâ Allāhou yâ Allāhou yâ Allāh yâ Ḥayyou yâ Qayyôumou yâ Ghafôurou yâ Tawwâbou yâ Fattâḥou yâ Razzâqou yâ Wâçiʿou yâ Mouʿîn yâ Bâciṭou yâ Moubdi’ou yâ Wahhâbou yâ Matînou wa yâ Ḥâfiḍhou yâ Waliyyou yâ Kâfî yâ Ḥacîb yâ ’Arḥama r-Râḥimîn yâ Dha l-Manni wa yâ Dha l-Faḍl wa yâ Dha l-Jalâli wa l-’Ikrâm wa yâ Dha ṭ-Ṭawli wa l-’Inʿâm wa yâ man tamḥou mâ tachâ’ wa touthbitou mâ tachâ’ou liman tachâ’ wa yâ man ʿindaka ’oummou l-kitâb biḥaqqi ’asmâ’ika l-Ḥousnâ wa ’âyâtika l-ʿouḍhmâ wa biḥaqqi ismika l-ʿaḍhîmi l-’aʿḍham wa bi t-tajallî fî laylati n-niṣfi min chaʿbâni l-moukarram ṣalli ʿalâ sayyidinâ wa mawlânâ wa ḥabîbinâ wa chafîʿinâ wa malâdhinâ Mouḥammad raçôulika wa nabiyyika l-’akram ṣalâtan kâmilatan dâ’imatan taktoubounâ bihâ ʿindaka fî hâdhihi l-laylati l-moubârakah maghfôurîna lahoum masʿôudîna mouʿammirîna bi l-khayr marzôuqîna mouwaffaqîna li l-’adhkâri wa ṭ-ṭâʿâti wa l-khayrâti wa l-ḥaçanât wa moustaghnîna bifaḍlika fi d-dârayn ʿamman siwâk, wa ṣalli ʿalâ sayyidinâ Mouḥammad ṣalâtan taktoubounā bihâ fī hâdhihi l-laylati mina s-souʿadâ’i wa ṣ-ṣāliḥîn wa tarzouqounâ bihâ fi d-dârayni ’Imânan kâmilan wa kamâla l-yaqîn biḥaqqi sayyidinâ Mouḥammadin sayyidi l-mourçalîn wa ’imâmi l-mouttaqîn wa maḥbôubi Rabbi l-ʿâlamîn wa takchifou bihâ ʿanna l-baliyyâti wa l-’âfâti wa l-ʿâhâti l-wâridah bi’irâdatika hâdhihi s-sanata litouṣîba bihâ man tachâ’ou min ʿibâdika ’innaka Moujîbou d-daʿawâti wa mâ dhâlika ʿala l-Lâhi bi ʿazîz, wa ṣalla l-Lâhou ʿalâ sayyidinâ Mouḥammad wa ʿalâ ’âlihi wa ṣaḥbihi wa sallam.', '', 'invocation, dieu, changer, créatures'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = 'اللّهمّ يا الله يا الله يا الله يا حيّ يا قيّوم يا غفور يا توّاب يا فتّاح يا رزّاق يا واسع يا معين يا باسط يا مبدئ يا وهّاب يا متين ويا حافظ يا وليّ يا كافي يا حسيب يا أرحم الرّاحمين يا ذا المنّ ويا ذا الفضل ويا ذا الجلال والإكرام ويا ذا الطّول والإنعام ويا من تمحو ما تشاء وتثبت ما تشاء ويا من عندك أمّ الكتاب بحقّ أسماءك الحسنى وآياتك العظمى وبحقّ اسمك العظيم الأعظم وبالتجلّي في ليلة النّصف من شعبان المكرّم صلّ على سيّدنا ومولانا وحبيبنا وشفيعنا وملاذنا محمّد رسولك ونبيّك الأكرم صلاة كاملة دائمة تكتبنا بها عندك في هذه اللّيلة المباركة مغفورين لهم مسعودين معمّرين بالخير مرزوقين موفّقين للأذكار والطّاعات والخيرات والحسنات ومستغنين بفضلك في الدّارين عمّن سواك وصلّ على سيّدنا محمّد صلاة تكتبنا بها في هذه اللّيلة من السّعداء والصّالحين وترزقنا بها في الدّارين إيمانا كاملا وكمال اليقين بحقّ سيّدنا محمّد سيّد المرسلين وإمام المتّقين ومحبوب ربّ العالمين وتكشف بها عنا البليات والآفات والعاهات الواردة بإرادتك هذه السّنة لتصيب بها من تشاء من عبادك إنّك مجيب الدّعوات وما ذلك على الله بعزيز وصلّى الله على سيّدنا محمّد وعلى آله وصحبه وسلّم.');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = 'اللّهمّ يا الله يا الله يا الله يا حيّ يا قيّوم يا غفور يا توّاب يا فتّاح يا رزّاق يا واسع يا معين يا باسط يا مبدئ يا وهّاب يا متين ويا حافظ يا وليّ يا كافي يا حسيب يا أرحم الرّاحمين يا ذا المنّ ويا ذا الفضل ويا ذا الجلال والإكرام ويا ذا الطّول والإنعام ويا من تمحو ما تشاء وتثبت ما تشاء ويا من عندك أمّ الكتاب بحقّ أسماءك الحسنى وآياتك العظمى وبحقّ اسمك العظيم الأعظم وبالتجلّي في ليلة النّصف من شعبان المكرّم صلّ على سيّدنا ومولانا وحبيبنا وشفيعنا وملاذنا محمّد رسولك ونبيّك الأكرم صلاة كاملة دائمة تكتبنا بها عندك في هذه اللّيلة المباركة مغفورين لهم مسعودين معمّرين بالخير مرزوقين موفّقين للأذكار والطّاعات والخيرات والحسنات ومستغنين بفضلك في الدّارين عمّن سواك وصلّ على سيّدنا محمّد صلاة تكتبنا بها في هذه اللّيلة من السّعداء والصّالحين وترزقنا بها في الدّارين إيمانا كاملا وكمال اليقين بحقّ سيّدنا محمّد سيّد المرسلين وإمام المتّقين ومحبوب ربّ العالمين وتكشف بها عنا البليات والآفات والعاهات الواردة بإرادتك هذه السّنة لتصيب بها من تشاء من عبادك إنّك مجيب الدّعوات وما ذلك على الله بعزيز وصلّى الله على سيّدنا محمّد وعلى آله وصحبه وسلّم.');
 
 -- source: https://islam.ms/preuve-permis-invocation-faveur-prophete-apres-appel-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Quelle est la preuve qu’il est permis de faire l’invocation en faveur du Prophète après l’appel à la prière ?', '« إِذَا سَمِعْتُمُ المُؤَذِّنَ فَقُولُوا كَمَا يَقُولُ ثُمَّ صَلُّوا عَلَيَّ »', 'Lorsque vous entendez le mou’adh-dhin, répétez ce qu’il dit, ensuite faites l’invocation en ma faveur', '’idhā samiʿtoumou l-mou’adh-dhina faqoūlou kamā yaqoūlou thoumma ṣalloū ʿalayy', '[rapporté par Mouslim]. Il y a également le ḥadīth :', '', 'invocation, quelle, preuve, permis'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« إِذَا سَمِعْتُمُ المُؤَذِّنَ فَقُولُوا كَمَا يَقُولُ ثُمَّ صَلُّوا عَلَيَّ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« إِذَا سَمِعْتُمُ المُؤَذِّنَ فَقُولُوا كَمَا يَقُولُ ثُمَّ صَلُّوا عَلَيَّ »');
 
 -- source: https://islam.ms/preuve-permis-invocation-faveur-prophete-apres-appel-priere
-INSERT INTO "douaa" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
+INSERT INTO "douaas" (sujet, texte_arabe, texte_francais, phonétique, explication, commentaire, tag)
 SELECT 'Quelle est la preuve qu’il est permis de faire l’invocation en faveur du Prophète après l’appel à la prière ?', '« مَن ذَكَرَنِي فَلْيُصَلِّ عَلَيَّ »', 'Que celui qui cite mon nom invoque en ma faveur pour que Allāh m’honore davantage', 'man dhakarani fa l-youṣalli ʿalayy', '[rapporté par le ḥāfiḍh As-Sakhāwiyy]. Vous pouvez écouter ou télécharger l’audio du ’Adhān fait par le récitateur égyptien connu ʿAbdou l-Bāsiṭ ʿabdou ṣ-Ṣamad à la fin du ’Adhān il fait l’invocation en faveur du prophète:', '', 'invocation, quelle, preuve, permis'
-WHERE NOT EXISTS (SELECT 1 FROM "douaa" WHERE texte_arabe = '« مَن ذَكَرَنِي فَلْيُصَلِّ عَلَيَّ »');
+WHERE NOT EXISTS (SELECT 1 FROM "douaas" WHERE texte_arabe = '« مَن ذَكَرَنِي فَلْيُصَلِّ عَلَيَّ »');
 
 -- source: https://islam.ms/rattraper-jeune-rompu-ramadan
 INSERT INTO "hadiths" (sujet, rapporteur, narrateur, statut, texte_arabe, texte_francais, phonetique, explication, type_id, tag)
