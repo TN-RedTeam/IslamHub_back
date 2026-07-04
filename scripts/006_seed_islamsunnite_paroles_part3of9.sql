@@ -15,6 +15,11 @@
 ALTER TABLE parole ADD COLUMN IF NOT EXISTS savant VARCHAR(255) DEFAULT '';
 ALTER TABLE parole ADD COLUMN IF NOT EXISTS tag VARCHAR(255) DEFAULT '';
 
+-- Resynchronise la séquence des id : des lignes existantes ont des id posés
+-- explicitement et la séquence était en retard, d'où l'erreur
+-- « duplicate key value violates unique constraint "parole_pkey" ».
+SELECT setval(pg_get_serial_sequence('parole', 'id'), COALESCE((SELECT MAX(id) FROM parole), 0) + 1, false);
+
 BEGIN;
 
 -- source: https://islamsunnite.net/mouhammad-illaych-al-maliki-eloge-mawlid/

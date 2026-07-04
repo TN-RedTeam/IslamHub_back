@@ -14,6 +14,12 @@
 -- Colonne tag (filtrage) si absente :
 ALTER TABLE hadith ADD COLUMN IF NOT EXISTS tag VARCHAR(255) DEFAULT '';
 
+-- Resynchronise les séquences d'id (précaution : si des lignes existantes ont
+-- des id posés explicitement, la séquence peut être en retard → erreur pkey).
+SELECT setval(pg_get_serial_sequence('hadith', 'id'), COALESCE((SELECT MAX(id) FROM hadith), 0) + 1, false);
+SELECT setval(pg_get_serial_sequence('douaa', 'id'), COALESCE((SELECT MAX(id) FROM douaa), 0) + 1, false);
+SELECT setval(pg_get_serial_sequence('dhikr', 'id'), COALESCE((SELECT MAX(id) FROM dhikr), 0) + 1, false);
+
 BEGIN;
 
 -- source: https://islam.ms/causes-bien-invocations-aumones
