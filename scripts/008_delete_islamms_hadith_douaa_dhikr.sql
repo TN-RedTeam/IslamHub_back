@@ -1,12 +1,12 @@
--- SUPPRESSION des hadiths / invocations / dhikr importés depuis islam.ms (seeding 005).
+-- SUPPRESSION des hadithss / invocations / dhikrs importés depuis islam.ms (seeding 005).
 -- Retire uniquement les entrées dont le texte arabe correspond exactement à l'import
 -- islam.ms. Les entrées d'origine et tout autre contenu ne sont PAS touchés.
 -- À exécuter dans l'éditeur SQL de Supabase.
 
 BEGIN;
 
--- hadith : 70 entrées
-SELECT count(*) AS "hadith_a_supprimer" FROM "hadith" WHERE texte_arabe IN (
+-- hadiths : 70 entrées
+SELECT count(*) AS "hadiths_a_supprimer" FROM "hadiths" WHERE texte_arabe IN (
   '"أبو بكر في الجنة وعمرُ في الجنة وعثمانُ في الجنة وعليٌ في الجنة وطلحةُ بن عبيدِ اللهِ في الجنة والزبيرُ بنُ العوامِ في الجنة وأبو عبيدةُ عامرُ بنُ الجراحِ في الجنة وسعدُ بن أبي وقاصٍ في الجنة وسعيد بن زَيدٍ في الجنة وعبد الرحمنِ بنُ عوفٍ في الجنة".',
   '« ائتني بها »',
   '« أعتقها فإنها مؤمنة »',
@@ -79,7 +79,7 @@ SELECT count(*) AS "hadith_a_supprimer" FROM "hadith" WHERE texte_arabe IN (
   '« اللَّهُمَّ عَلِّمْهُ الحِكْمَةَ وَتَأْوِيلَ الكِتَابِ »'
 );
 
-DELETE FROM "hadith" WHERE texte_arabe IN (
+DELETE FROM "hadiths" WHERE texte_arabe IN (
   '"أبو بكر في الجنة وعمرُ في الجنة وعثمانُ في الجنة وعليٌ في الجنة وطلحةُ بن عبيدِ اللهِ في الجنة والزبيرُ بنُ العوامِ في الجنة وأبو عبيدةُ عامرُ بنُ الجراحِ في الجنة وسعدُ بن أبي وقاصٍ في الجنة وسعيد بن زَيدٍ في الجنة وعبد الرحمنِ بنُ عوفٍ في الجنة".',
   '« ائتني بها »',
   '« أعتقها فإنها مؤمنة »',
@@ -152,8 +152,8 @@ DELETE FROM "hadith" WHERE texte_arabe IN (
   '« اللَّهُمَّ عَلِّمْهُ الحِكْمَةَ وَتَأْوِيلَ الكِتَابِ »'
 );
 
--- douaa : 164 entrées
-SELECT count(*) AS "douaa_a_supprimer" FROM "douaa" WHERE texte_arabe IN (
+-- douaas : 164 entrées
+SELECT count(*) AS "douaas_a_supprimer" FROM "douaas" WHERE texte_arabe IN (
   '« إِذَا مَاتَ ابْنُ ءادَمَ انْقَطَعَ عَمَلُهُ إِلاَّ مِنْ ثَلاَثٍ صَدَقَةٍ جَارِيَةٍ وعِلْمٍ يُنْتَفَعُ بِهِ وَوَلَدٍ صَالِحٍ يَدْعُو لَهُ »',
   '« إِذَا مَاتَ ابْنُ ءادَمَ انْقَطَعَ عَمَلُهُ »',
   'الحمد لله رب العالمين',
@@ -320,7 +320,7 @@ SELECT count(*) AS "douaa_a_supprimer" FROM "douaa" WHERE texte_arabe IN (
   '« مَن ذَكَرَنِي فَلْيُصَلِّ عَلَيَّ »'
 );
 
-DELETE FROM "douaa" WHERE texte_arabe IN (
+DELETE FROM "douaas" WHERE texte_arabe IN (
   '« إِذَا مَاتَ ابْنُ ءادَمَ انْقَطَعَ عَمَلُهُ إِلاَّ مِنْ ثَلاَثٍ صَدَقَةٍ جَارِيَةٍ وعِلْمٍ يُنْتَفَعُ بِهِ وَوَلَدٍ صَالِحٍ يَدْعُو لَهُ »',
   '« إِذَا مَاتَ ابْنُ ءادَمَ انْقَطَعَ عَمَلُهُ »',
   'الحمد لله رب العالمين',
@@ -487,8 +487,8 @@ DELETE FROM "douaa" WHERE texte_arabe IN (
   '« مَن ذَكَرَنِي فَلْيُصَلِّ عَلَيَّ »'
 );
 
--- dhikr : 27 entrées
-SELECT count(*) AS "dhikr_a_supprimer" FROM "dhikr" WHERE texte_arabe IN (
+-- dhikrs : 27 entrées
+SELECT count(*) AS "dhikrs_a_supprimer" FROM "dhikrs" WHERE texte_arabe IN (
   'رَبِّ اغْفِرْ وَارْحَمْ وَاهْدِ لِلسَّبِيلِ الأَقْوَمِ',
   'لا إله إلا الله وحده لا شريك له، أحـد أحـد، لـم يلـد ولـم يولد، ولـم يكـن لـه كفوا أحـد.',
   'اللهُمَّ إِنِّي أُشْهِدُكَ وَأُشْهِدُ حَمَلَتَ عَرْشِك وَ مَلائكَتَكَ وَجَمِيعَ خَلْقِكَ أَنَّكَ أَنْتَ الله لا إلهَ إلا أنْتَ وَحْدَكَ لا شَرِيكَ لك وَأَنَّ مُحَمَّدً عَبْدُكَ وَ رَسُولُك',
@@ -518,7 +518,7 @@ SELECT count(*) AS "dhikr_a_supprimer" FROM "dhikr" WHERE texte_arabe IN (
   'أَعُوذُ باللهِ مِنَ الشَّيْطَانِ الرَّجِيم'
 );
 
-DELETE FROM "dhikr" WHERE texte_arabe IN (
+DELETE FROM "dhikrs" WHERE texte_arabe IN (
   'رَبِّ اغْفِرْ وَارْحَمْ وَاهْدِ لِلسَّبِيلِ الأَقْوَمِ',
   'لا إله إلا الله وحده لا شريك له، أحـد أحـد، لـم يلـد ولـم يولد، ولـم يكـن لـه كفوا أحـد.',
   'اللهُمَّ إِنِّي أُشْهِدُكَ وَأُشْهِدُ حَمَلَتَ عَرْشِك وَ مَلائكَتَكَ وَجَمِيعَ خَلْقِكَ أَنَّكَ أَنْتَ الله لا إلهَ إلا أنْتَ وَحْدَكَ لا شَرِيكَ لك وَأَنَّ مُحَمَّدً عَبْدُكَ وَ رَسُولُك',
